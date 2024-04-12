@@ -37,3 +37,10 @@ body {
     color: #1F1F1F;
   }
 }
+
+@font-face {
+  font-family: 'Ameretto';
+  src: url('/fonts/Ameretto Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
