@@ -35,7 +35,7 @@ function DarkModeToggle() {
   };
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} className="mt-[1.06rem]">
       {theme === "light" ? (
         <FaMoon className=" h-[1.73rem] w-[2.5rem] text-nav-text" />
       ) : (
