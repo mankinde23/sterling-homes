@@ -12,9 +12,14 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        ameretto: ["Ameretto", "sans-serif"],
+      },
       colors: {
         "navbar-bg": "rgba(16, 16, 16, 0.41)",
         "nav-text": "#FFFFFF",
+        "light-gray": "rgba(211, 211, 211, 0.5)",
+        "sterling-theme": "#00D079",
       },
     },
     screens: {
