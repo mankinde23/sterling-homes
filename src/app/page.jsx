@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Aboutus from "./component/aboutUs/aboutus";
 
 export default function Home() {
   return (
@@ -27,7 +28,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <Aboutus />
+      </div>
     </>
   );
 }
