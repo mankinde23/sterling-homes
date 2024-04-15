@@ -20,6 +20,11 @@ module.exports = {
         "nav-text": "#FFFFFF",
         "light-gray": "rgba(211, 211, 211, 0.5)",
         "sterling-theme": "#00D079",
+        "about-b": "#101010",
+        "about-t": "#000",
+        "about-s-b": "#CECECE",
+        "about-s-w": "#6F6F6F",
+        "about-bg": "#111",
       },
     },
     screens: {
