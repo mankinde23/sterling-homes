@@ -25,6 +25,8 @@ module.exports = {
         "about-s-b": "#CECECE",
         "about-s-w": "#6F6F6F",
         "about-bg": "#111",
+        "our-service": "rgba(255, 255, 255, 0.94)",
+        "our-service-b": "rgba(17, 17, 17, 0.88)",
       },
     },
     screens: {
