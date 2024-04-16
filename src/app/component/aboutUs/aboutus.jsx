@@ -9,13 +9,13 @@ export default function Aboutus() {
   return (
     <>
       <div
-        className={`h-[53.575rem] w-auto ${
+        className={`h-[53.575rem] w-auto px-[4.51rem]  ${
           theme === "dark"
             ? "bg-about-bg transition duration-500 ease-in-out"
             : "bg-nav-text transition duration-500 ease-in-out"
         }`}
       >
-        <div className="flex justify-center gap-[3.94rem] items-center pt-[6.25rem]">
+        <div className="flex  justify-between gap-[3.94rem] items-center pt-[6.25rem]">
           <div>
             <div className="h-[5.8125rem]">
               <h1
@@ -56,7 +56,7 @@ export default function Aboutus() {
             <Image src={mock} className="w-[45.3125rem]" />
           </div>
         </div>
-        <div className="gap-[9.0625rem] flex justify-center items-center mt-[7.56rem]">
+        <div className="gap-[9.0625rem] flex  justify-between items-center mt-[7.56rem] w-auto h-[7.93rem]">
           <div className="flex flex-col gap-[0.8125rem] w-[24.5rem]">
             <p
               className={` text-[1.25rem] font-semibold ${
