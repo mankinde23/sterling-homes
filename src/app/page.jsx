@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Aboutus from "./component/aboutUs/aboutus";
 import Ourservice from "./component/ourServices/ourservice";
+import Testimonial from "./component/testimonial/testimonial";
 
 export default function Home() {
   return (
@@ -34,6 +35,9 @@ export default function Home() {
       </div>
       <div>
         <Ourservice />
+      </div>
+      <div>
+        <Testimonial />
       </div>
     </>
   );
