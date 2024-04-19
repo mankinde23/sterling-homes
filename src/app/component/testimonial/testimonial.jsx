@@ -3,6 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import test from "../../../../public/testimonial-image.png";
+import EmblaCarousel, { Carousel } from "../carousel/carousel";
+
+// const OPTIONS = { loop: true };
+// const SLIDE_COUNT = 3;
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 export default function Testimonial() {
   const { theme } = useTheme();
@@ -37,6 +42,9 @@ export default function Testimonial() {
               what Our Clients Say
             </p>
           </div>
+        </div>
+        <div>
+          <Carousel />
         </div>
       </div>
     </>
