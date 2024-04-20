@@ -31,6 +31,9 @@ module.exports = {
         "our-servicet": "rgba(255, 255, 255, 0.72)",
         "profile-b": "#F3F3F3",
         "testimonial-text": "#939393",
+        "testimonial-b": "#1E1E1E",
+        "testimonial-w": "#101010",
+        "cars-b": "rgba(16, 16, 16, 0.86)",
       },
     },
     screens: {
