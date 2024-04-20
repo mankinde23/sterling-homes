@@ -151,6 +151,7 @@
 
 "use client";
 import React, { useCallback } from "react";
+import { useTheme } from "next-themes";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import {
@@ -159,6 +160,7 @@ import {
 } from "react-icons/md";
 
 export function Carousel() {
+  const { theme } = useTheme();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000 }),
   ]);
@@ -172,26 +174,55 @@ export function Carousel() {
   }, [emblaApi]);
 
   return (
-    <div className="embla ">
-      <div class="embla__viewport overflow-hidden  " ref={emblaRef}>
-        <div className="embla__container flex h-full">
-          <div className="embla__slide flex-shrink-0 flex min-w-0 w-full">
+    <div className="embla relative ">
+      <div
+        class="embla__viewport overflow-hidden w-[42rem] h-[25.6875rem]"
+        ref={emblaRef}
+      >
+        <div className="embla__container flex gap-5">
+          <div
+            className={` embla__slide   pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] shadow-md${
+              theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
+            }`}
+          >
             Slide 1
           </div>
-          <div className="embla__slide flex-shrink-0 flex min-w-0 w-full">
+          <div
+            className={` embla__slide  pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md${
+              theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
+            }`}
+          >
             Slide 2
           </div>
-          <div className="embla__slide flex-shrink-0 flex min-w-0 w-full">
+          <div
+            className={` embla__slide pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] mr-[1.25rem]  shadow-md${
+              theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
+            }`}
+          >
             Slide 3
           </div>
         </div>
       </div>
-      <div>
-        <button className="embla__prev" onClick={scrollPrev}>
-          <MdOutlineKeyboardArrowLeft />
+      <div className=" flex  items-center justify-center w-auto h-[3.125rem] gap-[1.875rem] mt-[2.56rem]">
+        <button
+          className={`embla__next  hover:bg-sterling-theme border-[3px] rounded-full ${
+            theme === "light"
+              ? " bg-cars-b border-none"
+              : " bg-testimonial-b border-sterling-theme bg-transparent"
+          }`}
+          onClick={scrollPrev}
+        >
+          <MdOutlineKeyboardArrowLeft className="w-[3.125rem] h-[3.125rem] text-our-service-text" />
         </button>
-        <button className="embla__next" onClick={scrollNext}>
-          <MdOutlineKeyboardArrowRight />
+        <button
+          className={`embla__next  hover:bg-sterling-theme border-[3px] rounded-full ${
+            theme === "light"
+              ? " bg-cars-b border-none"
+              : " bg-testimonial-b border-sterling-theme bg-transparent"
+          }`}
+          onClick={scrollNext}
+        >
+          <MdOutlineKeyboardArrowRight className="w-[50px] h-[50px] text-our-service-text" />
         </button>
       </div>
     </div>
