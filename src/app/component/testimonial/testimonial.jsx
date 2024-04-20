@@ -33,7 +33,7 @@ export default function Testimonial() {
               Testimonials
             </p>
             <p
-              className={` text-[0.75rem] font-semibold leading-normal ${
+              className={` text-[0.75rem] font-semibold leading-normal mb-[2.19rem] ${
                 theme === "light"
                   ? " text-testimonial-text"
                   : "text-sterling-theme"
@@ -41,10 +41,10 @@ export default function Testimonial() {
             >
               what Our Clients Say
             </p>
+            <div className="mb-[2.19rem]">
+              <Carousel />
+            </div>
           </div>
-        </div>
-        <div>
-          <Carousel />
         </div>
       </div>
     </>
