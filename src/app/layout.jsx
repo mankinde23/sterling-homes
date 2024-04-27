@@ -2,6 +2,8 @@ import Navbar from "./component/navbar/navbar";
 import Providers from "./context/ThemeContext";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 const inter = Poppins({ subsets: ["latin"], weight: "400" });
 
