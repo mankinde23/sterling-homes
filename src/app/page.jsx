@@ -2,6 +2,7 @@ import Image from "next/image";
 import Aboutus from "./component/aboutUs/aboutus";
 import Ourservice from "./component/ourServices/ourservice";
 import Testimonial from "./component/testimonial/testimonial";
+import Founders from "./component/founders/founder";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
             <h1 className="text-nav-text font-ameretto text-[4.6875rem] leading-normal tracking-[0.9375rem] font-normal">
               STERLING HOMES
             </h1>
-            <p className="flex justify-center items-center text-nav-text">
-              Lorem ipsum dolor sit amet{" "}
+            <p className="flex justify-center items-center text-nav-text text-[0.8125rem] font-light">
+              Building dreams, one home at a time, with integrity and excellence
             </p>
             <div className="flex justify-center items-center mt-[4rem]">
               <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
@@ -38,6 +39,9 @@ export default function Home() {
       </div>
       <div>
         <Testimonial />
+      </div>
+      <div>
+        <Founders />
       </div>
     </>
   );
