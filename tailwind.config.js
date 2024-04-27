@@ -34,6 +34,10 @@ module.exports = {
         "testimonial-b": "#1E1E1E",
         "testimonial-w": "#101010",
         "cars-b": "rgba(16, 16, 16, 0.86)",
+        "testimonial-const": "rgba(255, 255, 255, 0.67)",
+        "founders-link": "#5C5C5C",
+        "founders-socials": "rgba(255, 255, 255, 1)",
+        "founders-text": "rgba(255, 255, 255, 0.78)",
       },
     },
     screens: {
@@ -44,14 +48,14 @@ module.exports = {
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
 
-      lg: { max: "1024px" },
+      lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
 
       md: { max: "767px" },
       // => @media (max-width: 767px) { ... }
 
       sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
+      // => @media (max-width: 639px) { ... } mobile 699
     },
   },
   plugins: [],
