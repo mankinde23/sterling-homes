@@ -41,8 +41,8 @@ body {
     max-width: 42rem;
     margin: auto;
     --slide-height: 19rem;
-    --slide-spacing: 1rem;
-    --slide-size: 80%;
+    /* --slide-spacing: 1rem; */
+    --slide-size: 100%;
   }
 
   .embla__viewport {
@@ -54,6 +54,10 @@ body {
     display: flex;
     touch-action: pan-y;
     margin-left: calc(var(--slide-spacing) * -1);
+    width: 100%;
+    /* Ensure the container takes up the full width */
+
+    /* Add a transition for smoother sliding */
   }
 
   .embla__slide {
