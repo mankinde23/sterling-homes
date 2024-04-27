@@ -19,7 +19,7 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div>
+        <div className="w-auto">
           <ul className="flex justify-between items-center w-[32.5rem] gap-[1.09rem] px-[1.25rem] py-[0rem] h-[2.375rem]">
             <li className=" text-nav-text">
               <Link href="">Home </Link>
