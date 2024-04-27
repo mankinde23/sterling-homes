@@ -158,11 +158,15 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Image from "next/image";
+import ahmad from "../../../../public/ahmad.png";
+import rahman from "../../../../public/rahman.png";
 
 export function Carousel() {
   const { theme } = useTheme();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 4000 }),
+    Autoplay({ delay: 18000 }),
   ]);
 
   const scrollPrev = useCallback(() => {
@@ -181,25 +185,95 @@ export function Carousel() {
       >
         <div className="embla__container flex gap-5">
           <div
-            className={` embla__slide   pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] shadow-md${
+            className={` embla__slide   pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] shadow-md flex flex-col items-center${
               theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
             }`}
           >
-            Slide 1
+            <div className="w-[4.0625rem] h-[4.0625rem]">
+              <div
+                class="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]"
+                // style={{ backgroundImage: "url('/ahmad.png')" }}
+              >
+                <Image
+                  src={ahmad}
+                  className="flex justify-center items-center"
+                />
+              </div>
+            </div>
+            <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
+              <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
+              <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal w-[33.3125rem] h-[4rem]">
+                Soji and Rukayat swiftly recognized a rapidly developing
+                neighborhood in Houston for an early investment in rentals. I am
+                pleased with the short-term rental performance and also
+                assisting in expanding my investment portfolio.
+              </p>
+              <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
+            </div>
+            <div className="flex flex-col items-center gap-[0.25rem] w-[11.9375rem] mt-[5.44rem]">
+              <p className="w-[8.75rem] h-[1.75rem] text-nav-text text-[1.25rem] font-medium leading-normal">
+                Ahmad Isiaka
+              </p>
+              <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const">
+                Homeowner | Houston, Texas
+              </p>
+            </div>
           </div>
           <div
-            className={` embla__slide  pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md${
+            className={` embla__slide  pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md flex flex-col gap-[4.4375rem] items-center${
               theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
             }`}
           >
-            Slide 2
+            <div className="flex h-[5.5rem] gap-[1.875rem]">
+              <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
+              <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal  w-[33.3125rem] h-[5rem]">
+                Previous realtors I worked with didn't conduct detailed risk
+                evaluations during house searches. Rukki and Soji exceeded my
+                expectations by thoroughly assessing area risks based on my
+                criteria, negotiating a favorable deal, and managing the
+                decoration of the rental property. The results have been
+                outstanding!
+              </p>
+              <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
+            </div>
+            <div className="flex flex-col items-center gap-[0.25rem] w-[12.3125rem]">
+              <p className="w-[7.3125rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal">
+                Kabir Wolly
+              </p>
+              <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const">
+                Homeowner | Atlanta, Georgia
+              </p>
+            </div>
           </div>
           <div
-            className={` embla__slide pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] mr-[1.25rem]  shadow-md${
+            className={` embla__slide pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] mr-[1.25rem]  shadow-md flex flex-col items-center${
               theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
             }`}
           >
-            Slide 3
+            <div className="w-[4.0625rem] h-[4.0625rem]">
+              <div class="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]">
+                <Image src={rahman} />
+              </div>
+            </div>
+            <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
+              <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
+              <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal w-[33.3125rem] h-[4rem]">
+                I couldn't have achieved a strong tax return without Sterling
+                Homes. Their expert advice on home improvement strategies and
+                real estate investor tax requirements ensured routine tax
+                planning, resulting in significant gains on my investment. They
+                are the best real estate tax consultants I've ever worked with!
+              </p>
+              <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
+            </div>
+            <div className="flex flex-col items-center gap-[0.25rem] w-[14.0625rem] mt-[5.44rem]">
+              <p className="w-[5.5625rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal">
+                Rahman
+              </p>
+              <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const">
+                Homeowner | Baltimore, Maryland
+              </p>
+            </div>
           </div>
         </div>
       </div>
