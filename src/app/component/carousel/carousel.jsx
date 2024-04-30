@@ -162,6 +162,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Image from "next/image";
 import ahmad from "../../../../public/ahmad.png";
 import rahman from "../../../../public/rahman.png";
+import kabir from "../../../../public/KABIR.png";
 
 export function Carousel() {
   const { theme } = useTheme();
@@ -220,11 +221,16 @@ export function Carousel() {
             </div>
           </div>
           <div
-            className={` embla__slide  pt-[6.81rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md flex flex-col gap-[4.4375rem] items-center${
+            className={` embla__slide  pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md flex flex-col items-center${
               theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
             }`}
           >
-            <div className="flex h-[5.5rem] gap-[1.875rem]">
+            <div className="w-[4.0625rem] h-[4.0625rem]">
+              <div class="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]">
+                <Image src={kabir} />
+              </div>
+            </div>
+            <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
               <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
               <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal  w-[33.3125rem] h-[5rem]">
                 Previous realtors I worked with didn't conduct detailed risk
@@ -236,7 +242,7 @@ export function Carousel() {
               </p>
               <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
             </div>
-            <div className="flex flex-col items-center gap-[0.25rem] w-[12.3125rem]">
+            <div className="flex flex-col items-center gap-[0.25rem] w-[12.3125rem] mt-[4.44rem]">
               <p className="w-[7.3125rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal">
                 Kabir Wolly
               </p>
