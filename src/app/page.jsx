@@ -12,6 +12,7 @@ export default function Home() {
         style={{
           backgroundImage: "url('/landing-img2.png')",
         }}
+        id="hero"
       >
         <div className="flex justify-center items-end ">
           <div className=" mt-[19.88rem]">
