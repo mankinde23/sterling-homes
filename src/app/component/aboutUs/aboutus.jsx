@@ -9,11 +9,12 @@ export default function Aboutus() {
   return (
     <>
       <div
-        className={`h-[53.575rem] w-auto px-[4.51rem]  ${
+        className={`h-[53.575rem] w-auto px-[4.51rem]   ${
           theme === "dark"
             ? "bg-about-bg transition duration-500 ease-in-out"
             : "bg-nav-text transition duration-500 ease-in-out"
         }`}
+        id="about"
       >
         <div className="flex  justify-between gap-[3.94rem] items-center pt-[6.25rem]">
           <div>
@@ -70,9 +71,10 @@ export default function Aboutus() {
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
-              Lorem ipsum dolor sit amet consectetur. In cras ornare urna ut.
-              Purus eget amet ultrices vivamus eu. Pellentesque sagittis lacinia
-              in volutpat. Lorem eu velit lobortis vel suspendisse nec.{" "}
+              Our company specializes in commercial and luxury home real estate,
+              offering tailored solutions to meet client needs, ensuring
+              seamless transactions, and delivering exceptional value and
+              service.
             </p>
           </div>
           <div className="flex flex-col gap-[0.8125rem] w-[19.1875rem]">
@@ -88,9 +90,9 @@ export default function Aboutus() {
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
-              Lorem ipsum dolor sit amet consectetur. In cras ornare urna ut.
-              Purus eget amet ultrices vivamus eu. Pellentesque sagittis lacinia
-              in volutpat. Lorem eu velit lobortis vel suspendisse nec.{" "}
+              Our realtor services provide expert guidance in buying or selling
+              properties, ensuring a smooth process, maximizing value, and
+              delivering personalized solutions to meet your real estate goals.
             </p>
           </div>
 
@@ -107,9 +109,10 @@ export default function Aboutus() {
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
-              Lorem ipsum dolor sit amet consectetur. In cras ornare urna ut.
-              Purus eget amet ultrices vivamus eu. Pellentesque sagittis lacinia
-              in volutpat. Lorem eu velit lobortis vel suspendisse nec.{" "}
+              Our tax advisory services offer expert guidance on tax planning
+              and compliance, optimizing financial strategies, ensuring
+              regulatory compliance, and maximizing tax savings for individuals
+              and businesses.
             </p>
           </div>
         </div>
