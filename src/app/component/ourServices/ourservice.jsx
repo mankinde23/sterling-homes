@@ -8,11 +8,12 @@ export default function Ourservice() {
   return (
     <>
       <div
-        className={`h-[47.875rem] w-auto px-[5.31rem] pt-[3.5rem] ${
+        className={`h-[47.875rem] w-auto px-[5.31rem]  pt-[3.5rem] ${
           theme === "dark"
             ? "bg-our-service-b transition duration-500 ease-in-out"
             : "bg-profile-b transition duration-500 ease-in-out"
         }`}
+        id="services"
       >
         <div className="flex flex-col w-[8.75rem] h-[3.6875rem]">
           <p className="text-about-s-w text-[1rem] font-medium leading-normal  ">
