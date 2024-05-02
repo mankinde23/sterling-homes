@@ -19,6 +19,7 @@ export default function Testimonial() {
             ? "bg-about-bg transition duration-500 ease-in-out"
             : "bg-nav-text transition duration-500 ease-in-out"
         }`}
+        id="testimonials"
       >
         <div className="flex  gap-[3.56rem]">
           <Image src={test} className="w-[55.3125rem] h-[39rem]" />
