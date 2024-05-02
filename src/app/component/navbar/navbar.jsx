@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "../../../../public/sterling-logo.png";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 import DarkModeToggle from "../darmodetoggle/darkmodetoggle";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -19,22 +21,76 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div className="w-auto">
-          <ul className="flex justify-between items-center w-[32.5rem] gap-[1.09rem] px-[1.25rem] py-[0rem] h-[2.375rem]">
-            <li className=" text-nav-text">
-              <Link href="">Home </Link>
+        <div className="w-auto active:text-sterling-theme">
+          <ul className="flex justify-between items-center w-[32.5rem] gap-[1.09rem] px-[1.25rem] py-[0rem] h-[2.375rem]  ">
+            <li className="text-nav-text">
+              <Link
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-28}
+                duration={500}
+              >
+                <p className=" hover:text-sterling-theme hover:cursor-pointer  ">
+                  Home{" "}
+                </p>
+              </Link>
+            </li>
+            <li className="text-nav-text">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={24}
+                duration={500}
+              >
+                <p className=" hover:text-sterling-theme hover:cursor-pointer ">
+                  {" "}
+                  About{" "}
+                </p>
+              </Link>
             </li>
             <li className=" text-nav-text">
-              <Link href="">About </Link>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-25}
+                duration={500}
+              >
+                <p className=" hover:text-sterling-theme hover:cursor-pointer">
+                  {" "}
+                  Services{" "}
+                </p>
+              </Link>
             </li>
             <li className=" text-nav-text">
-              <Link href="">Services </Link>
+              <Link
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={-28}
+                duration={500}
+              >
+                <p className=" hover:text-sterling-theme hover:cursor-pointer">
+                  {" "}
+                  Testimonials{" "}
+                </p>
+              </Link>
             </li>
             <li className=" text-nav-text">
-              <Link href="">Testimonials </Link>
-            </li>
-            <li className=" text-nav-text">
-              <Link href="">Contact </Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={28}
+                duration={500}
+              >
+                <p className=" hover:text-sterling-theme hover:cursor-pointer">
+                  {" "}
+                  Contact{" "}
+                </p>
+              </Link>
             </li>
           </ul>
         </div>
