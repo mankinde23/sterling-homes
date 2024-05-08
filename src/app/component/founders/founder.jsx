@@ -51,10 +51,7 @@ export default function Founders() {
             </div>
             <div className="w-[28.3125rem] h-[16.1875rem] bg-navbar-bg backdrop-blur-[20px] ">
               <div className="h-[1.5rem] w-[23.9375rem] flex justify-between items-center ml-[1.69rem] mt-[1.94rem] mr-[2.69rem]">
-                <p
-                  className="text-nav-text text-[1.25rem] font-semibold leading-normal"
-                  style={{ fontFamily: " Montserrat, sans-serif" }}
-                >
+                <p className="text-nav-text text-[1.25rem] font-semibold leading-normal">
                   Adesoji Bello
                 </p>
                 <div className="flex w-[4.4375rem] h-[1.8125rem] gap-[0.6875rem]">
@@ -80,10 +77,7 @@ export default function Founders() {
                 </div>
               </div>
               <div className="w-[24.5rem] h-[9.75rem] ml-[1.69rem]  mr-[2.13rem] mt-[1.88rem]">
-                <p
-                  className="text-[0.75rem] font-medium leading-[1.21925rem] text-founders-text"
-                  style={{ fontFamily: " Montserrat, sans-serif" }}
-                >
+                <p className="text-[0.75rem] font-medium leading-[1.21925rem] text-founders-text">
                   Soji is a skilled commercial realtor and seasoned home leasing{" "}
                   <br />
                   service agent. With expertise in real estate tax planning and{" "}
@@ -113,10 +107,7 @@ export default function Founders() {
             </div>
             <div className="w-[28.3125rem] h-[16.1875rem] bg-navbar-bg backdrop-blur-[20px] ">
               <div className="h-[1.5rem] w-[23.9375rem] flex justify-between items-center ml-[1.69rem] mt-[1.94rem] mr-[2.69rem]">
-                <p
-                  className="text-nav-text text-[1.25rem] font-semibold leading-normal"
-                  style={{ fontFamily: " Montserrat, sans-serif" }}
-                >
+                <p className="text-nav-text text-[1.25rem] font-semibold leading-normal">
                   Rukayat Adeosun
                 </p>
                 <div className=" w-[4.4375rem] h-[1.8125rem] flex justify-end">
@@ -132,10 +123,7 @@ export default function Founders() {
                 </div>
               </div>
               <div className="w-[24.5rem] h-[9.75rem] ml-[1.69rem]  mr-[2.13rem] mt-[1.88rem]">
-                <p
-                  className="text-[0.75rem] font-medium leading-[1.21925rem] text-founders-text"
-                  style={{ fontFamily: " Montserrat, sans-serif" }}
-                >
+                <p className="text-[0.75rem] font-medium leading-[1.21925rem] text-founders-text">
                   With over 5 years of expertise in real estate transactions,{" "}
                   <br />
                   including buying and selling homes and negotiating <br />{" "}
