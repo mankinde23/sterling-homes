@@ -29,7 +29,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-28}
-                duration={500}
+                duration={900}
               >
                 <p className=" hover:text-sterling-theme hover:cursor-pointer  ">
                   Home{" "}
@@ -42,7 +42,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={24}
-                duration={500}
+                duration={900}
               >
                 <p className=" hover:text-sterling-theme hover:cursor-pointer ">
                   {" "}
@@ -56,7 +56,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-25}
-                duration={500}
+                duration={900}
               >
                 <p className=" hover:text-sterling-theme hover:cursor-pointer">
                   {" "}
@@ -70,7 +70,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-28}
-                duration={500}
+                duration={900}
               >
                 <p className=" hover:text-sterling-theme hover:cursor-pointer">
                   {" "}
@@ -83,8 +83,8 @@ export default function Navbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={28}
-                duration={500}
+                offset={-80}
+                duration={900}
               >
                 <p className=" hover:text-sterling-theme hover:cursor-pointer">
                   {" "}
