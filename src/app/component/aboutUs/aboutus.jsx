@@ -54,7 +54,7 @@ export default function Aboutus() {
             </div>
           </div>
           <div>
-            <Image src={mock} className="w-[45.3125rem]" />
+            <Image src={mock} alt="" className="w-[45.3125rem]" />
           </div>
         </div>
         <div className="gap-[9.0625rem] flex  justify-between items-center mt-[7.56rem] w-auto h-[7.93rem]">
