@@ -66,9 +66,9 @@ export default function Contact() {
           <div className="w-[47.375rem] h-[5.5rem] mt-[1.81rem]">
             <p className="text-nav-text text-[1rem] font-normal leading-[1.6rem]">
               Unlock the door to your dream home with confidence , whether
-              you're seeking a cozy <br /> bungalow, a spacious family retreat,
-              or a sleek urban oasis, we are here to make your dreams a reality.
-              Let's find your perfect place to call home together.
+              you&apos;re seeking a cozy <br /> bungalow, a spacious family
+              retreat, or a sleek urban oasis, we are here to make your dreams a
+              reality. Let&apos;s find your perfect place to call home together.
             </p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Contact() {
           </p>
           <p className="text-nav-text w-[20.07069rem] h-[2.25rem] text-[0.625rem] font-normal leading-[1rem] mt-[0.56rem]">
             We value your feedback and inquiries. Please fill out the form
-            below, and we'll get back to you as soon as possible
+            below, and we&apos;ll get back to you as soon as possible
           </p>
           <Formik
             initialValues={formValues}

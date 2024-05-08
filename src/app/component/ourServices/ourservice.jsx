@@ -328,17 +328,18 @@ export default function Ourservice({ onClose }) {
                             <p className="mt-[2.19rem] text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                               {" "}
                               Our comprehensive tax planning services begin with
-                              a thorough analysis of each client's real estate
-                              portfolio, taking into account factors such as
-                              property types, rental income, capital gains, and
-                              allowable deductions. We identify opportunities to
-                              minimize tax liabilities through strategies such
-                              as cost segregation, depreciation scheduling, and
-                              structuring transactions to take advantage of
-                              favorable tax provisions. By proactively planning
-                              and strategizing, we help our clients optimize
-                              their tax positions while ensuring compliance with
-                              applicable tax laws and regulations.
+                              a thorough analysis of each client&apos;s real
+                              estate portfolio, taking into account factors such
+                              as property types, rental income, capital gains,
+                              and allowable deductions. We identify
+                              opportunities to minimize tax liabilities through
+                              strategies such as cost segregation, depreciation
+                              scheduling, and structuring transactions to take
+                              advantage of favorable tax provisions. By
+                              proactively planning and strategizing, we help our
+                              clients optimize their tax positions while
+                              ensuring compliance with applicable tax laws and
+                              regulations.
                             </p>{" "}
                             <p className="mt-[2.19rem] text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                               {" "}

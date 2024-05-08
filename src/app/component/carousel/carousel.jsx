@@ -197,6 +197,7 @@ export function Carousel() {
               >
                 <Image
                   src={ahmad}
+                  alt=""
                   className="flex justify-center items-center"
                 />
               </div>
@@ -227,15 +228,15 @@ export function Carousel() {
           >
             <div className="w-[4.0625rem] h-[4.0625rem]">
               <div class="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]">
-                <Image src={kabir} />
+                <Image src={kabir} alt="" />
               </div>
             </div>
             <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
               <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
               <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal  w-[33.3125rem] h-[5rem]">
-                Previous realtors I worked with didn't conduct detailed risk
-                evaluations during house searches. Rukki and Soji exceeded my
-                expectations by thoroughly assessing area risks based on my
+                Previous realtors I worked with didn&apos;t conduct detailed
+                risk evaluations during house searches. Rukki and Soji exceeded
+                my expectations by thoroughly assessing area risks based on my
                 criteria, negotiating a favorable deal, and managing the
                 decoration of the rental property. The results have been
                 outstanding!
@@ -258,17 +259,18 @@ export function Carousel() {
           >
             <div className="w-[4.0625rem] h-[4.0625rem]">
               <div class="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]">
-                <Image src={rahman} />
+                <Image src={rahman} alt="" />
               </div>
             </div>
             <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
               <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
               <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal w-[33.3125rem] h-[4rem]">
-                I couldn't have achieved a strong tax return without Sterling
-                Homes. Their expert advice on home improvement strategies and
-                real estate investor tax requirements ensured routine tax
-                planning, resulting in significant gains on my investment. They
-                are the best real estate tax consultants I've ever worked with!
+                I couldn&apos;t have achieved a strong tax return without
+                Sterling Homes. Their expert advice on home improvement
+                strategies and real estate investor tax requirements ensured
+                routine tax planning, resulting in significant gains on my
+                investment. They are the best real estate tax consultants
+                I&apos;ve ever worked with!
               </p>
               <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
             </div>
