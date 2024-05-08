@@ -3,6 +3,8 @@ import Aboutus from "./component/aboutUs/aboutus";
 import Ourservice from "./component/ourServices/ourservice";
 import Testimonial from "./component/testimonial/testimonial";
 import Founders from "./component/founders/founder";
+import Contact from "./component/contact/contact";
+import Footer from "./component/footer/footer";
 
 export default function Home() {
   return (
@@ -43,6 +45,12 @@ export default function Home() {
       </div>
       <div>
         <Founders />
+      </div>
+      <div>
+        <Contact />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
