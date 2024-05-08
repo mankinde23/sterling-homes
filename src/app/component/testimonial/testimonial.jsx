@@ -5,10 +5,6 @@ import { useTheme } from "next-themes";
 import test from "../../../../public/testimonial-image.png";
 import EmblaCarousel, { Carousel } from "../carousel/carousel";
 
-// const OPTIONS = { loop: true };
-// const SLIDE_COUNT = 3;
-// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
 export default function Testimonial() {
   const { theme } = useTheme();
   return (
@@ -22,7 +18,7 @@ export default function Testimonial() {
         id="testimonials"
       >
         <div className="flex  gap-[3.56rem]">
-          <Image src={test} className="w-[55.3125rem] h-[39rem]" />
+          <Image src={test} alt="" className="w-[55.3125rem] h-[39rem]" />
           <div className="w-[13rem] h-[4.5625rem] flex flex-col items-center gap-[0.25rem]">
             <p
               className={` text-[2rem] font-semibold leading-normal ${
