@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <div className="theme">
-            <Navbar />
+            {/* <Navbar /> */}
             {children}
           </div>
         </Providers>
