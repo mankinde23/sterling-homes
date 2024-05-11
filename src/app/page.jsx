@@ -5,10 +5,13 @@ import Testimonial from "./component/testimonial/testimonial";
 import Founders from "./component/founders/founder";
 import Contact from "./component/contact/contact";
 import Footer from "./component/footer/footer";
+import Navbar from "./component/navbar/navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
       <div
         className="bg-cover h-[57.3125rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
         style={{
@@ -25,11 +28,13 @@ export default function Home() {
               Building dreams, one home at a time, with integrity and excellence
             </p>
             <div className="flex justify-center items-center mt-[4rem]">
-              <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
-                <p className="text-nav-text text-[1rem] font-semibold leading-normal">
-                  View Catalogue
-                </p>
-              </button>
+              <Link href="/catalogue">
+                <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
+                  <p className="text-nav-text text-[1rem] font-semibold leading-normal">
+                    View Catalogue
+                  </p>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
