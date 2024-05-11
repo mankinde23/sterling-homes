@@ -9,7 +9,7 @@ import catalogued from "../../../public/cataloguesterlingd.png";
 import cataloguew from "../../../public/cataloguesterlingw.png";
 import Link from "next/link";
 
-export default function page() {
+export default function Catalogue() {
   const { theme } = useTheme();
   return (
     <>
