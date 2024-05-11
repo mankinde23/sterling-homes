@@ -47,6 +47,7 @@ module.exports = {
         "copy-t": "rgba(164, 163, 163, 0.80)",
         "footer-test": "#EAEAEA",
         "text-error": "rgba(249, 75, 75, 1)",
+        "catalogue-stroke": "rgba(234, 231, 231, 0.16)",
       },
     },
     screens: {
