@@ -37,7 +37,7 @@ export default function Footer() {
                 </p>
               </a>
               <a
-                href="https://github.com/mankinde23"
+                href="https://www.instagram.com/sterlinghomes22/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-[1rem] items-center"
@@ -52,9 +52,12 @@ export default function Footer() {
               <p className="w-[17.0625rem] h-[2.6875rem] text-sterling-theme text-[1.25rem] font-medium leading-[3rem] tracking-[0.05rem]">
                 CONTACT US
               </p>
-              <p className="w-[17.0625rem] h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test">
-                sterlinghomes22@gmail.com
-              </p>
+              <a href="mailto: sterlinghomes22@gmail.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
+                <p className="w-[17.0625rem] h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test">
+                  sterlinghomes22@gmail.com
+                </p>
+              </a>
+
               <p className="w-[17.0625rem] h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test">
                 +1 9062818990
               </p>
