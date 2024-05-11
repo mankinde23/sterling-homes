@@ -73,7 +73,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="w-[29.0625rem] h-[34.4375rem] shadow-md bg-contact-section backdrop-blur-[20px] mr-[4.6rem] pr-[] pl-[1.88rem] pt-[2.75rem]">
-          <p className="text-nav-text text-[1.5rem] font-medium leading-normal w-[19.59406rem] h-[3.09475rem]">
+          <p className="text-nav-text text-[1.8rem] font-medium leading-normal w-[19.59406rem] h-[3.09475rem]">
             Contact us
           </p>
           <p className="text-nav-text w-[20.07069rem] h-[2.25rem] text-[0.625rem] font-normal leading-[1rem] mt-[0.56rem]">
