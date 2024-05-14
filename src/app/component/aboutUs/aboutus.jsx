@@ -30,9 +30,9 @@ export default function Aboutus() {
                 Est . 2024, March.
               </p>
             </div>
-            <div className=" h-[18.75rem] w-[30.625rem] mt-[2.69rem]">
+            <div className=" h-[18.75rem] w-[35.625rem] mt-[2.69rem]">
               <p
-                className={` text-[0.875rem] font-normal ${
+                className={` text-[0.875rem] font-normal text-justify ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
