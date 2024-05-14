@@ -87,10 +87,7 @@ export default function Ourservice({ onClose }) {
                       <div className="flex justify-center items-center">
                         {" "}
                         <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] ">
-                          <div
-                            className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem]"
-                            style={{ fontFamily: " Montserrat, sans-serif" }}
-                          >
+                          <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify pr-[1rem]">
                             <p className="text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                               {" "}
                               Buying a home, whether residential or commercial,
@@ -199,11 +196,8 @@ export default function Ourservice({ onClose }) {
                       <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[2.69rem]"></div>
                       <div className="flex justify-center items-center">
                         {" "}
-                        <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] ">
-                          <div
-                            className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem]"
-                            style={{ fontFamily: " Montserrat, sans-serif" }}
-                          >
+                        <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] text-justify pr-[1rem]">
+                          <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem]">
                             <p className="mt-[2.19rem] text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                               As a seasoned realtor offering home leasing
                               services, I specialize in facilitating seamless
@@ -307,10 +301,7 @@ export default function Ourservice({ onClose }) {
                       <div className="flex justify-center items-center">
                         {" "}
                         <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] ">
-                          <div
-                            className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem]"
-                            style={{ fontFamily: " Montserrat, sans-serif" }}
-                          >
+                          <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify pr-[1rem]">
                             <p className="mt-[2.19rem] text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                               {" "}
                               Tax planning and filing services for real estate
