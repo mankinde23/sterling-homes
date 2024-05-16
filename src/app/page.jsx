@@ -63,7 +63,44 @@ export default function Home() {
 
       {/* MOBILE */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden"></div>
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden ">
+        <Navbar />
+
+        <div
+          className="bg-cover h-[42.0625rem] w-full bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+          style={{
+            backgroundImage: "url('/sterling-bg-m.png')",
+          }}
+          id="hero"
+        >
+          <div className="flex justify-center items-end w-full">
+            <div className=" mt-[17.69rem]">
+              <h1 className="text-nav-text font-ameretto text-[2rem] leading-normal  font-normal">
+                STERLING HOMES
+              </h1>
+              <p className="flex justify-center items-center text-nav-text text-[0.4375rem] font-light">
+                Building dreams, one home at a time, with integrity and
+                excellence
+              </p>
+              <div className="flex justify-center items-center mt-[1.56rem]">
+                <Link href="/catalogue">
+                  <button className="w-[6.6875rem] h-[1.6875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
+                    <p className="text-nav-text text-[0.625rem] font-semibold leading-normal">
+                      View Catalogue
+                    </p>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full">
+          <Aboutus />
+        </div>
+        <div className="w-full">
+          <Ourservice />
+        </div>
+      </div>
     </>
   );
 }
