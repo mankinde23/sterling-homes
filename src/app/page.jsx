@@ -75,10 +75,10 @@ export default function Home() {
         >
           <div className="flex justify-center items-end w-full">
             <div className=" mt-[17.69rem]">
-              <h1 className="text-nav-text font-ameretto text-[2rem] leading-normal  font-normal">
+              <h1 className="text-nav-text font-ameretto text-[1.875rem] leading-normal  font-normal tracking-[0.375rem]">
                 STERLING HOMES
               </h1>
-              <p className="flex justify-center items-center text-nav-text text-[0.4375rem] font-light">
+              <p className="flex justify-center items-center text-nav-text text-[0.4375rem]  font-extralight">
                 Building dreams, one home at a time, with integrity and
                 excellence
               </p>
@@ -99,6 +99,18 @@ export default function Home() {
         </div>
         <div className="w-full">
           <Ourservice />
+        </div>
+        <div className="w-full">
+          <Testimonial />
+        </div>
+        <div className="w-full">
+          <Founders />
+        </div>
+        <div className="w-full">
+          <Contact />
+        </div>
+        <div className="w-full">
+          <Footer />
         </div>
       </div>
     </>
