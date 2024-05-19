@@ -48,6 +48,7 @@ module.exports = {
         "footer-test": "#EAEAEA",
         "text-error": "rgba(249, 75, 75, 1)",
         "catalogue-stroke": "rgba(234, 231, 231, 0.16)",
+        "footer-test1": "#E0E0E0",
       },
     },
     screens: {
