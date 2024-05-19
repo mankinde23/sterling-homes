@@ -111,11 +111,11 @@ export default function Navbar() {
               <Image src={mlogo} alt="" quality={100} className="" />
             </div>
           </div>
-          <div className="w-auto h-[2.25rem] flex justify-center items-center gap-[2.25rem]">
+          <div className="w-auto h-[2.25rem] flex justify-center gap-[1.25rem] hover:cursor-pointer mt-[0.8rem]">
             <DarkModeToggle />
-            <div className="flex justify-center items-center mt-[1.06rem]">
+            <div className="flex justify-center">
               {" "}
-              <IoIosMenu className="h-[1.25469rem] w-[1.25469rem] text-nav-text" />
+              <IoIosMenu className=" text-nav-text h-[1.73rem] w-[2.5rem]" />
             </div>
           </div>
         </div>
