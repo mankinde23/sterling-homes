@@ -387,9 +387,9 @@ export default function Ourservice({ onClose }) {
           }`}
           id="services"
         >
-          <div className="flex flex-col w-[4.75rem] h-[2.25rem] pl-[1.81rem]">
-            <p className="text-about-s-w text-[ 0.6875rem] font-medium leading-normal  ">
-              Our
+          <div className=" w-[4.75rem] h-[2.25rem] pl-[1.81rem]">
+            <p className="text-about-s-w text-[0.7875rem] font-bold leading-normal  ">
+              OUR
             </p>
             <h1
               className={` text-[1rem] font-semibold leading-normal ${
@@ -436,7 +436,7 @@ export default function Ourservice({ onClose }) {
                             className=" flex justify-end top-0 right-0 mr-[1.31rem] cursor-pointer text-nav-text hover:text-sterling-theme  mt-[1rem] "
                             onClick={closeModal}
                           >
-                            <IoClose className="w-[2.5625rem] h-[2.5625rem]  flex justify-center items-center " />
+                            <IoClose className="h-[1.73rem] w-[2.5rem]  flex justify-center items-center " />
                           </span>
                         </div>
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem]"></div>
@@ -528,7 +528,7 @@ export default function Ourservice({ onClose }) {
                   </p>
                   <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
                     Facilitating quicker rental property leases by accurately
-                    pricing properties to attract tenants <br /> efficiently.{" "}
+                    pricing properties to attract tenants efficiently.{" "}
                   </p>
                 </div>
                 <button
@@ -629,8 +629,8 @@ export default function Ourservice({ onClose }) {
                   </p>
                   <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
                     Providing strategic tax planning and filing services
-                    tailored for real estate investors to optimize <br /> tax
-                    benefits and maximize gains.
+                    tailored for real estate investors to optimize tax benefits
+                    and maximize gains.
                   </p>
                 </div>
                 <button
