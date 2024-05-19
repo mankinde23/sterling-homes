@@ -48,11 +48,19 @@ function DarkModeToggle() {
 
       {/* MOBILE.... */}
       <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
-        <button onClick={toggleTheme} className="mt-[1.06rem] w-[2.1875rem]">
+        <button onClick={toggleTheme}>
+          {/* className="mt-[1.06rem] w-auto " */}
           {theme === "light" ? (
-            <FaMoon className=" h-[1.10025rem] w-[1.0625rem] text-nav-text" />
+            // <div className="h-[1.25469rem] w-[0.8rem] flex justify-center items-center mt-[0.2rem]">
+
+            // </div>
+            <FaMoon className="  text-nav-text  h-[1.5rem] w-[2.5rem] mt-[0.2rem] " />
           ) : (
-            <TbBrightnessUp className="h-[1.25469rem] w-[1.25469rem] text-nav-text " />
+            // <div className="h-[1.25469rem] w-[1.25469rem] flex justify-center items-center">
+            //   {" "}
+
+            // </div>
+            <TbBrightnessUp className=" text-nav-text  h-[1.73rem] w-[2.5rem]" />
           )}
         </button>
       </div>
