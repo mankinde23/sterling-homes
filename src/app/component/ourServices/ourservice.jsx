@@ -546,7 +546,7 @@ export default function Ourservice({ onClose }) {
                             className=" flex justify-end top-0 right-0  mr-[1.31rem] cursor-pointer text-nav-text hover:text-sterling-theme mt-[1rem] "
                             onClick={closeModal}
                           >
-                            <IoClose className="w-[2.5625rem] h-[2.5625rem]  flex justify-center items-center " />
+                            <IoClose className="h-[1.73rem] w-[2.5rem] flex justify-center items-center " />
                           </span>
                         </div>
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem]"></div>
@@ -651,7 +651,7 @@ export default function Ourservice({ onClose }) {
                             className=" flex justify-end top-0 right-0  mr-[1.31rem] cursor-pointer text-nav-text hover:text-sterling-theme  mt-[1rem] "
                             onClick={closeModal}
                           >
-                            <IoClose className="w-[2.5625rem] h-[2.5625rem]  flex justify-center items-center  " />
+                            <IoClose className="h-[1.73rem] w-[2.5rem]  flex justify-center items-center  " />
                           </span>
                         </div>
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem]"></div>
