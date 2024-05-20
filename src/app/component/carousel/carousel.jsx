@@ -15,6 +15,7 @@ import kabir from "../../../../public/KABIR.png";
 import ahmadm from "../../../../public/ahmadm.png";
 import rahmanm from "../../../../public/Abdurm.png";
 import kabirm from "../../../../public/KABIRm.png";
+import { DotButton, useDotButton } from "../carouseldot/carouseldot";
 
 export function Carousel() {
   const { theme } = useTheme();
@@ -33,6 +34,17 @@ export function Carousel() {
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
+
+  // const scrollPrevm = useCallback(() => {
+  //   if (emblaApi) emblaApi.scrollPrev();
+  // }, [emblaApi]);
+
+  // const scrollNextm = useCallback(() => {
+  //   if (emblaApi) emblaApi.scrollNext();
+  // }, [emblaApi]);
+
+  // const { selectedIndex, scrollSnaps, onDotButtonClick } =
+  //   useDotButton(emblaApi);
 
   return (
     <>
@@ -278,6 +290,19 @@ export function Carousel() {
             </div>
           </div>
         </div>
+        {/* <div className="embla__dots">
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              onClick={() => onDotButtonClick(index)}
+              className={"embla__dot ".concat(
+                index === selectedIndex
+                  ? " embla__dot--selected bg-sterling-theme"
+                  : ""
+              )}
+            />
+          ))}
+        </div> */}
       </div>
     </>
   );
