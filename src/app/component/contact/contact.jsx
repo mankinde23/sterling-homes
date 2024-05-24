@@ -112,7 +112,7 @@ export default function Contact() {
                         <ErrorMessage
                           name="name"
                           component="div"
-                          className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem]"
+                          className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                         />
                       </div>
                       <div className="w-[22.75rem] h-[3.47106rem]">
@@ -129,7 +129,7 @@ export default function Contact() {
                         <ErrorMessage
                           name="email"
                           component="div"
-                          className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem]"
+                          className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                         />
                       </div>
                       <div className="w-[22.75rem] h-[3.47106rem]">
@@ -146,7 +146,7 @@ export default function Contact() {
                         <ErrorMessage
                           name="message"
                           component="div"
-                          className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem]"
+                          className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                         />
                       </div>
                     </div>
@@ -189,7 +189,6 @@ export default function Contact() {
           style={{
             backgroundImage: "url('/contactm.png')",
           }}
-          id="contact"
         >
           <p className="text-nav-text text-[1.875rem] font-semibold leading-normal">
             Sterling Homes
@@ -246,7 +245,7 @@ export default function Contact() {
                       <ErrorMessage
                         name="name"
                         component="div"
-                        className="text-text-error text-[0.75rem] font-medium leading-normal w-auto mt-[0.62rem]"
+                        className="text-text-error text-[0.75rem] font-medium leading-normal w-auto mt-[0.62rem] ml-[0.5rem]"
                       />
                     </div>
                     <div className="w-auto h-[3.375rem]">
@@ -263,7 +262,7 @@ export default function Contact() {
                       <ErrorMessage
                         name="email"
                         component="div"
-                        className="text-text-error text-[0.75rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem]"
+                        className="text-text-error text-[0.75rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                       />
                     </div>
                     <div className="w-auto h-[3.375rem]">
@@ -280,7 +279,7 @@ export default function Contact() {
                       <ErrorMessage
                         name="message"
                         component="div"
-                        className="text-text-error text-[0.75rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem]"
+                        className="text-text-error text-[0.75rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                       />
                     </div>
                   </div>

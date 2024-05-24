@@ -385,7 +385,6 @@ export default function Ourservice({ onClose }) {
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
           }`}
-          id="services"
         >
           <div className=" w-[4.75rem] h-[2.25rem] pl-[1.81rem]">
             <p className="text-about-s-w text-[0.7875rem] font-bold leading-normal  ">
@@ -409,10 +408,10 @@ export default function Ourservice({ onClose }) {
             >
               <div className="h-[9.5rem] w-auto pt-[0.9375rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
                 <div className="flex flex-col">
-                  <p className="text-[0.8125rem] font-semibold leading-normal text-our-service-text">
+                  <p className="text-[0.8125rem] font-normal leading-normal text-our-service-text">
                     Home Buying & Selling
                   </p>
-                  <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-auto h-[2.53125rem]">
+                  <p className="text-[0.625rem] leading-normal  text-our-servicet mt-[0.62rem] w-auto h-[2.53125rem]">
                     Helping clients navigate the process of buying and selling
                     both residential and commercial properties.
                   </p>
@@ -523,10 +522,10 @@ export default function Ourservice({ onClose }) {
             >
               <div className="h-[9.5rem] w-auto pt-[0.9375rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
                 <div className="flex flex-col">
-                  <p className="text-[0.8125rem] font-semibold leading-normal text-our-service-text">
+                  <p className="text-[0.8125rem] font-normal leading-normal text-our-service-text">
                     Home Leasing Service
                   </p>
-                  <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
+                  <p className="text-[0.625rem] leading-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
                     Facilitating quicker rental property leases by accurately
                     pricing properties to attract tenants efficiently.{" "}
                   </p>
@@ -624,10 +623,10 @@ export default function Ourservice({ onClose }) {
             >
               <div className="h-[9.5rem] w-auto pt-[0.9375rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
                 <div className="flex flex-col">
-                  <p className="text-[0.8125rem] font-semibold leading-normal text-our-service-text">
+                  <p className="text-[0.8125rem] font-normal leading-normal text-our-service-text">
                     Tax Preparation & Filing
                   </p>
-                  <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
+                  <p className="text-[0.625rem] leading-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
                     Providing strategic tax planning and filing services
                     tailored for real estate investors to optimize tax benefits
                     and maximize gains.

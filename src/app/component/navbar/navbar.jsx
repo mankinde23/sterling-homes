@@ -17,14 +17,18 @@ export default function Navbar() {
     setMenuOpen(!menuOpen); // Toggle menuOpen state
   };
 
-  const handleCloseMenu = (href) => {
+  const handleCloseMenu = (elementId) => {
     setMenuOpen(false); // Close the menu when a link is clicked
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:hidden lg:hidden  md:hidden">
         <div className="fixed top-0 left-0 w-full z-50 h-[4.4375rem]  flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg">
-          <div className="ml-[5.94rem]">
+          <div className="ml-[0.94rem]">
             <Link href="/">
               <Image
                 src={logo}
@@ -114,7 +118,7 @@ export default function Navbar() {
       </div>
 
       {/* MOBILE...................................... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:block md:block">
         <div className="fixed top-0 w-full z-50 h-[4rem] flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg pl-[0.94rem] pr-[1.88rem] pt-[1rem] pb-[0.73rem]">
           <div className="h-[2.26rem] flex  justify-center items-center gap-[12.625rem] w-auto">
             <div className="w-[3.9375rem] h-[2.26906rem]">
@@ -130,9 +134,9 @@ export default function Navbar() {
             >
               {" "}
               {menuOpen ? (
-                <IoIosMenu className="h-[1.73rem] w-[2.5rem] " />
+                <IoIosMenu className="h-[1.73rem] w-[2.5rem] text-nav-text" />
               ) : (
-                <IoIosMenu className="h-[1.73rem] w-[2.5rem]" />
+                <IoIosMenu className="h-[1.73rem] w-[2.5rem] text-nav-text" />
               )}
             </div>
             {/* fixed top-0 left-0 right-0 bottom-0 flex w-full h-full text-center ease-in duration-500 z-[100] overflow-y-auto p-[32px] flex-col 
@@ -150,46 +154,72 @@ export default function Navbar() {
               <Image src={mlogo} alt="Logo" quality={100} />
             </div>
             <IoClose
-              className="h-[1.73rem] w-[2.5rem] hover:cursor-pointer"
+              className="h-[1.73rem] w-[2.5rem] hover:cursor-pointer text-nav-text"
               onClick={handleMenu}
             />
           </div>
           <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem] p-[0rem]"></div>
-          <ul className="flex flex-col items-center gap-8 mt-8 w-full p-8 ">
+          <ul className="flex flex-col  gap-8 mt-8 w-full p-8 ">
             <li
-              className="text-lg font-semibold flex justify-between w-full hover:text-header-text"
-              onClick={() => handleCloseMenu("/")}
+              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text "
+              onClick={() => handleCloseMenu("herom")}
             >
-              <Link href="/">Home</Link>
-              <IoIosArrowForward />
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Home
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex justify-between w-full hover:text-header-text"
-              onClick={() => handleCloseMenu("/about")}
+              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("aboutm")}
             >
-              <Link href="/about">About</Link>
-              <IoIosArrowForward />
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[2rem] xl:text-[1rem] "
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                About
+              </p>
+
+              <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex justify-between w-full hover:text-header-text"
-              onClick={() => handleCloseMenu("/services")}
+              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("servicesm")}
             >
-              <Link href="/services">Services</Link>
-              <IoIosArrowForward />
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Services
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex justify-between w-full hover:text-header-text"
-              onClick={() => handleCloseMenu("/testimonials")}
+              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("testimonialsm")}
             >
-              <Link href="/testimonials">Testimonials</Link>
-              <IoIosArrowForward />
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Testimonials
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex justify-between w-full hover:text-header-text"
-              onClick={() => handleCloseMenu("/contact")}
+              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("contactm")}
             >
-              <Link href="/contact">Contact</Link>
-              <IoIosArrowForward />
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Contact
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
             </li>
           </ul>
         </div>

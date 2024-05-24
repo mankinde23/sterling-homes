@@ -8,7 +8,10 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div
+        className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block"
+        style={{ width: "auto" }}
+      >
         <div className="w-auto h-[28.375rem] bg-footer-b">
           <div className="flex gap-[2rem] items-center justify-center pt-[6.5rem]">
             <div className="w-[62.25rem] h-[8.6875rem] flex gap-[4.25rem]">
@@ -69,7 +72,7 @@ export default function Footer() {
               <Image src={logo} alt="" />
             </div>
           </div>
-          <div className="w-[81rem] h-[0.125rem] rounded-[2.125rem] bg-footer-s mx-[5.5rem] mt-[4.84rem]"></div>
+          <div className="w-[81rem] h-[0.125rem] rounded-[2.125rem] bg-footer-s mx-[5.5rem] mt-[4.84rem] 2xl-max:w-auto"></div>
           <div className="flex justify-center items-center mt-[1.72rem]">
             <p className="w-[20.125rem] h-[2.4375rem] text-[0.6875rem] font-normal leading-normal text-copy-t flex justify-center items-center">
               Copyright © 2024 Sterling Homes,All rights reserved.
@@ -86,10 +89,10 @@ export default function Footer() {
               <p className="w-[5.1875rem]  h-[2.6875rem] text-sterling-theme text-[0.875rem] font-medium leading-[3rem] tracking-[0.05rem]">
                 MORE INFO
               </p>
-              <p className="w-auto h-[2.6875rem] text-[0.6875rem] font-light leading-[3rem]  text-footer-test1">
+              <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
                 Our Services
               </p>
-              <p className="w-auto h-[2.6875rem] text-[0.6875rem] font-light leading-[3rem]  text-footer-test1">
+              <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
                 About Us
               </p>
             </div>
@@ -104,7 +107,7 @@ export default function Footer() {
                 className="flex gap-[1rem] items-center"
               >
                 <FaXTwitter className="w-[1.0625rem] h-[1.0625rem] text-footer-test1" />
-                <p className="text-[0.6875rem] font-light leading-[3rem] tracking-[0.04rem] text-footer-test1">
+                <p className="text-[0.6875rem]  leading-[3rem] tracking-[0.04rem] text-footer-test1">
                   Twitter
                 </p>
               </a>
@@ -115,7 +118,7 @@ export default function Footer() {
                 className="flex gap-[1rem] items-center"
               >
                 <FaInstagram className=" w-[1.0625rem] h-[1.0625rem] text-footer-test1" />
-                <p className="text-[0.6875rem] font-normal leading-[3rem] tracking-[0.0375rem] text-footer-test1">
+                <p className="text-[0.6875rem] leading-[3rem] tracking-[0.0375rem] text-footer-test1">
                   Instagram
                 </p>
               </a>
@@ -127,12 +130,12 @@ export default function Footer() {
               CONTACT US
             </p>
             <a href="mailto: sterlinghomes22@gmail.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
-              <p className="w-auto h-[2.6875rem] text-[0.6875rem] font-light leading-[3rem]  text-footer-test1">
+              <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
                 sterlinghomes22@gmail.com
               </p>
             </a>
 
-            <p className="w-auto h-[2.6875rem] text-[0.6875rem] font-light leading-[3rem]  text-footer-test1">
+            <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
               +1 9062818990
             </p>
           </div>

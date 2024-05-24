@@ -36,8 +36,11 @@ function DarkModeToggle() {
 
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
-        <button onClick={toggleTheme} className="mt-[1.06rem] w-[2.1875rem]">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:hidden lg:hidden  md:hidden">
+        <button
+          onClick={toggleTheme}
+          className="mt-[1.06rem] w-[2.1875rem] pl-[2rem]"
+        >
           {theme === "light" ? (
             <FaMoon className=" h-[1.875rem] w-[1.875rem] text-nav-text" />
           ) : (
@@ -47,7 +50,7 @@ function DarkModeToggle() {
       </div>
 
       {/* MOBILE.... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:block md:block">
         <button onClick={toggleTheme}>
           {/* className="mt-[1.06rem] w-auto " */}
           {theme === "light" ? (

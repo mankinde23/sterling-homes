@@ -8,9 +8,9 @@ export default function Aboutus() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block 2xl-max:w-auto">
         <div
-          className={`h-[53.575rem] w-auto px-[4.51rem]   ${
+          className={`h-[53.575rem] w-auto px-[4.51rem]  ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
@@ -129,9 +129,9 @@ export default function Aboutus() {
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
-          id="about"
         >
           <div className="h-[2.5625rem] w-auto">
+            <div></div>
             <h1
               className={` text-[1.5rem] font-bold leading-normal  ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
@@ -154,7 +154,7 @@ export default function Aboutus() {
 
           <div className=" w-auto text-justify hyphens-auto mt-[1.75rem]">
             <p
-              className={` text-[0.6875rem] font-normal  ${
+              className={` text-[0.6875rem] font-extralight  ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
             >
@@ -183,7 +183,7 @@ export default function Aboutus() {
               Commercial and Luxury Homes Focus
             </p>
             <p
-              className={` text-[0.6875rem] font-normal leading-normal h-[6rem]  text-justify  hyphens-auto ${
+              className={` text-[0.6875rem] font-thin leading-normal h-[6rem]  text-justify  hyphens-auto ${
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
@@ -202,7 +202,7 @@ export default function Aboutus() {
               Realtor Services Description
             </p>
             <p
-              className={`text-[0.6875rem] font-normal leading-normal h-[6rem]  text-justify hyphens-auto ${
+              className={`text-[0.6875rem] font-thin leading-normal h-[6rem]  text-justify hyphens-auto ${
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
@@ -221,7 +221,7 @@ export default function Aboutus() {
               Tax Advisory
             </p>
             <p
-              className={`text-[0.6875rem] font-normal leading-normal h-[6rem] text-justify hyphens-auto ${
+              className={`text-[0.6875rem] font-thin leading-normal h-[6rem] text-justify hyphens-auto ${
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
