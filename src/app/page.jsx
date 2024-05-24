@@ -32,7 +32,7 @@ export default function Home() {
               <div className="flex justify-center items-center mt-[4rem]">
                 <Link href="/catalogue">
                   <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
-                    <p className="text-nav-text text-[1rem] font-semibold leading-normal">
+                    <p className="text-nav-text text-[1rem] font-light leading-normal">
                       View Catalogue
                     </p>
                   </button>
@@ -41,19 +41,19 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-full " id="about">
           <Aboutus />
         </div>
-        <div>
+        <div className="" id="services">
           <Ourservice />
         </div>
-        <div>
+        <div className="" id="testimonials">
           <Testimonial />
         </div>
         <div>
           <Founders />
         </div>
-        <div>
+        <div className="" id="contact">
           <Contact />
         </div>
         <div>
@@ -71,7 +71,7 @@ export default function Home() {
           style={{
             backgroundImage: "url('/sterling-bg-m.png')",
           }}
-          id="hero"
+          id="herom"
         >
           <div className="flex justify-center items-end w-full">
             <div className=" mt-[17.69rem]">
@@ -85,7 +85,7 @@ export default function Home() {
               <div className="flex justify-center items-center mt-[1.56rem]">
                 <Link href="/catalogue">
                   <button className="w-[6.6875rem] h-[1.6875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
-                    <p className="text-nav-text text-[0.625rem] font-semibold leading-normal">
+                    <p className="text-nav-text text-[0.625rem] font-light leading-normal">
                       View Catalogue
                     </p>
                   </button>
@@ -94,19 +94,19 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full scroll-mt-[3.5rem]" id="aboutm">
           <Aboutus />
         </div>
-        <div className="w-full">
+        <div className="w-full scroll-mt-[3.5rem]" id="servicesm">
           <Ourservice />
         </div>
-        <div className="w-full">
+        <div className="w-full scroll-mt-[3rem]" id="testimonialsm">
           <Testimonial />
         </div>
         <div className="w-full">
           <Founders />
         </div>
-        <div className="w-full">
+        <div className="w-full scroll-mt-[-13rem]" id="contactm">
           <Contact />
         </div>
         <div className="w-full">
