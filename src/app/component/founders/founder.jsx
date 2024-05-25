@@ -169,11 +169,11 @@ export default function Founders() {
             <div
               className="bg-cover h-[41.4375rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[23.75rem] "
               style={{
-                backgroundImage: "url('founderm.png')",
+                backgroundImage: "url('foundermt.png')",
               }}
             >
               <div className="flex justify-end mt-[1.8rem]">
-                <div className="w-[9.70031rem] h-[2.07731rem] px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
+                <div className="w-[7.70031rem] h-[2.07731rem] px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
                   <p
                     className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.54rem]"
                     style={{ fontFamily: "Roboto, sans-serif" }}
@@ -223,11 +223,11 @@ export default function Founders() {
             <div
               className="bg-cover  h-[41.4375rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[23.75rem] "
               style={{
-                backgroundImage: "url('co-foundermt.png')",
+                backgroundImage: "url('co-foundermtt.png')",
               }}
             >
               <div className="flex justify-end mt-[1.8rem]">
-                <div className="w-[9.70031rem] h-[2.07731rem]    px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
+                <div className="w-[7.70031rem] h-[2.07731rem]    px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
                   <p
                     className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.54rem]"
                     style={{ fontFamily: "Roboto, sans-serif" }}
