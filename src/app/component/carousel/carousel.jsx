@@ -155,7 +155,7 @@ export function Carousel() {
               </div>
             </div>
           </div>
-          <div className=" flex  items-center justify-center w-auto h-[3.125rem] gap-[1.875rem] mt-[2.56rem]">
+          <div className=" flex  items-center justify-center w-auto h-[3.125rem] gap-[1.875rem] mt-[2.56rem] ml-[10rem]">
             <button
               className={`embla__next  hover:bg-sterling-theme border-[3px] rounded-full ${
                 theme === "light"
