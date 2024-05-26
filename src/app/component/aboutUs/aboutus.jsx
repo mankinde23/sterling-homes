@@ -8,7 +8,10 @@ export default function Aboutus() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block 2xl-max:w-auto">
+      <div
+        className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block 2xl-max:w-auto"
+        id="about"
+      >
         <div
           className={`h-[53.575rem] w-auto px-[4.51rem]  ${
             theme === "dark"
