@@ -11,7 +11,7 @@ export default function Testimonial() {
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
         <div
-          className={`h-[47.875rem] w-auto py-[4.44rem] px-[5.31rem]  2xl-max:flex 2xl-max:justify-center 2xl:block ${
+          className={`h-[47.875rem] w-auto py-[4.44rem] px-[5.31rem] ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
@@ -39,7 +39,7 @@ export default function Testimonial() {
               >
                 what Our Clients Say
               </p>
-              <div className="mb-[2.19rem] mr-[10rem]">
+              <div className="mb-[2.19rem] relative right-[6rem]">
                 <Carousel />
               </div>
             </div>
