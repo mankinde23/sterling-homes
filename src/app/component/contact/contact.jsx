@@ -153,9 +153,9 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-[10.125rem] h-[3rem] p-[0.5rem] gap-[0.5rem] flex justify-center items-center border-sterling-theme border-solid border-[0.7px] mt-[2.75rem]"
+                      className="w-[10.125rem] h-[3rem] p-[0.5rem] gap-[0.5rem] flex justify-center items-center border-sterling-theme border-solid border-[0.7px] mt-[2.75rem] hover:bg-nav-text hover:text-about-b transition duration-500 ease-in-out text-nav-text"
                     >
-                      <p className="text-nav-text text-[0.8125rem] font-normal leading-normal">
+                      <p className=" text-[0.8125rem] font-normal leading-normal  ">
                         {buttonText}
                       </p>
                     </button>
