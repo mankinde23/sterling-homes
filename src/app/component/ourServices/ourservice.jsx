@@ -63,7 +63,7 @@ export default function Ourservice({ onClose }) {
                 </div>
 
                 <button
-                  className="w-[6.375rem] h-[2.1875rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] mt-[0.69rem]"
+                  className="w-[6.375rem] h-[2.1875rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] mt-[0.69rem] hover:bg-sterling-hover transition duration-500 ease-in-out"
                   onClick={() =>
                     openModal(
                       <div>
@@ -78,7 +78,7 @@ export default function Ourservice({ onClose }) {
                             </h2>
                           </div>
                           <span
-                            className=" flex justify-end top-0 right-0 mr-[4rem] cursor-pointer text-nav-text hover:text-sterling-theme  mt-[1rem] "
+                            className=" flex justify-end top-0 right-0 mr-[4rem] cursor-pointer text-nav-text hover:text-sterling-theme  mt-[1rem] transition duration-500 ease-in-out"
                             onClick={closeModal}
                           >
                             <IoClose className="w-[2.5625rem] h-[2.5625rem]  flex justify-center items-center " />
@@ -153,7 +153,7 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-semibold leading-normal">
+                  <p className=" text-our-service-text text-[0.6875rem] font-light leading-normal">
                     Learn More
                   </p>
                 </button>
@@ -177,7 +177,7 @@ export default function Ourservice({ onClose }) {
                   </p>
                 </div>
                 <button
-                  className="w-[6.375rem] h-[2.1875rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] mt-[0.69rem]"
+                  className="w-[6.375rem] h-[2.1875rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] mt-[0.69rem] hover:bg-sterling-hover transition duration-500 ease-in-out"
                   onClick={() =>
                     openModal(
                       <div>
@@ -192,7 +192,7 @@ export default function Ourservice({ onClose }) {
                             </h2>
                           </div>
                           <span
-                            className=" flex justify-end top-0 right-0  mr-[4rem] cursor-pointer text-nav-text hover:text-sterling-theme mt-[1rem] "
+                            className=" flex justify-end top-0 right-0  mr-[4rem] cursor-pointer text-nav-text hover:text-sterling-theme mt-[1rem] transition duration-500 ease-in-out "
                             onClick={closeModal}
                           >
                             <IoClose className="w-[2.5625rem] h-[2.5625rem]  flex justify-center items-center " />
@@ -258,7 +258,7 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-semibold leading-normal">
+                  <p className=" text-our-service-text text-[0.6875rem] font-light leading-normal">
                     Learn More
                   </p>
                 </button>
@@ -283,7 +283,7 @@ export default function Ourservice({ onClose }) {
                   </p>
                 </div>
                 <button
-                  className="w-[6.375rem] h-[2.1875rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] mt-[0.69rem]"
+                  className="w-[6.375rem] h-[2.1875rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] mt-[0.69rem] hover:bg-sterling-hover transition duration-500 ease-in-out"
                   onClick={() =>
                     openModal(
                       <div>
@@ -298,7 +298,7 @@ export default function Ourservice({ onClose }) {
                             </h2>
                           </div>
                           <span
-                            className=" flex justify-end top-0 right-0  mr-[4rem] cursor-pointer text-nav-text hover:text-sterling-theme  mt-[1rem] "
+                            className=" flex justify-end top-0 right-0  mr-[4rem] cursor-pointer text-nav-text hover:text-sterling-theme  mt-[1rem] transition duration-500 ease-in-out"
                             onClick={closeModal}
                           >
                             <IoClose className="w-[2.5625rem] h-[2.5625rem]  flex justify-center items-center  " />
@@ -365,7 +365,7 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-semibold leading-normal">
+                  <p className=" text-our-service-text text-[0.6875rem] font-light leading-normal">
                     Learn More
                   </p>
                 </button>
