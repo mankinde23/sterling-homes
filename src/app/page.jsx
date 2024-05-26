@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:hidden lg:hidden  md:hidden">
         <Navbar />
         <div
           className="bg-cover h-[57.3125rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
@@ -31,7 +31,7 @@ export default function Home() {
               </p>
               <div className="flex justify-center items-center mt-[4rem]">
                 <Link href="/catalogue">
-                  <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
+                  <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme hover:bg-sterling-hover transition duration-500 ease-in-out">
                     <p className="text-nav-text text-[1rem] font-light leading-normal">
                       View Catalogue
                     </p>
@@ -54,6 +54,58 @@ export default function Home() {
           <Founders />
         </div>
         <div className="" id="contact">
+          <Contact />
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
+
+      {/* TAB */}
+
+      <div className="sm:hidden 2xl:hidden 2xl-max:hidden xl:block lg:block  md:block">
+        <Navbar />
+        <div
+          className="bg-cover h-[57.3125rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+          style={{
+            backgroundImage: "url('/landing-img2.png')",
+          }}
+          id="heromm"
+        >
+          <div className="flex justify-center items-end ">
+            <div className=" mt-[19.88rem]">
+              <h1 className="text-nav-text font-ameretto text-[4.6875rem] leading-normal tracking-[0.9375rem] font-normal">
+                STERLING HOMES
+              </h1>
+              <p className="flex justify-center items-center text-nav-text text-[0.8125rem] font-light">
+                Building dreams, one home at a time, with integrity and
+                excellence
+              </p>
+              <div className="flex justify-center items-center mt-[4rem]">
+                <Link href="/catalogue">
+                  <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme hover:bg-sterling-hover transition duration-500 ease-in-out">
+                    <p className="text-nav-text text-[1rem] font-light leading-normal">
+                      View Catalogue
+                    </p>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full scroll-mt-[3.5rem] " id="aboutmm">
+          <Aboutus />
+        </div>
+        <div className="w-full scroll-mt-[3.5rem]" id="servicesmm">
+          <Ourservice />
+        </div>
+        <div className="w-full scroll-mt-[3rem]" id="testimonialsmm">
+          <Testimonial />
+        </div>
+        <div>
+          <Founders />
+        </div>
+        <div className="w-full scroll-mt-[5rem]" id="contactmm">
           <Contact />
         </div>
         <div>
