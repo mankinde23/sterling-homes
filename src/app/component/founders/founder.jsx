@@ -11,7 +11,7 @@ export default function Founders() {
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
         <div
-          className={`h-[60.1875rem] w-auto py-[4.5rem] flex 2xl-max:flex 2xl-max:justify-center 2xl:flex ${
+          className={`h-[60.1875rem] w-auto py-[4.5rem] flex ${
             theme === "dark"
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
@@ -61,7 +61,7 @@ export default function Founders() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link">
+                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link hover:bg-link-hover transition duration-500 ease-in-out">
                         <IoLogoLinkedin className="text-founders-socials" />
                       </div>
                     </a>
@@ -71,7 +71,7 @@ export default function Founders() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link">
+                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link hover:bg-link-hover transition duration-500 ease-in-out">
                         <FaXTwitter className="text-founders-socials" />
                       </div>
                     </a>
@@ -117,7 +117,7 @@ export default function Founders() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link">
+                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link hover:bg-link-hover transition duration-500 ease-in-out">
                         <IoLogoLinkedin className="text-founders-socials" />
                       </div>
                     </a>
