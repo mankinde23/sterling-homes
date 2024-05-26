@@ -90,8 +90,8 @@ export default function Catalogue() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem]">
-                      <p className="text-footer-test text-[0.68rem] font-semibold leading-normal">
+                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem] text-footer-test hover:bg-footer-test hover:text-testimonial-w transition duration-500 ease-in-out">
+                      <p className="text-[0.68rem] font-semibold leading-normal">
                         View
                       </p>
                     </button>
@@ -140,8 +140,8 @@ export default function Catalogue() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem]">
-                      <p className="text-footer-test text-[0.68rem] font-semibold leading-normal">
+                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem] text-footer-test hover:bg-footer-test hover:text-testimonial-w transition duration-500 ease-in-out">
+                      <p className="text-[0.68rem] font-semibold leading-normal">
                         View
                       </p>
                     </button>
@@ -190,8 +190,8 @@ export default function Catalogue() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem]">
-                      <p className="text-footer-test text-[0.68rem] font-semibold leading-normal">
+                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem] text-footer-test hover:bg-footer-test hover:text-testimonial-w transition duration-500 ease-in-out">
+                      <p className=" text-[0.68rem] font-semibold leading-normal">
                         View
                       </p>
                     </button>
@@ -241,8 +241,8 @@ export default function Catalogue() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem]">
-                      <p className="text-footer-test text-[0.68rem] font-semibold leading-normal">
+                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem] text-footer-test hover:bg-footer-test hover:text-testimonial-w transition duration-500 ease-in-out">
+                      <p className=" text-[0.68rem] font-semibold leading-normal">
                         View
                       </p>
                     </button>
@@ -291,8 +291,8 @@ export default function Catalogue() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem]">
-                      <p className="text-footer-test text-[0.68rem] font-semibold leading-normal">
+                    <button className="w-[7.77rem] h-[2.625rem] p-[0.5rem] flex justify-center items-center bg-testimonial-w mt-[3.12rem] ml-[1.25rem] text-footer-test hover:bg-footer-test hover:text-testimonial-w transition duration-500 ease-in-out">
+                      <p className="text-[0.68rem] font-semibold leading-normal">
                         View
                       </p>
                     </button>
