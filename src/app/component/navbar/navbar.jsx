@@ -48,7 +48,7 @@ export default function Navbar() {
                   offset={-28}
                   duration={900}
                 >
-                  <p className=" hover:text-sterling-theme hover:cursor-pointer  ">
+                  <p className=" hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out ">
                     Home{" "}
                   </p>
                 </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
                   offset={24}
                   duration={900}
                 >
-                  <p className=" hover:text-sterling-theme hover:cursor-pointer ">
+                  <p className=" hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out ">
                     {" "}
                     About{" "}
                   </p>
@@ -75,7 +75,7 @@ export default function Navbar() {
                   offset={-25}
                   duration={900}
                 >
-                  <p className=" hover:text-sterling-theme hover:cursor-pointer">
+                  <p className=" hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out">
                     {" "}
                     Services{" "}
                   </p>
@@ -89,7 +89,7 @@ export default function Navbar() {
                   offset={-28}
                   duration={900}
                 >
-                  <p className=" hover:text-sterling-theme hover:cursor-pointer">
+                  <p className=" hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out">
                     {" "}
                     Testimonials{" "}
                   </p>
@@ -103,7 +103,7 @@ export default function Navbar() {
                   offset={-80}
                   duration={900}
                 >
-                  <p className=" hover:text-sterling-theme hover:cursor-pointer">
+                  <p className=" hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out">
                     {" "}
                     Contact{" "}
                   </p>
@@ -117,8 +117,116 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* tab */}
+      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:hidden md:block">
+        <div className="fixed top-0 w-full z-50 h-[4rem] flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg pl-[0.94rem] pr-[1.88rem] pt-[1rem] pb-[0.73rem]">
+          <div className="h-[2.26rem] flex  justify-center items-center gap-[12.625rem] w-auto">
+            <div className="w-[3.9375rem] h-[2.26906rem]">
+              <Image src={logonm} alt="" quality={100} className="" />
+            </div>
+          </div>
+          <div className="w-auto h-[2.25rem] flex justify-center gap-[1.25rem] hover:cursor-pointer mt-[0.8rem]">
+            <DarkModeToggle />
+
+            <div
+              className="flex justify-center z-10 hover:cursor-pointer"
+              onClick={handleMenu}
+            >
+              {" "}
+              {menuOpen ? (
+                <IoIosMenu className="h-[1.73rem] w-[2.5rem] text-nav-text" />
+              ) : (
+                <IoIosMenu className="h-[1.73rem] w-[2.5rem] text-nav-text" />
+              )}
+            </div>
+            {/* fixed top-0 left-0 right-0 bottom-0 flex w-full h-full text-center ease-in duration-500 z-[100] overflow-y-auto p-[32px] flex-col 
+              fixed top-0 left-[-100%] right-0 bottom-0 block w-full h-screen transition-colors ease-out duration-500 */}
+          </div>
+        </div>
+        <div
+          className={`fixed top-0 left-0 right-0 bottom-0 transition-transform transform ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          } backdrop-blur-lg bg-navbar-bg z-[100] flex flex-col  h-full pt-[1.2rem] ease-out duration-500`}
+        >
+          <div className="flex justify-between items-center w-full px-8 ">
+            <div></div>
+            <div className="w-[3.9375rem] h-[2.26906rem]">
+              <Image src={mlogo} alt="Logo" quality={100} />
+            </div>
+            <IoClose
+              className="h-[1.73rem] w-[2.5rem] hover:cursor-pointer text-nav-text"
+              onClick={handleMenu}
+            />
+          </div>
+          <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem] p-[0rem]"></div>
+          <ul className="flex flex-col  gap-8 mt-8 w-full p-8 ">
+            <li
+              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text "
+              onClick={() => handleCloseMenu("heromm")}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Home
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+            <li
+              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("aboutmm")}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[1rem] xl:text-[1rem] "
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                About
+              </p>
+
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+            <li
+              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("servicesmm")}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Services
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+            <li
+              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("testimonialsmm")}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Testimonials
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+            <li
+              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("contactmm")}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Contact
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
       {/* MOBILE...................................... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
         <div className="fixed top-0 w-full z-50 h-[4rem] flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg pl-[0.94rem] pr-[1.88rem] pt-[1rem] pb-[0.73rem]">
           <div className="h-[2.26rem] flex  justify-center items-center gap-[12.625rem] w-auto">
             <div className="w-[3.9375rem] h-[2.26906rem]">
