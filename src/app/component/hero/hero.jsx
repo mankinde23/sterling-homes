@@ -1,6 +1,21 @@
+"use client";
 import React from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 export default function Hero() {
+  const ref1 = useRef(null);
+  const isInView = useInView(ref1, { once: true });
+
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShouldAnimate(true);
+    }, 1000); // Adjust the delay as needed (in milliseconds)
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <>
       <div
@@ -15,14 +30,35 @@ export default function Hero() {
         >
           <div className="flex justify-center items-end ">
             <div className=" mt-[19.88rem]">
-              <h1 className="text-nav-text font-ameretto text-[4.6875rem] leading-normal tracking-[0.9375rem] font-normal">
+              <motion.h1
+                // initial={{ opacity: 100, y: 50 }}
+                // animate={{ opacity: 50, y: 0 }}
+                // exit={{ opacity: 0 }}
+                // transition={{ duration: 1.5, ease: "easeIn" }}
+
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 50, y: 0 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                exit={{ opacity: 0 }}
+                className="text-nav-text font-ameretto text-[4.6875rem] leading-normal tracking-[0.9375rem] font-normal"
+              >
                 STERLING HOMES
-              </h1>
-              <p className="flex justify-center items-center text-nav-text text-[0.8125rem] font-light">
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 0 }}
+                animate={{ opacity: shouldAnimate ? 1 : 0, y: 0 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className="flex justify-center items-center text-nav-text text-[0.8125rem] font-light"
+              >
                 Building dreams, one home at a time, with integrity and
                 excellence
-              </p>
-              <div className="flex justify-center items-center mt-[4rem]">
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 0 }}
+                animate={{ opacity: shouldAnimate ? 1 : 0, y: 0 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className="flex justify-center items-center mt-[4rem]"
+              >
                 <Link href="/catalogue">
                   <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme hover:bg-sterling-hover transition duration-500 ease-in-out">
                     <p className="text-nav-text text-[1rem] font-light leading-normal">
@@ -30,7 +66,7 @@ export default function Hero() {
                     </p>
                   </button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
