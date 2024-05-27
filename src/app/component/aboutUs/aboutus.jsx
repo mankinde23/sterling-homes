@@ -3,9 +3,59 @@ import React from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import mock from "../../../../public/video-mock.png";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 
 export default function Aboutus() {
   const { theme } = useTheme();
+  // const ref1 = useRef(null);
+  // const isInView = useInView(ref1, { once: true });
+  // const isInView = useInView({ threshold: 0 });
+
+  // const ref1 = useRef(null);
+  // // const { ref: refInView, inView: isInView } = useInView({ threshold: 0 });
+  // const isInView = useInView(ref1);
+
+  // useEffect(() => {
+  //   if (isInView) {
+  //     // Your animation logic when the component is in view
+  //     // console.log("Component is in view!");   animate={{ opacity: shouldAnimate && isInView ? 1 : 0, y: shouldAnimate && isInView ? 0 : 50 }}
+  //   }
+  // }, [isInView]);
+
+  // const [shouldAnimate, setShouldAnimate] = useState(false);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setShouldAnimate(true);
+  //   }, 2000); // Adjust the delay as needed (in milliseconds)
+
+  //   return () => clearTimeout(timeout);
+  // }, []);
+
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+
+  const [shouldAnimate1, setShouldAnimate1] = useState(false);
+  const [animateImage1, setAnimateImage1] = useState(false);
+  const [shouldAnimateP, setShouldAnimateP] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate1(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage1(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP(true);
+      }, 1000); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView1]);
+
   return (
     <>
       <div
@@ -19,10 +69,22 @@ export default function Aboutus() {
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
           id="about"
+          ref={ref1}
         >
           <div className="flex  justify-between gap-[3.94rem] items-center pt-[6.25rem]">
             <div>
-              <div className="h-[5.8125rem]">
+              <motion.div
+                initial={{ opacity: 0, y: 0 }}
+                // animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 0 }}
+                animate={{
+                  opacity: shouldAnimate1 ? 1 : 0,
+                  y: shouldAnimate1 ? 0 : 0,
+                }}
+                // transition={{ duration: 1.5, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                exit={{ opacity: 0 }}
+                className="h-[5.8125rem]"
+              >
                 <h1
                   className={` text-[3.3125rem] font-bold leading-normal ${
                     theme === "light" ? "text-about-b" : "text-nav-text"
@@ -33,8 +95,22 @@ export default function Aboutus() {
                 <p className=" text-sterling-theme text-[0.875rem] font-medium leading-[0.105rem]">
                   Est . 2024, March.
                 </p>
-              </div>
-              <div className=" h-[18.75rem] w-[35.625rem] mt-[2.69rem]">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                // animate={{
+                //   opacity: isInView1 ? 1 : 0,
+                //   x: isInView1 ? 0 : -100,
+                // }}
+                animate={{
+                  opacity: shouldAnimate1 ? 1 : 0,
+                  x: shouldAnimate1 ? 0 : -100,
+                }}
+                // transition={{ duration: 1, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                exit={{ opacity: 0 }}
+                className=" h-[18.75rem] w-[35.625rem] mt-[2.69rem]"
+              >
                 <p
                   className={` text-[0.875rem] font-normal text-justify ${
                     theme === "light" ? "text-about-t" : "text-nav-text"
@@ -55,13 +131,35 @@ export default function Aboutus() {
                   growth for all our clients, distinguishing ourselves in both
                   residential and commercial real estate sectors.
                 </p>
-              </div>
+              </motion.div>
             </div>
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 0 }}
+              // animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 0 }}
+              // animate={{
+              //   opacity: shouldAnimate && isInView ? 1 : 0,
+              //   y: shouldAnimate && isInView ? 0 : 0,
+              // }}
+              animate={{
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
+              }}
+              transition={{ duration: 1.5, ease: "easeIn" }}
+              exit={{ opacity: 0 }}
+            >
               <Image src={mock} alt="" className="w-[45.3125rem]" />
-            </div>
+            </motion.div>
           </div>
-          <div className="gap-[9.0625rem] flex  justify-between items-center mt-[7.56rem] w-auto h-[7.93rem]">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{
+              opacity: shouldAnimateP ? 1 : 0,
+              y: shouldAnimateP ? 0 : 50,
+            }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
+            className="gap-[9.0625rem] flex  justify-between items-center mt-[7.56rem] w-auto h-[7.93rem]"
+          >
             <div className="flex flex-col gap-[0.8125rem] w-[24.5rem]">
               <p
                 className={` text-[1.25rem] font-semibold ${
@@ -120,7 +218,7 @@ export default function Aboutus() {
                 individuals and businesses.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* MOBILE ....... */}
