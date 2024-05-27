@@ -4,9 +4,35 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import test from "../../../../public/testimonial-image.png";
 import EmblaCarousel, { Carousel } from "../carousel/carousel";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 
 export default function Testimonial() {
   const { theme } = useTheme();
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+
+  const [shouldAnimate1, setShouldAnimate1] = useState(false);
+  const [animateImage1, setAnimateImage1] = useState(false);
+  const [shouldAnimateP, setShouldAnimateP] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate1(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage1(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP(true);
+      }, 1000); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView1]);
+
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
@@ -17,31 +43,74 @@ export default function Testimonial() {
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
           id="testimonials"
+          ref={ref1}
         >
           <div className="flex  gap-[3.56rem]">
-            <Image src={test} alt="" className="w-[55.3125rem] h-[39rem]" />
+            <motion.div
+              initial={{ opacity: 0, y: 0 }}
+              // animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 0 }}
+              // animate={{
+              //   opacity: shouldAnimate && isInView ? 1 : 0,
+              //   y: shouldAnimate && isInView ? 0 : 0,
+              // }}
+              animate={{
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
+              }}
+              transition={{ duration: 1, ease: "easeIn" }}
+              exit={{ opacity: 0 }}
+            >
+              <Image src={test} alt="" className="w-[55.3125rem] h-[39rem]" />
+            </motion.div>
             <div className="w-[13rem] h-[4.5625rem] flex flex-col items-center gap-[0.25rem]">
-              <p
-                className={` text-[2rem] font-semibold leading-normal ${
-                  theme === "light"
-                    ? " text-sterling-theme"
-                    : "text-our-service-text"
-                }`}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                // animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 0 }}
+                animate={{
+                  opacity: shouldAnimate1 ? 1 : 0,
+                  y: shouldAnimate1 ? 0 : 50,
+                }}
+                // transition={{ duration: 1.5, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                exit={{ opacity: 0 }}
               >
-                Testimonials
-              </p>
-              <p
-                className={` text-[0.75rem] font-semibold leading-normal mb-[2.19rem] ${
-                  theme === "light"
-                    ? " text-testimonial-text"
-                    : "text-sterling-theme"
-                }`}
+                <p
+                  className={` text-[2rem] font-semibold leading-normal ${
+                    theme === "light"
+                      ? " text-sterling-theme"
+                      : "text-our-service-text"
+                  }`}
+                >
+                  Testimonials
+                </p>
+                <p
+                  className={` text-[0.75rem] font-semibold leading-normal mb-[2.19rem] ${
+                    theme === "light"
+                      ? " text-testimonial-text"
+                      : "text-sterling-theme"
+                  }`}
+                >
+                  what Our Clients Say
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 0 }}
+                // animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 0 }}
+                // animate={{
+                //   opacity: shouldAnimate && isInView ? 1 : 0,
+                //   y: shouldAnimate && isInView ? 0 : 0,
+                // }}
+                animate={{
+                  opacity: shouldAnimateP ? 1 : 0,
+                  y: shouldAnimateP ? 0 : 0,
+                }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                exit={{ opacity: 0 }}
+                className="mb-[2.19rem] relative right-[6rem]"
               >
-                what Our Clients Say
-              </p>
-              <div className="mb-[2.19rem] relative right-[6rem]">
                 <Carousel />
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
