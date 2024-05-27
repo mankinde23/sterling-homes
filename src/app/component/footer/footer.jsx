@@ -7,15 +7,50 @@ import logom from "../../../../public/sterling-logo-footerm.png";
 import { FaXTwitter } from "react-icons/fa6";
 // import Link from "next/link";
 import { Link } from "react-scroll";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 
 export default function Footer() {
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+
+  const [shouldAnimate1, setShouldAnimate1] = useState(false);
+  const [animateImage1, setAnimateImage1] = useState(false);
+  const [shouldAnimateP, setShouldAnimateP] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate1(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage1(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP(true);
+      }, 1000); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView1]);
   return (
     <>
       <div
         className="sm:hidden 2xl:block 2xl-max:block xl:hidden lg:hidden  md:hidden"
         style={{ width: "auto" }}
+        ref={ref1}
       >
-        <div className="w-auto h-[28.375rem] bg-footer-b">
+        <motion.div
+          initial={{ opacity: 0, y: 0 }}
+          animate={{
+            opacity: shouldAnimate1 ? 1 : 0,
+            y: shouldAnimate1 ? 0 : 0,
+          }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          exit={{ opacity: 0 }}
+          className="w-auto h-[28.375rem] bg-footer-b"
+        >
           <div className="flex gap-[2rem] items-center justify-center pt-[6.5rem]">
             <div className="w-[62.25rem] h-[8.6875rem] flex gap-[4.25rem]">
               <div className="w-[17.91rem] h-[8.68rem]">
@@ -99,7 +134,7 @@ export default function Footer() {
               Copyright © 2024 Sterling Homes,All rights reserved.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* TAB */}

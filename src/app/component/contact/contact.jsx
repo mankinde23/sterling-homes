@@ -4,6 +4,8 @@ import axios from "axios";
 import { validationSchema } from "@/utils/validation";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toFormikValidationSchema } from "zod-formik-adapter";
+import { motion, useInView } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
 import Confetti from "react-confetti";
@@ -46,7 +48,29 @@ export default function Contact() {
       setButtonText("Send");
     }
   };
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
 
+  const [shouldAnimate1, setShouldAnimate1] = useState(false);
+  const [animateImage1, setAnimateImage1] = useState(false);
+  const [shouldAnimateP, setShouldAnimateP] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate1(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage1(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP(true);
+      }, 1500); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView1]);
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
@@ -56,16 +80,35 @@ export default function Contact() {
             backgroundImage: "url('/contact.png')",
           }}
           id="contact"
+          ref={ref1}
         >
           <div className="flex  justify-center gap-[0.38rem]">
             <div className="ml-[4rem]">
               <div className="w-[51.4375rem] h-[4.3125rem] mt-[6rem]">
                 {" "}
-                <p className="text-nav-text text-[4rem] font-semibold leading-normal">
+                <motion.p
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{
+                    opacity: shouldAnimate1 ? 1 : 0,
+                    y: shouldAnimate1 ? 0 : 50,
+                  }}
+                  transition={{ duration: 1, ease: "easeIn" }}
+                  exit={{ opacity: 0 }}
+                  className="text-nav-text text-[4rem] font-semibold leading-normal"
+                >
                   Sterling Homes
-                </p>
+                </motion.p>
               </div>
-              <div className="w-[47.375rem] h-[5.5rem] mt-[1.81rem]">
+              <motion.div
+                initial={{ opacity: 0, y: 0 }}
+                animate={{
+                  opacity: animateImage1 ? 1 : 0,
+                  y: animateImage1 ? 0 : 0,
+                }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                exit={{ opacity: 0 }}
+                className="w-[47.375rem] h-[5.5rem] mt-[1.81rem]"
+              >
                 <p className="text-nav-text text-[1rem] font-normal leading-[1.6rem]">
                   Unlock the door to your dream home with confidence , whether
                   you&apos;re seeking a cozy <br /> bungalow, a spacious family
@@ -73,9 +116,18 @@ export default function Contact() {
                   dreams a reality. Let&apos;s find your perfect place to call
                   home together.
                 </p>
-              </div>
+              </motion.div>
             </div>
-            <div className="w-[29.0625rem] h-[34.4375rem] shadow-md bg-contact-section backdrop-blur-[20px] mr-[4.6rem] pr-[] pl-[1.88rem] pt-[2.75rem]">
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              animate={{
+                opacity: shouldAnimateP ? 1 : 0,
+                y: shouldAnimateP ? 0 : -100,
+              }}
+              transition={{ duration: 1.5, ease: "backOut" }}
+              exit={{ opacity: 0 }}
+              className="w-[29.0625rem] h-[34.4375rem] shadow-md bg-contact-section backdrop-blur-[20px] mr-[4.6rem] pr-[] pl-[1.88rem] pt-[2.75rem]"
+            >
               <p className="text-nav-text text-[1.8rem] font-medium leading-normal w-[19.59406rem] h-[3.09475rem]">
                 Contact us
               </p>
@@ -176,7 +228,7 @@ export default function Contact() {
                   theme="light"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

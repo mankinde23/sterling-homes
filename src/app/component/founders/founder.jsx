@@ -4,9 +4,29 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 
 export default function Founders() {
   const { theme } = useTheme();
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+
+  const [shouldAnimate1, setShouldAnimate1] = useState(false);
+  const [animateImage1, setAnimateImage1] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate1(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage1(true);
+      }, 1500); // 2 seconds delay for image animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+      };
+    }
+  }, [isInView1]);
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
@@ -16,8 +36,18 @@ export default function Founders() {
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
           }`}
+          ref={ref1}
         >
-          <div className="flex w-[22.3125rem] h-[8.75rem] px-[3.0625rem] py-[0rem] flex-col gap-[0.73rem] mt-[16.72rem]">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: shouldAnimate1 ? 1 : 0,
+              y: shouldAnimate1 ? 0 : 0,
+            }}
+            transition={{ duration: 1, ease: "easeIn", delay: 0.6 }}
+            exit={{ opacity: 0 }}
+            className="flex w-[22.3125rem] h-[8.75rem] px-[3.0625rem] py-[0rem] flex-col gap-[0.73rem] mt-[16.72rem]"
+          >
             <div className=" w-[19.25rem] gap-[0.8125rem] flex items-center">
               <div className="w-[3.75rem] h-[0.125rem] rounded-[2.125rem] bg-sterling-theme"></div>
               <p className="text-sterling-theme text-[0.9375rem] font-semibold tracking-[0.10313rem] leading-normal">
@@ -31,9 +61,18 @@ export default function Founders() {
             >
               PROFILE
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex gap-[4.87rem] items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{
+              opacity: animateImage1 ? 1 : 0,
+              x: animateImage1 ? 0 : -100,
+            }}
+            transition={{ duration: 2.5, ease: "backOut" }}
+            exit={{ opacity: 0 }}
+            className="flex gap-[4.87rem] items-center"
+          >
             <div
               className="bg-cover pt-[2.06rem] h-[50.375rem] w-[28.3125rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[29.92rem] "
               style={{
@@ -135,7 +174,7 @@ export default function Founders() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Modal from "../modal/modal";
 import { IoClose } from "react-icons/io5";
+import { motion, useInView } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 export default function Ourservice({ onClose }) {
   const { theme } = useTheme();
@@ -21,6 +23,30 @@ export default function Ourservice({ onClose }) {
     setIsModalOpen(false);
   };
 
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+
+  const [shouldAnimate1, setShouldAnimate1] = useState(false);
+  const [animateImage1, setAnimateImage1] = useState(false);
+  const [shouldAnimateP, setShouldAnimateP] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate1(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage1(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP(true);
+      }, 1500); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView1]);
+
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
@@ -31,8 +57,20 @@ export default function Ourservice({ onClose }) {
               : "bg-profile-b transition duration-500 ease-in-out"
           }`}
           id="services"
+          ref={ref1}
         >
-          <div className="flex flex-col w-[8.75rem] h-[3.6875rem]">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            // animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 0 }}
+            animate={{
+              opacity: shouldAnimate1 ? 1 : 0,
+              y: shouldAnimate1 ? 0 : 50,
+            }}
+            // transition={{ duration: 1.5, ease: "easeIn" }}
+            transition={{ duration: 1, ease: "easeIn", delay: 0.2 }}
+            exit={{ opacity: 0 }}
+            className="flex flex-col w-[8.75rem] h-[3.6875rem]"
+          >
             <p className="text-about-s-w text-[1rem] font-medium leading-normal  ">
               Our
             </p>
@@ -43,9 +81,16 @@ export default function Ourservice({ onClose }) {
             >
               Services
             </h1>
-          </div>
+          </motion.div>
           <div className="flex gap-[10.81rem] justify-between items-center mt-[2.81rem]">
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 0 }}
+              animate={{
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
+              }}
+              transition={{ duration: 1, ease: "easeIn" }}
+              exit={{ opacity: 0 }}
               className="bg-cover pt-[21.375rem] h-[31.8125rem] w-[19.25rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/service1.png')",
@@ -158,9 +203,16 @@ export default function Ourservice({ onClose }) {
                   </p>
                 </button>
               </div>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: -150 }}
+              animate={{
+                opacity: shouldAnimateP ? 1 : 0,
+                x: shouldAnimateP ? 0 : -150,
+              }}
+              transition={{ duration: 1.5, ease: "backOut" }}
+              exit={{ opacity: 0 }}
               className="bg-cover pt-[21.375rem] h-[31.8125rem] w-[19.25rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/services2.png')",
@@ -263,9 +315,16 @@ export default function Ourservice({ onClose }) {
                   </p>
                 </button>
               </div>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: -250 }}
+              animate={{
+                opacity: shouldAnimateP ? 1 : 0,
+                x: shouldAnimateP ? 0 : -250,
+              }}
+              transition={{ duration: 1.5, ease: "backOut" }}
+              exit={{ opacity: 0 }}
               className="bg-cover pt-[21.375rem] h-[31.8125rem] w-[19.25rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/services3.png')",
@@ -370,7 +429,7 @@ export default function Ourservice({ onClose }) {
                   </p>
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
           <Modal isOpen={isModalOpen} onClose={closeModal}>
             {modalContent}

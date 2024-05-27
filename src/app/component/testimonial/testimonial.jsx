@@ -48,11 +48,6 @@ export default function Testimonial() {
           <div className="flex  gap-[3.56rem]">
             <motion.div
               initial={{ opacity: 0, y: 0 }}
-              // animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 0 }}
-              // animate={{
-              //   opacity: shouldAnimate && isInView ? 1 : 0,
-              //   y: shouldAnimate && isInView ? 0 : 0,
-              // }}
               animate={{
                 opacity: animateImage1 ? 1 : 0,
                 y: animateImage1 ? 0 : 0,
@@ -96,11 +91,6 @@ export default function Testimonial() {
 
               <motion.div
                 initial={{ opacity: 0, y: 0 }}
-                // animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 0 }}
-                // animate={{
-                //   opacity: shouldAnimate && isInView ? 1 : 0,
-                //   y: shouldAnimate && isInView ? 0 : 0,
-                // }}
                 animate={{
                   opacity: shouldAnimateP ? 1 : 0,
                   y: shouldAnimateP ? 0 : 0,
