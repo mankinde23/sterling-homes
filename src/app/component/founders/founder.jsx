@@ -69,7 +69,7 @@ export default function Founders() {
               opacity: animateImage1 ? 1 : 0,
               x: animateImage1 ? 0 : -100,
             }}
-            transition={{ duration: 2.5, ease: "backOut" }}
+            transition={{ duration: 1.5, ease: "backOut" }}
             exit={{ opacity: 0 }}
             className="flex gap-[4.87rem] items-center"
           >
