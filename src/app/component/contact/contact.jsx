@@ -6,6 +6,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
+import "react-toastify/dist/ReactToastify.css";
 
 import { ToastContainer, toast } from "react-toastify";
 import Confetti from "react-confetti";
@@ -35,13 +36,14 @@ export default function Contact() {
       });
 
       resetForm();
+      toast.success("Form submitted successfully!");
 
       console.log("Email sent successfully!");
     } catch (error) {
       console.error("Failed to send email:", error);
+      toast.error("Failed to submit form. Please try again.");
     } finally {
       setSubmitting(false);
-      toast.success("Form submitted successfully!");
       setShowConfetti(true);
       setIsLoading(false);
 
@@ -60,10 +62,10 @@ export default function Contact() {
       setShouldAnimate1(true);
       const timeoutImage = setTimeout(() => {
         setAnimateImage1(true);
-      }, 1000); // 2 seconds delay for image animation
+      }, 1000);
       const timeoutP = setTimeout(() => {
         setShouldAnimateP(true);
-      }, 1500); // 1 second delay for second paragraph animation
+      }, 1500);
 
       return () => {
         clearTimeout(timeoutImage);
@@ -217,14 +219,14 @@ export default function Contact() {
               <div className="relative">
                 <ToastContainer
                   position="top-center"
-                  autoClose={3000}
-                  hideProgressBar={false}
-                  newestOnTop={false}
-                  closeOnClick
-                  rtl={false}
-                  pauseOnFocusLoss
-                  draggable
-                  pauseOnHover
+                  // autoClose={3000}
+                  // hideProgressBar={false}
+                  // newestOnTop={false}
+                  // closeOnClick
+                  // rtl={false}
+                  // pauseOnFocusLoss
+                  // draggable
+                  // pauseOnHover
                   theme="light"
                 />
               </div>
@@ -350,14 +352,14 @@ export default function Contact() {
             <div className="relative">
               <ToastContainer
                 position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
+                // autoClose={3000}
+                // hideProgressBar={false}
+                // newestOnTop={false}
+                // closeOnClick
+                // rtl={false}
+                // pauseOnFocusLoss
+                // draggable
+                // pauseOnHover
                 theme="light"
               />
             </div>
