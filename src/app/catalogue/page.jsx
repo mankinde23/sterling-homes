@@ -13,22 +13,23 @@ export default function Catalogue() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block 2xl-max:w-auto">
+      {/* md:h-[126.375rem] lg:h-[126.375rem] xl:h-[126.375rem] xl:w-[80rem]  gap-[27.12rem] justify-center pr-[30.06rem]*/}
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden 2xl-max:w-auto">
         <div
-          className={`h-[90.375rem] w-auto px-[4.51rem] md:h-[126.375rem] lg:h-[126.375rem] xl:h-[126.375rem] xl:w-[80rem] ${
+          className={`h-auto w-auto pb-[6.06rem] ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
           // 2xl:w-[53rem] h-[4.3125rem] 2xl:gap-[27.125rem] 2xl-max:gap-[0rem] 2xl-max:w-full 2xl-max:justify-center xl:w-[37.1875rem] xl:gap-[18.56rem] xl:pt-[7.37rem] xl:h-[2.75rem]
         >
-          <div className="flex pt-[3.69rem] justify-center items-center w-auto gap-[27.12rem] pr-[30.06rem]">
+          <div className="flex pt-[3.69rem]  items-center w-auto   justify-between">
             <Link href="/">
               <div className="w-[5.0625rem] h-[2.63rem]  flex justify-start items-center ">
                 <MdKeyboardArrowLeft className="w-[2rem] h-[2.5rem] text-sterling-theme" />
               </div>
             </Link>
-            <div className="w-[20.8125rem] h-[4.3125rem] ">
+            <div className="w-[20.8125rem] xl:pl-[1rem] 2xl-max:mr-[1rem]">
               <p
                 className={` text-[3.125rem] font-semibold leading-normal lg:text-[2.25rem] xl:text-[2.25rem] ${
                   theme === "light" ? "text-about-b" : "text-nav-text"
@@ -37,12 +38,13 @@ export default function Catalogue() {
                 CATALOGUE
               </p>
             </div>
+            <div></div>
           </div>
 
           <div className="grid grid-cols-3 auto-rows-auto px-auto gap-x-[6.81rem] gap-y-[5.38rem] mt-[4.69rem]  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-[0rem] xl:mt-[5.56rem]">
             <div className="flex justify-center items-center">
               <div
-                className="bg-cover w-[22.5rem] h-[32.5rem] pt-[2.19rem] gap-[14.125rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
+                className="bg-cover w-auto h-[32.5rem] pt-[2.19rem] gap-[14.125rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
                 style={{
                   backgroundImage: "url('catalogue1.png')",
                 }}
@@ -102,7 +104,7 @@ export default function Catalogue() {
 
             <div className="flex justify-center items-center">
               <div
-                className="bg-cover w-[22.5rem] h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
+                className="bg-cover w-auto h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
                 style={{
                   backgroundImage: "url('catalogue2.png')",
                 }}
@@ -152,7 +154,7 @@ export default function Catalogue() {
 
             <div className="flex justify-center items-center">
               <div
-                className="bg-cover w-[22.5rem] h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
+                className="bg-cover w-auto h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
                 style={{
                   backgroundImage: "url('catalogue3.png')",
                 }}
@@ -202,7 +204,7 @@ export default function Catalogue() {
 
             <div className="flex justify-center items-center">
               <div
-                className="bg-cover w-[22.5rem] h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
+                className="bg-cover w-auto h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
                 style={{
                   backgroundImage: "url('catalogue4.png')",
                 }}
@@ -253,7 +255,7 @@ export default function Catalogue() {
 
             <div className="flex justify-center items-center">
               <div
-                className="bg-cover w-[22.5rem] h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
+                className="bg-cover w-auto h-[32.5rem] pt-[18.69rem]  bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col"
                 style={{
                   backgroundImage: "url('catalogue5.png')",
                 }}
@@ -317,9 +319,9 @@ export default function Catalogue() {
           </div>
         </div>
       </div>
-      {/* Mobile */}
+      {/* Mobile  w-[9.625rem] gap-[13.19rem] sm:w-[43.6875rem]*/}
       <div
-        className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden sm:w-[43.6875rem]"
+        className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block "
         style={{ width: "100% !important" }}
       >
         <div
@@ -329,14 +331,14 @@ export default function Catalogue() {
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
         >
-          <div className="flex pt-[5.38rem] justify-between items-center h-[1.8125rem] gap-[13.19rem] pr-[14.29rem] w-auto ">
+          <div className="flex pt-[5.38rem] justify-between items-center  w-auto ">
             <Link href="/">
               <div className="w-[2.4375rem] h-[1.3125rem] p-[0.625rem] flex justify-center items-center">
                 <MdKeyboardArrowLeft className="w-[2rem] h-[2.5rem] text-sterling-theme" />
               </div>
             </Link>
 
-            <div className="w-[9.625rem] h-[1.8125rem]">
+            <div className=" h-[1.8125rem]">
               <p
                 className={` text-[1.5rem] font-semibold leading-normal ${
                   theme === "light" ? "text-about-b" : "text-nav-text"
@@ -345,6 +347,7 @@ export default function Catalogue() {
                 CATALOGUE
               </p>
             </div>
+            <div></div>
           </div>
           <div className="grid grid-cols-1 auto-rows-auto gap-y-[2rem] mt-[3.81rem]">
             <div className="flex justify-center  flex-col gap-[2rem]">
@@ -372,19 +375,23 @@ export default function Catalogue() {
                     </p>
                   </div>
                   <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-catalogue-stroke mt-[1.19rem]"></div>
-                  <div className="w-[18.56rem] h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] ">
-                    <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
-                      <MdBed className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        4 Beds
-                      </p>
+                  <div className="h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] flex-col ">
+                    <div className="flex gap-[0.62rem]">
+                      {" "}
+                      <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
+                        <MdBed className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          4 Beds
+                        </p>
+                      </div>
+                      <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
+                        <FaBath className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          3 baths
+                        </p>
+                      </div>
                     </div>
-                    <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
-                      <FaBath className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        3 baths
-                      </p>
-                    </div>
+
                     <div className="w-[6.86rem] h-[1rem] gap-[0.5rem] flex">
                       <FaBed className="text-nav-text" />
                       <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
@@ -420,19 +427,21 @@ export default function Catalogue() {
                     </p>
                   </div>
                   <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-catalogue-stroke mt-[1.19rem]"></div>
-                  <div className="w-[18.56rem] h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] ">
+                  <div className="h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] flex-col">
                     {" "}
-                    <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
-                      <MdBed className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        3 Beds
-                      </p>
-                    </div>
-                    <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
-                      <FaBath className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        3 baths
-                      </p>
+                    <div className="flex gap-[0.62rem]">
+                      <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
+                        <MdBed className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          3 Beds
+                        </p>
+                      </div>
+                      <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
+                        <FaBath className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          3 baths
+                        </p>
+                      </div>
                     </div>
                     <div className="w-[6.86rem] h-[1rem] gap-[0.5rem] flex">
                       <FaBed className="text-nav-text" />
@@ -469,18 +478,20 @@ export default function Catalogue() {
                     </p>
                   </div>
                   <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-catalogue-stroke mt-[1.19rem]"></div>
-                  <div className="w-[18.56rem] h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] ">
-                    <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
-                      <MdBed className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        5 Beds
-                      </p>
-                    </div>
-                    <div className="w-[5.4rem] h-[1.1875rem] gap-[0.5rem] flex">
-                      <FaBath className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal ">
-                        3.5 baths
-                      </p>
+                  <div className=" h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] flex-col">
+                    <div className="flex gap-[0.62rem]">
+                      <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
+                        <MdBed className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          5 Beds
+                        </p>
+                      </div>
+                      <div className="w-[5.4rem] h-[1.1875rem] gap-[0.5rem] flex">
+                        <FaBath className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal ">
+                          3.5 baths
+                        </p>
+                      </div>
                     </div>
 
                     <div className="w-[6.86rem] h-[1rem] gap-[0.5rem] flex">
@@ -519,19 +530,21 @@ export default function Catalogue() {
                     </p>
                   </div>
                   <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-catalogue-stroke mt-[1.19rem]"></div>
-                  <div className="w-[18.56rem] h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] ">
+                  <div className="h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] flex-col">
                     {" "}
-                    <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
-                      <MdBed className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        6 Beds
-                      </p>
-                    </div>
-                    <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
-                      <FaBath className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        3 baths
-                      </p>
+                    <div className="flex gap-[0.62rem]">
+                      <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
+                        <MdBed className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          6 Beds
+                        </p>
+                      </div>
+                      <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
+                        <FaBath className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          3 baths
+                        </p>
+                      </div>
                     </div>
                     <div className="w-[6.86rem] h-[1rem] gap-[0.5rem] flex">
                       <FaBed className="text-nav-text" />
@@ -568,19 +581,21 @@ export default function Catalogue() {
                     </p>
                   </div>
                   <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-catalogue-stroke mt-[1.19rem]"></div>
-                  <div className="w-[18.56rem] h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] ">
+                  <div className=" h-[1.1875rem] gap-[0.62rem] flex ml-[1.25rem] mt-[1.194rem] flex-col ">
                     {" "}
-                    <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
-                      <MdBed className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        3 Beds
-                      </p>
-                    </div>
-                    <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
-                      <FaBath className="text-nav-text" />
-                      <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
-                        2 baths
-                      </p>
+                    <div className="flex gap-[0.62rem]">
+                      <div className="w-[4.375rem] h-[1rem] gap-[0.5rem] flex">
+                        <MdBed className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          3 Beds
+                        </p>
+                      </div>
+                      <div className="w-[4.875rem] h-[1.1875rem] gap-[0.5rem] flex">
+                        <FaBath className="text-nav-text" />
+                        <p className="text-nav-text text-[0.8125rem] font-medium leading-normal">
+                          2 baths
+                        </p>
+                      </div>
                     </div>
                     <div className="w-[6.86rem] h-[1rem] gap-[0.5rem] flex">
                       <FaBed className="text-nav-text" />

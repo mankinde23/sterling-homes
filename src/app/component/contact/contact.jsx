@@ -75,7 +75,7 @@ export default function Contact() {
   }, [isInView1]);
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden">
         <div
           className="bg-cover h-[36.5rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100  "
           style={{
@@ -84,9 +84,9 @@ export default function Contact() {
           id="contact"
           ref={ref1}
         >
-          <div className="flex  justify-center gap-[0.38rem]">
+          <div className="flex  justify-between gap-[0.38rem] xl:justify-center">
             <div className="ml-[4rem]">
-              <div className="w-[51.4375rem] h-[4.3125rem] mt-[6rem]">
+              <div className="w-auto h-[4.3125rem] mt-[6rem] lg:w-auto">
                 {" "}
                 <motion.p
                   initial={{ opacity: 0, y: 50 }}
@@ -96,7 +96,7 @@ export default function Contact() {
                   }}
                   transition={{ duration: 1, ease: "easeIn" }}
                   exit={{ opacity: 0 }}
-                  className="text-nav-text text-[4rem] font-semibold leading-normal"
+                  className="text-nav-text text-[4rem] font-semibold leading-normal lg:text-[2rem]"
                 >
                   Sterling Homes
                 </motion.p>
@@ -109,11 +109,11 @@ export default function Contact() {
                 }}
                 transition={{ duration: 1, ease: "easeIn" }}
                 exit={{ opacity: 0 }}
-                className="w-[47.375rem] h-[5.5rem] mt-[1.81rem]"
+                className="w-[46.375rem] h-[5.5rem] mt-[1.81rem] lg:w-auto"
               >
-                <p className="text-nav-text text-[1rem] font-normal leading-[1.6rem]">
+                <p className="text-nav-text text-[1rem] font-normal leading-[1.6rem] lg:text-[0.9375rem ]">
                   Unlock the door to your dream home with confidence , whether
-                  you&apos;re seeking a cozy <br /> bungalow, a spacious family
+                  you&apos;re seeking a cozy bungalow, a spacious family
                   retreat, or a sleek urban oasis, we are here to make your
                   dreams a reality. Let&apos;s find your perfect place to call
                   home together.
@@ -128,12 +128,12 @@ export default function Contact() {
               }}
               transition={{ duration: 1.5, ease: "backOut" }}
               exit={{ opacity: 0 }}
-              className="w-[29.0625rem] h-[34.4375rem] shadow-md bg-contact-section backdrop-blur-[20px] mr-[4.6rem] pr-[] pl-[1.88rem] pt-[2.75rem]"
+              className="w-[24.21875rem] h-[34.4375rem] shadow-md bg-contact-section backdrop-blur-[20px] mr-[4.6rem] pr-[1.88rem] pl-[1.88rem] pt-[2.75rem] lg:w-[18.44469rem]"
             >
-              <p className="text-nav-text text-[1.8rem] font-medium leading-normal w-[19.59406rem] h-[3.09475rem]">
+              <p className="text-nav-text text-[1.8rem] font-medium leading-normal w-[19.59406rem] h-[3.09475rem] lg:text-[1.5rem] lg:w-auto lg:h-auto">
                 Contact us
               </p>
-              <p className="text-nav-text w-[20.07069rem] h-[2.25rem] text-[0.625rem] font-normal leading-[1rem] mt-[0.56rem]">
+              <p className="text-nav-text w-[20.07069rem] h-[2.25rem] text-[0.6875rem] font-normal leading-[1rem] mt-[0.56rem] lg:w-auto lg:h-auto">
                 We value your feedback and inquiries. Please fill out the form
                 below, and we&apos;ll get back to you as soon as possible
               </p>
@@ -151,17 +151,17 @@ export default function Contact() {
               >
                 {({ values, handleChange, isSubmitting }) => (
                   <Form className="">
-                    <div className="w-[23.09375rem] h-[15.41325rem] flex flex-col gap-[2.5rem] mt-[2.5rem]">
-                      <div className="w-[22.75rem] h-[3.47106rem]">
+                    <div className="w-[19.24481rem] h-[15.41325rem] flex flex-col gap-[2.5rem] mt-[2.5rem] lg:w-[14.60981rem] lg:h-[13.875rem]">
+                      <div className="w-auto h-[3.47106rem] lg:w-auto">
                         <Field
                           type="text"
                           name="name"
                           placeholder="Name*"
                           value={values.name}
                           onChange={handleChange}
-                          className=" w-full h-[1.58rem] bg-transparent focus:outline-none focus:shadow-none text-nav-text text-[0.875rem] font-medium leading-normal ml-[0.5rem]"
+                          className=" w-full h-[1.58rem] bg-transparent focus:outline-none focus:shadow-none text-nav-text text-[0.875rem] font-medium leading-normal ml-[0.5rem] lg:text-[0.75rem]"
                         />
-                        <div className="w-[22.96875rem] h-[0.125rem] rounded-[2.125rem] bg-nav-text  mt-[0.27rem]"></div>
+                        <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-nav-text  mt-[0.27rem] lg:w-auto"></div>
 
                         <ErrorMessage
                           name="name"
@@ -169,16 +169,16 @@ export default function Contact() {
                           className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                         />
                       </div>
-                      <div className="w-[22.75rem] h-[3.47106rem]">
+                      <div className="w-auto h-[3.47106rem] lg:w-auto">
                         <Field
                           type="email"
                           name="email"
                           placeholder="Email*"
                           value={values.email}
                           onChange={handleChange}
-                          className=" w-full h-[1.58rem] bg-transparent focus:outline-none focus:shadow-none text-nav-text text-[0.875rem] font-medium leading-normal  ml-[0.5rem]"
+                          className="lg:text-[0.75rem] w-full h-[1.58rem] bg-transparent focus:outline-none focus:shadow-none text-nav-text text-[0.875rem] font-medium leading-normal  ml-[0.5rem]"
                         />
-                        <div className="w-[22.96875rem] h-[0.125rem] rounded-[2.125rem] bg-nav-text  mt-[0.27rem]"></div>
+                        <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-nav-text  mt-[0.27rem] lg:w-auto"></div>
 
                         <ErrorMessage
                           name="email"
@@ -186,16 +186,16 @@ export default function Contact() {
                           className="text-text-error text-[0.875rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                         />
                       </div>
-                      <div className="w-[22.75rem] h-[3.47106rem]">
+                      <div className="w-auto h-[3.47106rem] lg:w-auto">
                         <Field
                           type="text"
                           name="message"
                           placeholder="Message*"
                           value={values.message}
                           onChange={handleChange}
-                          className=" w-full h-[1.58rem] bg-transparent focus:outline-none focus:shadow-none text-nav-text text-[0.875rem] font-medium leading-normal  ml-[0.5rem]"
+                          className="lg:text-[0.75rem] w-full h-[1.58rem] bg-transparent focus:outline-none focus:shadow-none text-nav-text text-[0.875rem] font-medium leading-normal  ml-[0.5rem]"
                         />
-                        <div className="w-[22.96875rem] h-[0.125rem] rounded-[2.125rem] bg-nav-text mt-[0.27rem]"></div>
+                        <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-nav-text mt-[0.27rem] lg:w-auto"></div>
 
                         <ErrorMessage
                           name="message"
@@ -207,7 +207,7 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-[10.125rem] h-[3rem] p-[0.5rem] gap-[0.5rem] flex justify-center items-center border-sterling-theme border-solid border-[0.7px] mt-[2.75rem] hover:bg-nav-text hover:text-about-b transition duration-500 ease-in-out text-nav-text"
+                      className=" lg:w-[7.34981rem] lg:h-[2.6875rem] w-[10.125rem] h-[3rem] p-[0.5rem] gap-[0.5rem] flex justify-center items-center border-sterling-theme border-solid border-[0.7px] mt-[2.75rem] hover:bg-nav-text hover:text-about-b transition duration-500 ease-in-out text-nav-text"
                     >
                       <p className=" text-[0.8125rem] font-normal leading-normal  ">
                         {buttonText}
@@ -237,7 +237,7 @@ export default function Contact() {
 
       {/* MOBILE */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block">
         <div
           className="bg-cover h-[17rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 pt-[3.875rem] pr-[1.875rem] pb-[6.625rem] pl-[1.875rem] gap-[1.125rem] flex flex-col "
           style={{
@@ -248,7 +248,7 @@ export default function Contact() {
             Sterling Homes
           </p>
           <div className="w-auto h-[3.625rem] ">
-            <p className="text-nav-text text-[0.625rem] font-normal leading-[1rem]">
+            <p className="text-nav-text text-[0.75rem] font-normal leading-[1rem]">
               Unlock the door to your dream home with confidence , whether
               you&apos;re seeking a cozy bungalow, a spacious family retreat, or
               a sleek urban oasis, we are here to make your dreams a reality.

@@ -29,9 +29,9 @@ export default function Founders() {
   }, [isInView1]);
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:hidden md:hidden">
         <div
-          className={`h-[60.1875rem] w-auto py-[4.5rem] flex ${
+          className={`h-[60.1875rem] w-auto py-[4.5rem] flex justify-between xl:justify-normal ${
             theme === "dark"
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
@@ -46,7 +46,7 @@ export default function Founders() {
             }}
             transition={{ duration: 1, ease: "easeIn", delay: 0.6 }}
             exit={{ opacity: 0 }}
-            className="flex w-[22.3125rem] h-[8.75rem] px-[3.0625rem] py-[0rem] flex-col gap-[0.73rem] mt-[16.72rem]"
+            className="flex w-[22.3125rem] h-[8.75rem] xl:pr-[3.0625rem] xl:pl-[5.0625rem] pl-[5.0625rem] pr-[3.0625rem] py-[0rem] flex-col gap-[0.73rem] mt-[16.72rem]"
           >
             <div className=" w-[19.25rem] gap-[0.8125rem] flex items-center">
               <div className="w-[3.75rem] h-[0.125rem] rounded-[2.125rem] bg-sterling-theme"></div>
@@ -71,12 +71,12 @@ export default function Founders() {
             }}
             transition={{ duration: 1.5, ease: "backOut" }}
             exit={{ opacity: 0 }}
-            className="flex gap-[4.87rem] items-center"
+            className="flex gap-[4.06rem] items-center pr-[3rem] xl:pr-0"
           >
             <div
-              className="bg-cover pt-[2.06rem] h-[50.375rem] w-[28.3125rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[29.92rem] "
+              className="bg-cover pt-[2.23rem] w-[23.59rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[29.23rem] "
               style={{
-                backgroundImage: "url('founder.png')",
+                backgroundImage: "url('/founder.png')",
               }}
             >
               <div className="flex justify-end">
@@ -89,9 +89,9 @@ export default function Founders() {
                   </p>
                 </div>
               </div>
-              <div className="w-[28.3125rem] h-[16.1875rem] bg-navbar-bg backdrop-blur-[20px] ">
-                <div className="h-[1.5rem] w-[23.9375rem] flex justify-between items-center ml-[1.69rem] mt-[1.94rem] mr-[2.69rem]">
-                  <p className="text-nav-text text-[1.25rem] font-semibold leading-normal">
+              <div className="w-auto h-auto bg-navbar-bg backdrop-blur-[20px] ">
+                <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.69rem] mt-[1.94rem] mr-[2.69rem]">
+                  <p className="text-nav-text text-[1.5rem] font-semibold leading-normal">
                     Adesoji Bello
                   </p>
                   <div className="flex w-[4.4375rem] h-[1.8125rem] gap-[0.6875rem]">
@@ -116,23 +116,21 @@ export default function Founders() {
                     </a>
                   </div>
                 </div>
-                <div className="w-[24.5rem] h-[9.75rem] ml-[1.69rem]  mr-[2.13rem] mt-[1.88rem]">
-                  <p className="text-[0.75rem] font-medium leading-[1.21925rem] text-founders-text">
+                <div className="w-auto h-auto ml-[1.41rem]  mr-[1.77rem] mt-[1.56rem] mb-[5.25rem]">
+                  <p className="text-[1rem] font-medium leading-[1.62569rem] text-founders-text">
                     Soji is a skilled commercial realtor and seasoned home
-                    leasing <br />
-                    service agent. With expertise in real estate tax planning
-                    and <br />
-                    filing, Soji excels in maximizing returns for real estate{" "}
-                    investors <br /> across the United States.
+                    leasing service agent. With expertise in real estate tax
+                    planning and filing, Soji excels in maximizing returns for
+                    real estate investors across the United States.
                   </p>
                 </div>
               </div>
             </div>
 
             <div
-              className="bg-cover pt-[2.06rem] h-[50.375rem] w-[28.3125rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[29.92rem] "
+              className="bg-cover pt-[2.23rem] w-[23.59rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[29.23rem] "
               style={{
-                backgroundImage: "url('co-founder.png')",
+                backgroundImage: "url('/co-founder.png')",
               }}
             >
               <div className="flex justify-end">
@@ -145,9 +143,9 @@ export default function Founders() {
                   </p>
                 </div>
               </div>
-              <div className="w-[28.3125rem] h-[16.1875rem] bg-navbar-bg backdrop-blur-[20px] ">
-                <div className="h-[1.5rem] w-[23.9375rem] flex justify-between items-center ml-[1.69rem] mt-[1.94rem] mr-[2.69rem]">
-                  <p className="text-nav-text text-[1.25rem] font-semibold leading-normal">
+              <div className="w-auto h-auto bg-navbar-bg backdrop-blur-[20px] ">
+                <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.35rem] mt-[1.94rem] mr-[0.31rem]">
+                  <p className="text-nav-text text-[1.5rem] font-semibold leading-normal">
                     Rukayat Adeosun
                   </p>
                   <div className=" w-[4.4375rem] h-[1.8125rem] flex justify-end">
@@ -162,33 +160,77 @@ export default function Founders() {
                     </a>
                   </div>
                 </div>
-                <div className="w-[24.5rem] h-[9.75rem] ml-[1.69rem]  mr-[2.13rem] mt-[1.88rem]">
-                  <p className="text-[0.75rem] font-medium leading-[1.21925rem] text-founders-text">
+                <div className="w-auto h-auto ml-[1.35rem]  mr-[1.13rem] mt-[1.56rem] mb-[4.01rem]">
+                  <p className="text-[1rem] font-medium leading-[1.62569rem] text-founders-text">
                     With over 5 years of expertise in real estate transactions,{" "}
-                    <br />
-                    including buying and selling homes and negotiating <br />{" "}
+                    including buying and selling homes and negotiating{" "}
                     exceptional deals for clients, Rukayat also specializes in
-                    creating <br /> captivating interior designs that enhance
-                    the appeal and <br /> ambiance of rental properties.
+                    creating captivating interior designs that enhance the
+                    appeal and ambiance of rental properties.
                   </p>
                 </div>
               </div>
             </div>
+
+            {/* <div
+              className="bg-cover  pt-[2.23rem] w-[23.59rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[27.23rem] "
+              style={{
+                backgroundImage: "url('/co-founder.png')",
+              }}
+            >
+              <div className="flex justify-end">
+                <div className="w-[10.0625rem] h-[2.5254rem]  px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
+                  <p
+                    className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.76rem]"
+                    style={{ fontFamily: "Roboto, sans-serif" }}
+                  >
+                    CO. FOUNDER
+                  </p>
+                </div>
+              </div>
+              <div className="w-auto h-auto bg-navbar-bg backdrop-blur-[20px] ">
+                <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.69rem] mt-[1.94rem] mr-[2.69rem]">
+                  <p className="text-nav-text text-[1.5rem] font-semibold leading-normal">
+                    Rukayat Adeosun
+                  </p>
+                  <div className=" w-[4.4375rem] h-[1.8125rem] flex justify-end">
+                    <a
+                      href="https://www.linkedin.com/in/rukayat-adeosun-287438147/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="w-[1.875rem] h-[1.875rem] flex items-center justify-center rounded-full bg-founders-link hover:bg-link-hover transition duration-500 ease-in-out">
+                        <IoLogoLinkedin className="text-founders-socials" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div className="w-auto h-auto ml-[1.41rem]  mr-[1.77rem] mt-[1.56rem] mb-[5.25rem]">
+                  <p className="text-[1rem] font-medium leading-[1.21925rem] text-founders-text">
+                    With over 5 years of expertise in real estate transactions,{" "}
+                    including buying and selling homes and negotiating{" "}
+                    exceptional deals for clients, Rukayat also specializes in
+                    creating captivating interior designs that enhance the
+                    appeal and ambiance of rental properties.
+                  </p>
+                </div>
+              </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
 
       {/* Mobile ...... */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:flex md:flex-col md:justify-center  ">
         <div
-          className={`h-[95rem] w-auto pt-[1.88rem] ${
+          className={`h-auto w-auto pt-[1.88rem] md:px-[7rem] sm:px-0 md:block lg:flex lg:flex-col lg:justify-center lg:items-center  lg:px-[17rem] ${
             theme === "dark"
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
           }`}
         >
-          <div className="flex w-[6.875rem] h-[2.625rem] flex-col px-[1.87rem]">
+          <div className="flex w-auto h-[2.625rem] flex-col px-[1.87rem] sm:items-start md:items-center">
             <div className=" w-[5.6875rem] gap-[0.5rem] flex items-center h-[1.125rem]">
               <div className="w-[1.625rem] h-[0.0625rem] rounded-[2.125rem] bg-sterling-theme"></div>
               <p className="text-sterling-theme text-[0.5rem] font-semibold tracking-[0.055rem] leading-normal">
@@ -196,7 +238,7 @@ export default function Founders() {
               </p>
             </div>
             <p
-              className={` text-[1.25rem] font-semibold leading-normal tracking-[0.2rem] ${
+              className={` text-[1.5rem] font-semibold leading-normal tracking-[0.2rem] ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
               }`}
             >
@@ -204,9 +246,9 @@ export default function Founders() {
             </p>
           </div>
 
-          <div className="flex gap-[3.19rem]  px-[1.87rem] flex-col mt-[1.56rem]">
+          <div className="flex gap-[3.19rem]  px-[1.87rem] flex-col mt-[1.56rem] pb-[2.94rem]">
             <div
-              className="bg-cover h-[41.4375rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[23.75rem] "
+              className="bg-cover h-[49.25rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col md:gap-[28.31rem] md:w-auto lg:h-[] lg:w-[42rem] lg:gap-[32.91rem]"
               style={{
                 backgroundImage: "url('foundermt.png')",
               }}
@@ -221,9 +263,9 @@ export default function Founders() {
                   </p>
                 </div>
               </div>
-              <div className="w-auto h-[13.8125rem] bg-navbar-bg backdrop-blur-[20px] ">
+              <div className="w-auto sm:h-[17.0625rem] md:h-[17.0625rem] bg-navbar-bg backdrop-blur-[20px] lg:h-[13.0625rem]">
                 <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.19rem] mt-[2.19rem] mr-[1.63rem]">
-                  <p className="text-nav-text text-[1rem] font-semibold leading-normal">
+                  <p className="text-nav-text text-[1.25rem] font-semibold leading-normal lg:text-[1.25rem]">
                     Adesoji Bello
                   </p>
                   <div className="flex w-[4.4375rem] h-[1.8125rem] gap-[0.69rem]">
@@ -249,7 +291,7 @@ export default function Founders() {
                   </div>
                 </div>
                 <div className="w-auto h-[7.75rem] ml-[1.19rem]  mr-[1.63rem] mt-[1.06rem]">
-                  <p className="text-[0.65rem] font-normal  text-founders-text">
+                  <p className="md:text-[0.8125rem] font-normal  text-founders-text lg:text-[1rem]">
                     Soji is a skilled commercial realtor and seasoned home
                     leasing service agent. With expertise in real estate tax
                     planning and filing, Soji excels in maximizing returns for
@@ -260,7 +302,7 @@ export default function Founders() {
             </div>
 
             <div
-              className="bg-cover  h-[41.4375rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col gap-[23.75rem] "
+              className="bg-cover  h-[49.25rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 flex flex-col sm:gap-[28.31rem] md:gap-[28.31rem] lg:gap-[32.91rem]"
               style={{
                 backgroundImage: "url('co-foundermtt.png')",
               }}
@@ -275,9 +317,9 @@ export default function Founders() {
                   </p>
                 </div>
               </div>
-              <div className="w-auto h-[13.8125rem] bg-navbar-bg backdrop-blur-[20px] ">
+              <div className="w-auto sm:h-[17.0625rem] md:h-[17.0625rem] bg-navbar-bg backdrop-blur-[20px] lg:h-[13.0625rem]">
                 <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.19rem] mt-[2.19rem] mr-[1.63rem]">
-                  <p className="text-nav-text text-[1rem] font-semibold leading-normal">
+                  <p className="text-nav-text text-[1.25rem] font-semibold leading-normal lg:text-[1.25rem]">
                     Rukayat Adeosun
                   </p>
                   <div className=" w-[4.4375rem] h-[1.8125rem] flex justify-end">
@@ -293,7 +335,7 @@ export default function Founders() {
                   </div>
                 </div>
                 <div className="w-auto  h-[7.75rem] ml-[1.19rem]  mr-[1.63rem] mt-[1.06rem]">
-                  <p className="text-[0.65rem] font-normal leading-[1.01606rem] text-founders-text">
+                  <p className="md:text-[0.8125rem] font-normal text-founders-text lg:text-[1rem]">
                     With over 5 years of expertise in real estate transactions,
                     including buying and selling homes and negotiating
                     exceptional deals for clients, Rukayat also specializes in

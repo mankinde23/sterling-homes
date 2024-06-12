@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import test from "../../../../public/testimonial-image.png";
+import test2 from "../../../../public/test2.png";
+
 import EmblaCarousel, { Carousel } from "../carousel/carousel";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
@@ -35,9 +37,9 @@ export default function Testimonial() {
 
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden">
         <div
-          className={`h-[47.875rem] w-auto py-[4.44rem] px-[5.31rem] ${
+          className={`h-auto w-auto py-[4.44rem] px-[3.23rem] lg:px-[3rem] ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
@@ -45,7 +47,7 @@ export default function Testimonial() {
           id="testimonials"
           ref={ref1}
         >
-          <div className="flex  gap-[3.56rem]">
+          <div className="flex  gap-[3.56rem] lg:gap-[2.51rem] lg:block">
             <motion.div
               initial={{ opacity: 0, y: 0 }}
               animate={{
@@ -55,17 +57,19 @@ export default function Testimonial() {
               transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
             >
-              <Image src={test} alt="" className="w-[55.3125rem] h-[39rem]" />
+              <Image
+                src={test}
+                alt=""
+                className=" lg:hidden w-[46.09375rem] h-[39rem] "
+              />
             </motion.div>
-            <div className="w-[13rem] h-[4.5625rem] flex flex-col items-center gap-[0.25rem]">
+            <div className="w-[13rem] h-[4.5625rem] flex flex-col items-center gap-[0.25rem] lg:w-auto lg:h-auto xl:ml-0 ml-[5rem]">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                // animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 0 }}
                 animate={{
                   opacity: shouldAnimate1 ? 1 : 0,
                   y: shouldAnimate1 ? 0 : 50,
                 }}
-                // transition={{ duration: 1.5, ease: "easeIn" }}
                 transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
                 exit={{ opacity: 0 }}
               >
@@ -79,7 +83,7 @@ export default function Testimonial() {
                   Testimonials
                 </p>
                 <p
-                  className={` text-[0.75rem] font-semibold leading-normal mb-[2.19rem] ${
+                  className={` text-[0.75rem] font-semibold leading-normal mb-[2.19rem] lg:flex lg:justify-center flex justify-center ${
                     theme === "light"
                       ? " text-testimonial-text"
                       : "text-sterling-theme"
@@ -97,7 +101,7 @@ export default function Testimonial() {
                 }}
                 transition={{ duration: 1, ease: "easeIn" }}
                 exit={{ opacity: 0 }}
-                className="mb-[2.19rem] relative right-[6rem]"
+                className="mb-[2.19rem] relative right-[6rem] lg:right-0"
               >
                 <Carousel />
               </motion.div>
@@ -108,9 +112,9 @@ export default function Testimonial() {
 
       {/* Mobile */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block ">
         <div
-          className={`h-[24.125rem] w-auto pt-[2.38rem] pr-[1.88rem] pb-[1.2rem] pl-[1.88rem] flex flex-col gap-[0.69rem] items-center ${
+          className={`h-[24.125rem] w-auto pt-[2.38rem] pr-[1.88rem] pb-[1.2rem] pl-[1.88rem] flex flex-col gap-[0.69rem] items-center md:h-auto ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
@@ -118,7 +122,7 @@ export default function Testimonial() {
         >
           <div className="w-[8.5625rem] h-[3rem] flex flex-col gap-[0.1rem] items-center">
             <p
-              className={` text-[1rem] font-semibold leading-normal ${
+              className={` text-[1.25rem] font-semibold leading-normal ${
                 theme === "light"
                   ? " text-sterling-theme"
                   : "text-our-service-text"

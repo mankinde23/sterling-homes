@@ -12,7 +12,7 @@ import Hero from "./component/hero/hero";
 export default function Home() {
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:hidden lg:hidden  md:hidden">
+      <div className="sm:hidden lg:hidden 2xl:block 2xl-max:block">
         <Navbar />
 
         <div className="w-full " id="hero">
@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* TAB */}
 
-      <div className="sm:hidden 2xl:hidden 2xl-max:hidden xl:block lg:block  md:block">
+      {/* <div className="sm:hidden 2xl:hidden 2xl-max:hidden xl:hidden lg:block  md:block">
         <Navbar />
         <div className="w-full " id="heromm">
           <Hero />
@@ -65,11 +65,11 @@ export default function Home() {
         <div>
           <Footer />
         </div>
-      </div>
+      </div> */}
 
       {/* MOBILE */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block ">
         <Navbar />
 
         <div className="w-full " id="herom">

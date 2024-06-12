@@ -49,9 +49,9 @@ export default function Ourservice({ onClose }) {
 
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:hidden  md:hidden">
         <div
-          className={`h-[47.875rem] w-auto px-[5.31rem]  pt-[3.5rem] ${
+          className={`h-auto w-auto px-[3.96rem]  pt-[4.25rem] pb-[3.19rem] ${
             theme === "dark"
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
@@ -82,7 +82,7 @@ export default function Ourservice({ onClose }) {
               Services
             </h1>
           </motion.div>
-          <div className="flex gap-[10.81rem] justify-between items-center mt-[2.81rem]">
+          <div className="flex justify-between items-center mt-[2.81rem] xl:gap-[2.5rem]">
             <motion.div
               initial={{ opacity: 0, y: 0 }}
               animate={{
@@ -91,19 +91,20 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
-              className="bg-cover pt-[21.375rem] h-[31.8125rem] w-[19.25rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover pt-[25.44rem]  w-[16.77081rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100  "
               style={{
                 backgroundImage: "url('/service1.png')",
               }}
             >
-              <div className="h-[10.4375rem] w-[19.25rem] pt-[0.9375rem] pr-[2.125rem] pb-[1.1875rem] pl-[0.8125rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
+              {/* w-[16.3125rem] h-[2.53125rem] */}
+              <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
-                  <p className="text-[1rem] font-semibold leading-normal text-our-service-text">
+                  <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Home Buying & Selling
                   </p>
-                  <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-[16.3125rem] h-[2.53125rem]">
+                  <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem] ">
                     Helping clients navigate the process of buying and selling
-                    both residential and commercial <br /> properties.
+                    both residential and commercial properties.
                   </p>
                 </div>
 
@@ -132,7 +133,7 @@ export default function Ourservice({ onClose }) {
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[2.69rem]"></div>
                         <div className="flex justify-center items-center">
                           {" "}
-                          <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] ">
+                          <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem]  mb-[2.19rem] ">
                             <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify pr-[1rem]">
                               <p className="text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                                 {" "}
@@ -198,7 +199,7 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-light leading-normal">
+                  <p className=" text-our-service-text text-[0.8125rem] font-light leading-normal">
                     Learn More
                   </p>
                 </button>
@@ -213,19 +214,19 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1.5, ease: "backOut" }}
               exit={{ opacity: 0 }}
-              className="bg-cover pt-[21.375rem] h-[31.8125rem] w-[19.25rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover  pt-[25.44rem]  w-[16.77081rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/services2.png')",
               }}
             >
-              <div className="h-[10.4375rem] w-[19.25rem] pt-[0.9375rem] pr-[2.125rem] pb-[1.1875rem] pl-[0.8125rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
+              <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
-                  <p className="text-[1rem] font-semibold leading-normal text-our-service-text">
+                  <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Home Leasing Service
                   </p>
-                  <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-[16.3125rem] h-[2.53125rem]">
+                  <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem]">
                     Facilitating quicker rental property leases by accurately
-                    pricing properties to attract tenants <br /> efficiently.{" "}
+                    pricing properties to attract tenants efficiently.{" "}
                   </p>
                 </div>
                 <button
@@ -253,9 +254,9 @@ export default function Ourservice({ onClose }) {
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[2.69rem]"></div>
                         <div className="flex justify-center items-center">
                           {" "}
-                          <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] text-justify pr-[1rem]">
+                          <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem]  mb-[2.19rem] text-justify pr-[1rem]">
                             <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem]">
-                              <p className="mt-[2.19rem] text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
+                              <p className="text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                                 As a seasoned realtor offering home leasing
                                 services, I specialize in facilitating seamless
                                 and efficient rental transactions for both
@@ -310,7 +311,7 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-light leading-normal">
+                  <p className=" text-our-service-text text-[0.8125rem] font-light leading-normal">
                     Learn More
                   </p>
                 </button>
@@ -325,17 +326,17 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1.5, ease: "backOut" }}
               exit={{ opacity: 0 }}
-              className="bg-cover pt-[21.375rem] h-[31.8125rem] w-[19.25rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover pt-[25.44rem]  w-[16.77081rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
               style={{
                 backgroundImage: "url('/services3.png')",
               }}
             >
-              <div className="h-[10.4375rem] w-[19.25rem] pt-[0.9375rem] pr-[2.125rem] pb-[1.1875rem] pl-[0.8125rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
+              <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
-                  <p className="text-[1rem] font-semibold leading-normal text-our-service-text">
+                  <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Tax Preparation & Filing
                   </p>
-                  <p className="text-[0.625rem] leading-normal font-normal text-our-servicet mt-[0.62rem] w-[16.3125rem] h-[2.53125rem]">
+                  <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem]">
                     Providing strategic tax planning and filing services
                     tailored for real estate investors to optimize <br /> tax
                     benefits and maximize gains.
@@ -366,9 +367,9 @@ export default function Ourservice({ onClose }) {
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[2.69rem]"></div>
                         <div className="flex justify-center items-center">
                           {" "}
-                          <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] ">
+                          <div className="w-[43.6875rem] h-[22.5rem] overflow-y-auto max-h-96 mt-[2.19rem] mb-[2.19rem] ">
                             <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify pr-[1rem]">
-                              <p className="mt-[2.19rem] text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
+                              <p className=" text-nav-text text-[0.9375rem] font-normal leading-[1.40625rem]">
                                 {" "}
                                 Tax planning and filing services for real estate
                                 investors are essential components of financial
@@ -424,7 +425,7 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-light leading-normal">
+                  <p className=" text-our-service-text text-[0.8125rem] font-light leading-normal">
                     Learn More
                   </p>
                 </button>
@@ -437,20 +438,20 @@ export default function Ourservice({ onClose }) {
         </div>
       </div>
       {/* Mobile....... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block">
         <div
-          className={`h-[85.75rem] w-auto pt-[3.5rem] ${
+          className={`h-auto w-auto pt-[3.5rem] md:block lg:flex lg:flex-col lg:justify-center lg:items-center  ${
             theme === "dark"
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
           }`}
         >
-          <div className=" w-[4.75rem] h-[2.25rem] pl-[1.81rem]">
-            <p className="text-about-s-w text-[0.7875rem] font-bold leading-normal  ">
+          <div className=" w-[4.75rem] h-[2.25rem] md:pl-[1.81rem] md:block lg:w-auto lg:flex lg:flex-col lg:justify-center lg:items-center lg:pl-0">
+            <p className="text-about-s-w text-[0.8125rem] font-bold leading-normal  ">
               OUR
             </p>
             <h1
-              className={` text-[1rem] font-semibold leading-normal ${
+              className={` md:text-[1.5rem] lg:text-[2rem] font-semibold leading-normal ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
               }`}
             >
@@ -458,33 +459,33 @@ export default function Ourservice({ onClose }) {
             </h1>
           </div>
 
-          <div className="flex gap-[0rem] flex-col justify-between  mt-[2.81rem]">
+          <div className="flex md:gap-[0rem] flex-col justify-between  mt-[2.81rem] lg:gap-[2.94rem]">
             <div
-              className="bg-cover pt-[16.5rem] h-[26rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover pt-[17.5rem] h-[29.5rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
               style={{
                 backgroundImage: "url('/sterling1m.png')",
               }}
             >
-              <div className="h-[9.5rem] w-auto pt-[0.9375rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
+              <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
                 <div className="flex flex-col">
-                  <p className="text-[0.8125rem] font-normal leading-normal text-our-service-text">
+                  <p className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]">
                     Home Buying & Selling
                   </p>
-                  <p className="text-[0.625rem] leading-normal  text-our-servicet mt-[0.62rem] w-auto h-[2.53125rem]">
+                  <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal  text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem] ">
                     Helping clients navigate the process of buying and selling
                     both residential and commercial properties.
                   </p>
                 </div>
 
                 <button
-                  className="w-[5.9rem] h-[1.8rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] "
+                  className="sm:w-[5.9rem] sm:h-[1.8rem] md:w-[5.9rem] md:h-[1.8rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] lg:w-[7.9rem] lg:h-[2.2rem] "
                   onClick={() =>
                     openModal(
                       <div>
-                        <div className="flex justify-between items-center mt-[0.94rem]">
-                          <div className="w-auto h-[1.875rem] flex justify-center items-end ">
+                        <div className="flex justify-between mt-[1.94rem]">
+                          <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
                             <h2
-                              className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem]"
+                              className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]"
                               // style={{ fontFamily: " Montserrat, sans-serif" }}
                             >
                               Home Buying & Selling
@@ -498,11 +499,11 @@ export default function Ourservice({ onClose }) {
                           </span>
                         </div>
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem]"></div>
-                        <div className="flex justify-center items-center">
+                        <div className="flex  items-center">
                           {" "}
-                          <div className="w-[18.43rem] h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] ">
-                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify ">
-                              <p className="text-nav-text text-[0.6875rem] font-normal leading-[1.2375rem]">
+                          <div className="w-auto h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] px-[1.88rem] mb-[1.04rem] ">
+                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify hyphens-auto">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 {" "}
                                 Buying a home, whether residential or
                                 commercial, involves a multifaceted process that
@@ -522,7 +523,7 @@ export default function Ourservice({ onClose }) {
                                 recommendations to ensure a smooth and
                                 successful purchase.{" "}
                               </p>{" "}
-                              <p className="text-nav-text  text-[0.6875rem] font-normal leading-[1.2375rem] mt-[1.04rem]">
+                              <p className="text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] mt-[1.04rem] lg:text-[0.875rem]">
                                 For commercial property buyers, the homebuying
                                 process involves a different set of
                                 considerations tailored to business needs. As
@@ -541,7 +542,7 @@ export default function Ourservice({ onClose }) {
                                 facilitate a seamless transaction and help you
                                 achieve your commercial real estate objectives.
                               </p>{" "}
-                              <p className="mt-[2.19rem] text-nav-text  text-[0.6875rem] font-normal leading-[1.2375rem]">
+                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 {" "}
                                 In both residential and commercial real estate
                                 transactions, my role extends beyond property
@@ -566,7 +567,10 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.625rem] font-semibold leading-normal">
+                  <p
+                    className=" text-our-service-text text-[0.75rem] font-semibold leading-normal"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Learn More
                   </p>
                 </button>
@@ -574,29 +578,29 @@ export default function Ourservice({ onClose }) {
             </div>
 
             <div
-              className="bg-cover pt-[16.5rem] h-[26rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover pt-[17.5rem] h-[29.5rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/sterling2m.png')",
               }}
             >
-              <div className="h-[9.5rem] w-auto pt-[0.9375rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
+              <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
                 <div className="flex flex-col">
-                  <p className="text-[0.8125rem] font-normal leading-normal text-our-service-text">
+                  <p className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]">
                     Home Leasing Service
                   </p>
-                  <p className="text-[0.625rem] leading-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
+                  <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem] ">
                     Facilitating quicker rental property leases by accurately
                     pricing properties to attract tenants efficiently.{" "}
                   </p>
                 </div>
                 <button
-                  className="w-[5.9rem] h-[1.8rem] bg-sterling-theme flex justify-center items-center p-[0.5rem]"
+                  className="sm:w-[5.9rem] sm:h-[1.8rem] md:w-[5.9rem] md:h-[1.8rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] lg:w-[7.9rem] lg:h-[2.2rem] "
                   onClick={() =>
                     openModal(
                       <div>
-                        <div className="flex justify-between items-center mt-[0.94rem]">
-                          <div className="w-auto h-[1.875rem] flex justify-center items-end ">
-                            <h2 className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem]">
+                        <div className="flex justify-between  mt-[1.94rem]">
+                          <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
+                            <h2 className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]">
                               Home Leasing Service
                             </h2>
                           </div>
@@ -608,11 +612,11 @@ export default function Ourservice({ onClose }) {
                           </span>
                         </div>
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem]"></div>
-                        <div className="flex justify-center items-center">
+                        <div className="flex  items-center">
                           {" "}
-                          <div className="w-[18.43rem] h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] text-justify">
-                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem]">
-                              <p className="mt-[1.04rem] text-nav-text text-[0.6875rem] font-normal leading-[1.2375rem]">
+                          <div className="w-auto h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] mb-[1.04rem] text-justify px-[1.88rem]">
+                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] hyphens-auto">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 As a seasoned realtor offering home leasing
                                 services, I specialize in facilitating seamless
                                 and efficient rental transactions for both
@@ -627,7 +631,7 @@ export default function Ourservice({ onClose }) {
                                 maximizing rental income and ensuring a positive
                                 rental experience for property owners.{" "}
                               </p>{" "}
-                              <p className="mt-[1.04rem] text-nav-text  text-[0.6875rem] font-normal leading-[1.2375rem]">
+                              <p className="mt-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 For tenants seeking to lease a home, I assist in
                                 identifying suitable rental properties based on
                                 preferences such as location, budget, and
@@ -642,7 +646,7 @@ export default function Ourservice({ onClose }) {
                                 meets their needs and provides a comfortable
                                 living environment.
                               </p>{" "}
-                              <p className="mt-[1.04rem] text-nav-text  text-[0.6875rem] font-normal leading-[1.2375rem]">
+                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 Throughout the home leasing process, I am
                                 committed to providing personalized attention
                                 and exceptional service to all parties involved.
@@ -667,7 +671,10 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.625rem] font-semibold leading-normal">
+                  <p
+                    className=" text-our-service-text text-[0.75rem] font-semibold leading-normal"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Learn More
                   </p>
                 </button>
@@ -675,31 +682,31 @@ export default function Ourservice({ onClose }) {
             </div>
 
             <div
-              className="bg-cover pt-[16.5rem] h-[26rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover pt-[17.5rem] h-[29.5rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/sterling3m.png')",
               }}
             >
-              <div className="h-[9.5rem] w-auto pt-[0.9375rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg">
+              <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
                 <div className="flex flex-col">
-                  <p className="text-[0.8125rem] font-normal leading-normal text-our-service-text">
+                  <p className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]">
                     Tax Preparation & Filing
                   </p>
-                  <p className="text-[0.625rem] leading-normal text-our-servicet mt-[0.62rem] w-auto h-[2.21rem]">
+                  <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem]">
                     Providing strategic tax planning and filing services
                     tailored for real estate investors to optimize tax benefits
                     and maximize gains.
                   </p>
                 </div>
                 <button
-                  className="w-[5.9rem] h-[1.8rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] "
+                  className="sm:w-[5.9rem] sm:h-[1.8rem] md:w-[5.9rem] md:h-[1.8rem] bg-sterling-theme flex justify-center items-center p-[0.5rem] lg:w-[7.9rem] lg:h-[2.2rem]"
                   onClick={() =>
                     openModal(
                       <div>
-                        <div className="flex justify-between items-center mt-[0.94rem]">
-                          <div className="w-auto h-[1.875rem] flex justify-center items-end ">
+                        <div className="flex justify-between  mt-[1.94rem]">
+                          <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
                             <h2
-                              className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem]"
+                              className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]"
                               // style={{ fontFamily: " Montserrat, sans-serif" }}
                             >
                               Tax Preparation & Filing
@@ -713,11 +720,11 @@ export default function Ourservice({ onClose }) {
                           </span>
                         </div>
                         <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem]"></div>
-                        <div className="flex justify-center items-center">
+                        <div className="flex  items-center">
                           {" "}
-                          <div className="w-[18.43rem] h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] text-justify">
-                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify">
-                              <p className="mt-[1.04rem] text-nav-text text-[0.6875rem] font-normal leading-[1.2375rem]">
+                          <div className="w-auto h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] mb-[1.04rem] text-justify px-[1.88rem]">
+                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify hyphens-auto">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 {" "}
                                 Tax planning and filing services for real estate
                                 investors are essential components of financial
@@ -731,7 +738,7 @@ export default function Ourservice({ onClose }) {
                                 personalized tax strategies that align with
                                 their investment goals and objectives.{" "}
                               </p>{" "}
-                              <p className="mt-[1.04rem] text-nav-text text-[0.6875rem] font-normal leading-[1.2375rem]">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 {" "}
                                 Our comprehensive tax planning services begin
                                 with a thorough analysis of each client&apos;s
@@ -748,7 +755,7 @@ export default function Ourservice({ onClose }) {
                                 compliance with applicable tax laws and
                                 regulations.
                               </p>{" "}
-                              <p className="mt-[1.04rem] text-nav-text text-[0.6875rem] font-normal leading-[1.2375rem]">
+                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
                                 {" "}
                                 In addition to tax planning, we provide expert
                                 tax filing services tailored specifically for
@@ -773,7 +780,10 @@ export default function Ourservice({ onClose }) {
                     )
                   }
                 >
-                  <p className=" text-our-service-text text-[0.6875rem] font-semibold leading-normal">
+                  <p
+                    className=" text-our-service-text text-[0.75rem] font-semibold leading-normal"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Learn More
                   </p>
                 </button>

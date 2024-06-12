@@ -26,7 +26,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:hidden lg:hidden  md:hidden">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:hidden  md:hidden">
         <div className="fixed top-0 left-0 w-full z-50 h-[4.4375rem]  flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg">
           <div className="ml-[0.94rem]">
             <Link href="/">
@@ -118,7 +118,7 @@ export default function Navbar() {
       </div>
 
       {/* tab */}
-      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:hidden md:block">
+      {/* <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:hidden md:block">
         <div className="fixed top-0 w-full z-50 h-[4rem] flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg pl-[0.94rem] pr-[1.88rem] pt-[1rem] pb-[0.73rem]">
           <div className="h-[2.26rem] flex  justify-center items-center gap-[12.625rem] w-auto">
             <div className="w-[3.9375rem] h-[2.26906rem]">
@@ -139,8 +139,6 @@ export default function Navbar() {
                 <IoIosMenu className="h-[1.73rem] w-[2.5rem] text-nav-text" />
               )}
             </div>
-            {/* fixed top-0 left-0 right-0 bottom-0 flex w-full h-full text-center ease-in duration-500 z-[100] overflow-y-auto p-[32px] flex-col 
-              fixed top-0 left-[-100%] right-0 bottom-0 block w-full h-screen transition-colors ease-out duration-500 */}
           </div>
         </div>
         <div
@@ -161,7 +159,7 @@ export default function Navbar() {
           <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem] p-[0rem]"></div>
           <ul className="flex flex-col  gap-8 mt-8 w-full p-8 ">
             <li
-              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text "
+              className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text "
               onClick={() => handleCloseMenu("heromm")}
             >
               <p
@@ -173,7 +171,7 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("aboutmm")}
             >
               <p
@@ -186,7 +184,7 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("servicesmm")}
             >
               <p
@@ -198,7 +196,7 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("testimonialsmm")}
             >
               <p
@@ -210,7 +208,7 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("contactmm")}
             >
               <p
@@ -223,10 +221,10 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       {/* MOBILE...................................... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block">
         <div className="fixed top-0 w-full z-50 h-[4rem] flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg pl-[0.94rem] pr-[1.88rem] pt-[1rem] pb-[0.73rem]">
           <div className="h-[2.26rem] flex  justify-center items-center gap-[12.625rem] w-auto">
             <div className="w-[3.9375rem] h-[2.26906rem]">
@@ -269,11 +267,11 @@ export default function Navbar() {
           <div className="w-auto border border-stroke-main border-opacity-17 border-width-1 mt-[1.17rem] p-[0rem]"></div>
           <ul className="flex flex-col  gap-8 mt-8 w-full p-8 ">
             <li
-              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text "
+              className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text "
               onClick={() => handleCloseMenu("herom")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Home
@@ -281,11 +279,11 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("aboutm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[2rem] xl:text-[1rem] "
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[1rem] xl:text-[1rem] "
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 About
@@ -294,11 +292,11 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("servicesm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Services
@@ -306,11 +304,11 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("testimonialsm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Testimonials
@@ -318,11 +316,11 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li>
             <li
-              className="text-lg font-semibold flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
+              className="text-lg font-thin flex gap-[7.69rem]  justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("contactm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[2rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Contact

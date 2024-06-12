@@ -76,7 +76,7 @@ export default function Hero() {
 
       <div className="sm:hidden 2xl:hidden 2xl-max:hidden xl:block lg:block  md:block">
         <div
-          className="bg-cover h-[57.3125rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+          className="bg-cover h-[57.3125rem] w-full bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
           style={{
             backgroundImage: "url('/landing-img2.png')",
           }}
@@ -88,7 +88,7 @@ export default function Hero() {
                 animate={{ opacity: 50, y: 0 }}
                 transition={{ duration: 1, ease: "easeIn" }}
                 exit={{ opacity: 0 }}
-                className="text-nav-text font-ameretto text-[4.6875rem] leading-normal tracking-[0.9375rem] font-normal"
+                className="text-nav-text font-ameretto text-[3.4375rem] leading-normal tracking-[0.9375rem] font-normal"
               >
                 STERLING HOMES
               </motion.h1>
@@ -134,7 +134,7 @@ export default function Hero() {
               <h1 className="text-nav-text font-ameretto text-[1.875rem] leading-normal  font-normal tracking-[0.375rem]">
                 STERLING HOMES
               </h1>
-              <p className="flex justify-center items-center text-nav-text text-[0.4375rem]  font-extralight">
+              <p className="flex justify-center items-center text-nav-text text-[0.4375rem]  font-extralight mt-[0.75rem]">
                 Building dreams, one home at a time, with integrity and
                 excellence
               </p>

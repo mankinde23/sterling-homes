@@ -48,19 +48,19 @@ export function Carousel() {
 
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden">
         <div className="embla relative ">
           <div
-            className="embla__viewport overflow-hidden w-[42rem] h-[25.6875rem]"
+            className="embla__viewport overflow-hidden w-[42rem] h-[25.6875rem] lg:w-auto lg:h-[18.5rem]"
             ref={emblaRef}
           >
             <div className="embla__container flex gap-5">
               <div
-                className={` embla__slide   pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] shadow-md flex flex-col items-center${
+                className={` embla__slide   pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] shadow-md flex flex-col items-center lg:px-[1rem] lg:pb-[1rem]${
                   theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
                 }`}
               >
-                <div className="w-[4.0625rem] h-[4.0625rem]">
+                <div className="w-[4.0625rem] h-[4.0625rem] lg:w-[2.5rem] lg:h-[2.5rem]">
                   <div
                     className="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]"
                     // style={{ backgroundImage: "url('/ahmad.png')" }}
@@ -72,38 +72,38 @@ export function Carousel() {
                     />
                   </div>
                 </div>
-                <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
-                  <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
-                  <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal w-[33.3125rem] h-[4rem]">
+                <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem] lg:gap-[0.0625rem] lg:items-baseline lg:mt-[1.64rem]">
+                  <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem] lg:w-auto lg:h-auto" />
+                  <p className="text-nav-text text-center text-[0.8125rem] font-extralight leading-normal w-[33.3125rem] h-[4rem] lg:text-[0.6875rem] lg:w-auto">
                     Soji and Rukayat swiftly recognized a rapidly developing
                     neighborhood in Houston for an early investment in rentals.
                     I am pleased with the short-term rental performance and also
                     assisting in expanding my investment portfolio.
                   </p>
-                  <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
+                  <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem] lg:w-auto lg:h-auto" />
                 </div>
-                <div className="flex flex-col items-center gap-[0.25rem] w-[11.9375rem] mt-[5.44rem]">
-                  <p className="w-[8.75rem] h-[1.75rem] text-nav-text text-[1.25rem] font-medium leading-normal">
+                <div className="flex flex-col items-center gap-[0.25rem] w-[11.9375rem] mt-[5.44rem] lg:mt-[2.5rem]">
+                  <p className="w-[8.75rem] h-[1.75rem] text-nav-text text-[1.25rem] font-medium leading-normal lg:text-[0.75rem] lg:flex lg:justify-center lg:h-auto">
                     Ahmad Isiaka
                   </p>
-                  <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const">
+                  <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const lg:text-[0.625rem]">
                     Homeowner | Houston, Texas
                   </p>
                 </div>
               </div>
               <div
-                className={` embla__slide  pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md flex flex-col items-center${
+                className={` embla__slide  pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem] h-[25rem] overflow-hidden rounded-[0.4375rem]  shadow-md flex flex-col items-center lg:px-[1rem] lg:pb-[1rem]${
                   theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
                 }`}
               >
-                <div className="w-[4.0625rem] h-[4.0625rem]">
+                <div className="w-[4.0625rem] h-[4.0625rem] lg:w-[2.5rem] lg:h-[2.5rem]">
                   <div class="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]">
                     <Image src={kabir} alt="" />
                   </div>
                 </div>
-                <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
-                  <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
-                  <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal  w-[33.3125rem] h-[5rem]">
+                <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem] lg:gap-[0.0625rem] lg:items-baseline lg:mt-[1.64rem]">
+                  <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem] lg:w-auto lg:h-auto" />
+                  <p className="text-nav-text text-center text-[0.8125rem] font-extralight leading-normal  w-[33.3125rem] h-[5rem] lg:text-[0.6875rem] lg:w-auto">
                     Previous realtors I worked with didn&apos;t conduct detailed
                     risk evaluations during house searches. Rukki and Soji
                     exceeded my expectations by thoroughly assessing area risks
@@ -111,30 +111,30 @@ export function Carousel() {
                     managing the decoration of the rental property. The results
                     have been outstanding!
                   </p>
-                  <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
+                  <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem] lg:w-auto lg:h-auto" />
                 </div>
-                <div className="flex flex-col items-center gap-[0.25rem] w-[12.3125rem] mt-[4.44rem]">
-                  <p className="w-[7.3125rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal">
+                <div className="flex flex-col items-center gap-[0.25rem] w-[12.3125rem] mt-[4.44rem] lg:mt-[2.5rem]">
+                  <p className="w-[7.3125rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal lg:text-[0.75rem] lg:flex lg:justify-center lg:h-auto">
                     Kabir Wolly
                   </p>
-                  <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const">
+                  <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const lg:text-[0.625rem]">
                     Homeowner | Atlanta, Georgia
                   </p>
                 </div>
               </div>
               <div
-                className={` embla__slide pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] mr-[1.25rem]  shadow-md flex flex-col items-center${
+                className={` embla__slide pt-[3.06rem] pr-[4.13rem] pb-[3.94rem] pl-[4.13rem]  h-[25rem] overflow-hidden rounded-[0.4375rem] mr-[1.25rem]  shadow-md flex flex-col items-center lg:px-[1rem] lg:pb-[1rem]${
                   theme === "light" ? " bg-testimonial-w" : " bg-testimonial-b"
                 }`}
               >
-                <div className="w-[4.0625rem] h-[4.0625rem]">
+                <div className="w-[4.0625rem] h-[4.0625rem] lg:w-[2.5rem] lg:h-[2.5rem]">
                   <div className="bg-lightgray bg-center bg-cover bg-no-repeat rounded-[4.0625rem]">
                     <Image src={rahman} alt="" />
                   </div>
                 </div>
-                <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem]">
-                  <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem]" />
-                  <p className="text-nav-text text-center text-[0.8125rem] font-normal leading-normal w-[33.3125rem] h-[4rem]">
+                <div className="flex h-[5.5rem] gap-[1.875rem] mt-[2.81rem] lg:gap-[0.0625rem] lg:items-baseline lg:mt-[1.64rem]">
+                  <FaQuoteLeft className="text-sterling-theme  w-[0.625rem] h-[0.54456rem] lg:w-auto lg:h-auto" />
+                  <p className="text-nav-text text-center text-[0.8125rem] font-extralight leading-normal w-[33.3125rem] h-[4rem] lg:text-[0.6875rem] lg:w-auto">
                     I couldn&apos;t have achieved a strong tax return without
                     Sterling Homes. Their expert advice on home improvement
                     strategies and real estate investor tax requirements ensured
@@ -142,20 +142,20 @@ export function Carousel() {
                     investment. They are the best real estate tax consultants
                     I&apos;ve ever worked with!
                   </p>
-                  <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem]" />
+                  <FaQuoteRight className="text-sterling-theme w-[0.625rem] h-[0.54456rem] lg:w-auto lg:h-auto" />
                 </div>
-                <div className="flex flex-col items-center gap-[0.25rem] w-[14.0625rem] mt-[5.44rem]">
-                  <p className="w-[5.5625rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal">
+                <div className="flex flex-col items-center gap-[0.25rem] w-[14.0625rem] mt-[5.44rem] lg:mt-[2.5rem]">
+                  <p className="w-[5.5625rem] h-[1.875rem] text-nav-text text-[1.25rem] font-medium leading-normal lg:text-[0.75rem] lg:flex lg:justify-center lg:h-auto">
                     Rahman
                   </p>
-                  <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const">
+                  <p className="text-[0.8125rem] font-normal leading-normal text-testimonial-const lg:text-[0.625rem] ">
                     Homeowner | Baltimore, Maryland
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className=" flex  items-center justify-center w-auto h-[3.125rem] gap-[1.875rem] mt-[2.56rem] ml-[10rem]">
+          <div className=" flex  items-center justify-center w-auto h-[3.125rem] gap-[1.875rem] mt-[2.56rem] ml-[14rem] lg:ml-0">
             <button
               className={`embla__next  hover:bg-sterling-theme border-[3px] rounded-full transition duration-500 ease-in-out ${
                 theme === "light"
@@ -182,7 +182,7 @@ export function Carousel() {
 
       {/* Mobile.... */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block">
         <div className="embla relative max-w-[20.625] ">
           <div
             className="embla__viewport overflow-hidden w-[19.625rem] h-[14.9375rem]"

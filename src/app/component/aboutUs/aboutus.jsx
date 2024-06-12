@@ -59,11 +59,11 @@ export default function Aboutus() {
   return (
     <>
       <div
-        className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:block 2xl-max:w-auto"
+        className="sm:hidden 2xl:block 2xl-max:block xl:block lg:hidden  md:hidden 2xl-max:w-auto"
         id="about"
       >
         <div
-          className={`h-[53.575rem] w-auto px-[4.51rem]  ${
+          className={`h-auto w-auto px-[3.75rem] pb-[5rem] ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
@@ -71,83 +71,82 @@ export default function Aboutus() {
           id="about"
           ref={ref1}
         >
-          <div className="flex  justify-between gap-[3.94rem] items-center pt-[6.25rem]">
+          <div className="flex  gap-[3.45rem] items-center pt-[5.25rem] justify-between flex-col">
             <div>
               <motion.div
                 initial={{ opacity: 0, y: 0 }}
-                // animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 0 }}
                 animate={{
                   opacity: shouldAnimate1 ? 1 : 0,
                   y: shouldAnimate1 ? 0 : 0,
                 }}
-                // transition={{ duration: 1.5, ease: "easeIn" }}
                 transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
                 exit={{ opacity: 0 }}
-                className="h-[5.8125rem]"
+                className="h-auto"
               >
                 <h1
                   className={` text-[3.3125rem] font-bold leading-normal ${
                     theme === "light" ? "text-about-b" : "text-nav-text"
                   }`}
+                  style={{ fontFamily: " Montserrat, sans-serif" }}
                 >
                   ABOUT US
                 </h1>
-                <p className=" text-sterling-theme text-[0.875rem] font-medium leading-[0.105rem]">
+                <p
+                  className=" text-sterling-theme text-[0.875rem] font-medium leading-[0.105rem]"
+                  style={{ fontFamily: " Montserrat, sans-serif" }}
+                >
                   Est . 2024, March.
                 </p>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                // animate={{
-                //   opacity: isInView1 ? 1 : 0,
-                //   x: isInView1 ? 0 : -100,
-                // }}
+                initial={{ opacity: 0, y: 0 }}
                 animate={{
-                  opacity: shouldAnimate1 ? 1 : 0,
-                  x: shouldAnimate1 ? 0 : -100,
+                  opacity: animateImage1 ? 1 : 0,
+                  y: animateImage1 ? 0 : 0,
                 }}
-                // transition={{ duration: 1, ease: "easeIn" }}
-                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                transition={{ duration: 1.5, ease: "easeIn" }}
                 exit={{ opacity: 0 }}
-                className=" h-[18.75rem] w-[35.625rem] mt-[2.69rem]"
+                className="mt-[1.41rem]"
               >
-                <p
-                  className={` text-[0.875rem] font-normal text-justify ${
-                    theme === "light" ? "text-about-t" : "text-nav-text"
-                  }`}
-                >
-                  Established on June 11, 2022, by accomplished founders with
-                  extensive experience in technology across critical sectors in
-                  the United States, our mission is to ensure customers enjoy an
-                  exceptional experience throughout the entire lifecycle of home
-                  ownership. From the initial search for a home to the purchase
-                  process, ongoing house maintenance, and optimizing tax
-                  benefits for both residential and commercial properties, we
-                  are committed to delivering excellence. Through proactive
-                  measures to identify and assess property risks, we have
-                  successfully closed over 50 homes for our customers since our
-                  inception, with a cumulative market value exceeding
-                  $20,000,000. We take pride in achieving appreciable equity
-                  growth for all our clients, distinguishing ourselves in both
-                  residential and commercial real estate sectors.
-                </p>
+                <Image src={mock} alt="video" className="" />
               </motion.div>
             </div>
             <motion.div
-              initial={{ opacity: 0, y: 0 }}
-              // animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 0 }}
-              // animate={{
-              //   opacity: shouldAnimate && isInView ? 1 : 0,
-              //   y: shouldAnimate && isInView ? 0 : 0,
-              // }}
+              initial={{ opacity: 0, x: -100 }}
               animate={{
-                opacity: animateImage1 ? 1 : 0,
-                y: animateImage1 ? 0 : 0,
+                opacity: shouldAnimate1 ? 1 : 0,
+                x: shouldAnimate1 ? 0 : -100,
               }}
-              transition={{ duration: 1.5, ease: "easeIn" }}
+              transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
               exit={{ opacity: 0 }}
+              className=" h-auto w-auto mt-[1.87rem]"
             >
-              <Image src={mock} alt="" className="w-[45.3125rem]" />
+              <p
+                className={` text-[1.5rem] font-normal text-justify leading-[2.55rem] hyphens-auto ${
+                  theme === "light" ? "text-about-t" : "text-nav-text"
+                }`}
+              >
+                Established on June 11, 2022, by accomplished founders with
+                extensive experience in technology across critical sectors in
+                the United States, our mission is to ensure customers enjoy an
+                exceptional experience throughout the entire lifecycle of home
+                ownership. From the initial search for a home to the purchase
+                process, ongoing house maintenance, and optimizing tax benefits
+                for both residential and commercial properties, we are committed
+                to delivering excellence.
+              </p>
+              <p
+                className={` text-[1.5rem] font-normal text-justify leading-[2.55rem] mt-[1.87rem] hyphens-auto ${
+                  theme === "light" ? "text-about-t" : "text-nav-text"
+                }`}
+              >
+                Through proactive measures to identify and assess property
+                risks, we have successfully closed over 50 homes for our
+                customers since our inception, with a cumulative market value
+                exceeding $20,000,000. We take pride in achieving appreciable
+                equity growth for all our clients, distinguishing ourselves in
+                both residential and commercial real estate sectors.
+              </p>
             </motion.div>
           </div>
           <motion.div
@@ -158,18 +157,18 @@ export default function Aboutus() {
             }}
             transition={{ duration: 1, ease: "easeIn" }}
             exit={{ opacity: 0 }}
-            className="gap-[9.0625rem] flex  justify-between items-center mt-[7.56rem] w-auto h-[7.93rem]"
+            className="gap-[3.62rem] flex items-baseline justify-between mt-[7.56rem] w-auto h-auto flex-col"
           >
-            <div className="flex flex-col gap-[0.8125rem] w-[24.5rem]">
+            <div className="flex flex-col gap-[0.81rem] ">
               <p
-                className={` text-[1.25rem] font-semibold ${
+                className={` text-[1.75rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
                 Commercial and Luxury Homes Focus
               </p>
               <p
-                className={` text-[0.75rem] font-normal leading-normal h-[5.625rem] w-[19.18rem] ${
+                className={` text-[1.25rem] font-normal  h-[5.625rem]  leading-normal ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -179,16 +178,16 @@ export default function Aboutus() {
                 and service.
               </p>
             </div>
-            <div className="flex flex-col gap-[0.8125rem] w-[19.1875rem]">
+            <div className="flex flex-col gap-[0.81rem]">
               <p
-                className={` text-[1.25rem] font-semibold ${
+                className={` text-[1.75rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
                 Realtor Services Description
               </p>
               <p
-                className={` text-[0.75rem] font-normal leading-normal h-[5.625rem] w-[19.18rem] ${
+                className={` text-[1.25rem] font-normal leading-normal h-[5.625rem]  ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -199,16 +198,16 @@ export default function Aboutus() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-[0.8125rem] w-[19.1875rem]">
+            <div className="flex flex-col gap-[0.81rem] ">
               <p
-                className={` text-[1.25rem] font-semibold ${
+                className={` text-[1.75rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
                 Tax Advisory
               </p>
               <p
-                className={` text-[0.75rem] font-normal leading-normal h-[5.625rem] w-[19.18rem] ${
+                className={` text-[1.25rem] font-normal leading-normal h-[5.625rem] ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -221,11 +220,12 @@ export default function Aboutus() {
           </motion.div>
         </div>
       </div>
+
       {/* MOBILE ....... */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block">
         <div
-          className={`h-[68.125rem] w-auto  px-[1.87rem] pt-[3.06rem] ${
+          className={`h-auto w-auto  px-[1.87rem] pt-[3.06rem] pb-[3.75rem] ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
@@ -253,9 +253,9 @@ export default function Aboutus() {
             <Image src={mock} alt="" className="w-auto " />
           </div>
 
-          <div className=" w-auto text-justify hyphens-auto mt-[1.75rem]">
+          <div className=" w-auto text-justify hyphens-auto mt-[1.75rem] flex flex-col gap-[3rem]">
             <p
-              className={` text-[0.6875rem] font-extralight  ${
+              className={` text-[0.875rem] font-extralight leading-[1.4875rem] ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
             >
@@ -266,16 +266,24 @@ export default function Aboutus() {
               ownership. From the initial search for a home to the purchase
               process, ongoing house maintenance, and optimizing tax benefits
               for both residential and commercial properties, we are committed
-              to delivering excellence. Through proactive measures to identify
-              and assess property risks, we have successfully closed over 50
-              homes for our customers since our inception, with a cumulative
-              market value exceeding $20,000,000. We take pride in achieving
-              appreciable equity growth for all our clients, distinguishing
-              ourselves in both residential and commercial real estate sectors.
+              to delivering excellence.{" "}
+            </p>
+            <p
+              className={` text-[0.875rem] font-extralight leading-[1.4875rem] ${
+                theme === "light" ? "text-about-t" : "text-nav-text"
+              }`}
+            >
+              {" "}
+              Through proactive measures to identify and assess property risks,
+              we have successfully closed over 50 homes for our customers since
+              our inception, with a cumulative market value exceeding
+              $20,000,000. We take pride in achieving appreciable equity growth
+              for all our clients, distinguishing ourselves in both residential
+              and commercial real estate sectors.
             </p>
           </div>
 
-          <div className="flex flex-col gap-[0.81rem] w-auto mt-[3.94rem]">
+          <div className="flex flex-col gap-[0.81rem] w-auto mt-[10rem]">
             <p
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
@@ -284,7 +292,7 @@ export default function Aboutus() {
               Commercial and Luxury Homes Focus
             </p>
             <p
-              className={` text-[0.6875rem] font-thin leading-normal h-[6rem]  text-justify  hyphens-auto ${
+              className={` text-[0.8125rem] font-thin leading-normal h-auto  text-justify  hyphens-auto ${
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
@@ -294,7 +302,7 @@ export default function Aboutus() {
               service.
             </p>
           </div>
-          <div className="flex flex-col gap-[0.81rem] w-auto  mt-[0.31rem]">
+          <div className="flex flex-col gap-[0.81rem] w-auto  mt-[3.62rem]">
             <p
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
@@ -303,7 +311,7 @@ export default function Aboutus() {
               Realtor Services Description
             </p>
             <p
-              className={`text-[0.6875rem] font-thin leading-normal h-[6rem]  text-justify hyphens-auto ${
+              className={`text-[0.8125rem] font-thin leading-normal h-auto  text-justify hyphens-auto ${
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >
@@ -313,7 +321,7 @@ export default function Aboutus() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-[0.81rem] w-auto  mt-[0.31rem]">
+          <div className="flex flex-col gap-[0.81rem] w-auto  mt-[3.62rem]">
             <p
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
@@ -322,7 +330,7 @@ export default function Aboutus() {
               Tax Advisory
             </p>
             <p
-              className={`text-[0.6875rem] font-thin leading-normal h-[6rem] text-justify hyphens-auto ${
+              className={`text-[0.8125rem] font-thin leading-normal h-auto text-justify hyphens-auto ${
                 theme === "light" ? "text-about-s-w" : "text-about-s-b"
               }`}
             >

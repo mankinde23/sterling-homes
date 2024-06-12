@@ -95,8 +95,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <div
-            className="theme width-fit-content 2xl-max:w-full 2xl:w-fit "
-            // style={{ width: "fit-content" }}
+            className="theme"
+            // style={{ width: "fit-content" }} width-fit-content 2xl-max:w-full 2xl:w-fit
           >
             {/* <Navbar /> */}
             {children}
