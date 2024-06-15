@@ -271,7 +271,7 @@ export default function Navbar() {
               onClick={() => handleCloseMenu("herom")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Home
@@ -283,7 +283,7 @@ export default function Navbar() {
               onClick={() => handleCloseMenu("aboutm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[1rem] xl:text-[1rem] "
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal "
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 About
@@ -296,7 +296,7 @@ export default function Navbar() {
               onClick={() => handleCloseMenu("servicesm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Services
@@ -308,7 +308,7 @@ export default function Navbar() {
               onClick={() => handleCloseMenu("testimonialsm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Testimonials
@@ -320,7 +320,7 @@ export default function Navbar() {
               onClick={() => handleCloseMenu("contactm")}
             >
               <p
-                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem]"
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal  md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal"
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Contact
