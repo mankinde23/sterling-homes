@@ -447,13 +447,17 @@ export default function Ourservice({ onClose }) {
           }`}
         >
           <div className=" w-[4.75rem] h-[2.25rem] md:pl-[1.81rem] md:block lg:w-auto lg:flex lg:flex-col lg:justify-center lg:items-center lg:pl-0">
-            <p className="text-about-s-w text-[0.8125rem] font-bold leading-normal  ">
+            <p
+              className="text-about-s-w text-[0.8125rem] font-semibold leading-normal  "
+              style={{ fontFamily: " Montserrat, sans-serif" }}
+            >
               OUR
             </p>
             <h1
               className={` md:text-[1.5rem] lg:text-[2rem] font-semibold leading-normal ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Services
             </h1>
@@ -486,7 +490,7 @@ export default function Ourservice({ onClose }) {
                           <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
                             <h2
                               className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]"
-                              // style={{ fontFamily: " Montserrat, sans-serif" }}
+                              style={{ fontFamily: " Montserrat, sans-serif" }}
                             >
                               Home Buying & Selling
                             </h2>
@@ -502,8 +506,8 @@ export default function Ourservice({ onClose }) {
                         <div className="flex  items-center">
                           {" "}
                           <div className="w-auto h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] px-[1.88rem] mb-[1.04rem] ">
-                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify hyphens-auto">
-                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                            <div className="text-nav-text text-[1.25rem] font-normal text-justify hyphens-auto">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 {" "}
                                 Buying a home, whether residential or
                                 commercial, involves a multifaceted process that
@@ -523,7 +527,7 @@ export default function Ourservice({ onClose }) {
                                 recommendations to ensure a smooth and
                                 successful purchase.{" "}
                               </p>{" "}
-                              <p className="text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] mt-[1.04rem] lg:text-[0.875rem]">
+                              <p className="text-nav-text  text-[0.75rem] font-normal leading-[1.9rem] mt-[1.04rem] lg:text-[0.875rem]">
                                 For commercial property buyers, the homebuying
                                 process involves a different set of
                                 considerations tailored to business needs. As
@@ -542,7 +546,7 @@ export default function Ourservice({ onClose }) {
                                 facilitate a seamless transaction and help you
                                 achieve your commercial real estate objectives.
                               </p>{" "}
-                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 {" "}
                                 In both residential and commercial real estate
                                 transactions, my role extends beyond property
@@ -585,7 +589,10 @@ export default function Ourservice({ onClose }) {
             >
               <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
                 <div className="flex flex-col">
-                  <p className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]">
+                  <p
+                    className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Home Leasing Service
                   </p>
                   <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem] ">
@@ -615,8 +622,8 @@ export default function Ourservice({ onClose }) {
                         <div className="flex  items-center">
                           {" "}
                           <div className="w-auto h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] mb-[1.04rem] text-justify px-[1.88rem]">
-                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] hyphens-auto">
-                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                            <div className="text-nav-text text-[1.25rem] font-normal hyphens-auto">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 As a seasoned realtor offering home leasing
                                 services, I specialize in facilitating seamless
                                 and efficient rental transactions for both
@@ -631,7 +638,7 @@ export default function Ourservice({ onClose }) {
                                 maximizing rental income and ensuring a positive
                                 rental experience for property owners.{" "}
                               </p>{" "}
-                              <p className="mt-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                              <p className="mt-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 For tenants seeking to lease a home, I assist in
                                 identifying suitable rental properties based on
                                 preferences such as location, budget, and
@@ -646,7 +653,7 @@ export default function Ourservice({ onClose }) {
                                 meets their needs and provides a comfortable
                                 living environment.
                               </p>{" "}
-                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text  text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 Throughout the home leasing process, I am
                                 committed to providing personalized attention
                                 and exceptional service to all parties involved.
@@ -689,7 +696,10 @@ export default function Ourservice({ onClose }) {
             >
               <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
                 <div className="flex flex-col">
-                  <p className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]">
+                  <p
+                    className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Tax Preparation & Filing
                   </p>
                   <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem]">
@@ -723,8 +733,8 @@ export default function Ourservice({ onClose }) {
                         <div className="flex  items-center">
                           {" "}
                           <div className="w-auto h-[20.81rem] overflow-y-auto max-h-[26] mt-[1.04rem] mb-[1.04rem] text-justify px-[1.88rem]">
-                            <div className="text-nav-text text-[1.25rem] font-normal leading-[1.5475rem] text-justify hyphens-auto">
-                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                            <div className="text-nav-text text-[1.25rem] font-normal text-justify hyphens-auto">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 {" "}
                                 Tax planning and filing services for real estate
                                 investors are essential components of financial
@@ -738,7 +748,7 @@ export default function Ourservice({ onClose }) {
                                 personalized tax strategies that align with
                                 their investment goals and objectives.{" "}
                               </p>{" "}
-                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                              <p className="mt-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 {" "}
                                 Our comprehensive tax planning services begin
                                 with a thorough analysis of each client&apos;s
@@ -755,7 +765,7 @@ export default function Ourservice({ onClose }) {
                                 compliance with applicable tax laws and
                                 regulations.
                               </p>{" "}
-                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.2375rem] lg:text-[0.875rem]">
+                              <p className="mt-[1.04rem] mb-[1.04rem] text-nav-text text-[0.75rem] font-normal leading-[1.9rem] lg:text-[0.875rem]">
                                 {" "}
                                 In addition to tax planning, we provide expert
                                 tax filing services tailored specifically for

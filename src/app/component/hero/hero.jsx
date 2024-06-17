@@ -78,7 +78,7 @@ export default function Hero() {
         <div
           className="bg-cover h-[57.3125rem] w-full bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
           style={{
-            backgroundImage: "url('/landing-img2.png')",
+            backgroundImage: "url('/landingt-img2.png')",
           }}
         >
           <div className="flex justify-center items-end ">
@@ -126,7 +126,7 @@ export default function Hero() {
         <div
           className="bg-cover h-[42.0625rem] w-full bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
           style={{
-            backgroundImage: "url('/sterling-bg-m.png')",
+            backgroundImage: "url('/landingt-img2.png')",
           }}
         >
           <div className="flex justify-center items-end w-full">
@@ -141,7 +141,7 @@ export default function Hero() {
               <div className="flex justify-center items-center mt-[1.56rem]">
                 <Link href="/catalogue">
                   <button className="w-[6.6875rem] h-[1.6875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
-                    <p className="text-nav-text text-[0.625rem] font-light leading-normal">
+                    <p className="text-nav-text text-[0.625rem] font-semibold leading-normal">
                       View Catalogue
                     </p>
                   </button>

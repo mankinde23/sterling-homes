@@ -241,13 +241,6 @@ export default function Aboutus() {
             >
               ABOUT US
             </h1>
-            <p
-              className=" text-sterling-theme text-[0.4375rem]
-               font-medium leading-normal] mt-[0.25rem] tracking-[0.0525rem]"
-              style={{ fontFamily: " Montserrat, sans-serif" }}
-            >
-              Est . 2024, March.
-            </p>
           </div>
           <div className="mt-[1.38rem]">
             <Image src={mock} alt="" className="w-auto " />
@@ -288,6 +281,7 @@ export default function Aboutus() {
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Commercial and Luxury Homes Focus
             </p>
@@ -307,6 +301,7 @@ export default function Aboutus() {
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Realtor Services Description
             </p>
@@ -326,6 +321,7 @@ export default function Aboutus() {
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Tax Advisory
             </p>

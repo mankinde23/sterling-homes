@@ -268,7 +268,7 @@ export default function Footer() {
                 FOLLOW US
               </p>
               <a
-                href="https://github.com/mankinde23"
+                href="https://www.twitter.com/sterlinghomes22"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-[1rem] items-center"
@@ -303,7 +303,7 @@ export default function Footer() {
             </a>
 
             <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
-              +1 9062818990
+              +1 (770) 480-9107
             </p>
           </div>
           <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-footer-s  mt-[4.37rem] px-[0rem]"></div>

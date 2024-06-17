@@ -233,7 +233,10 @@ export default function Founders() {
           <div className="flex w-auto h-[2.625rem] flex-col px-[1.87rem] sm:items-start md:items-center">
             <div className=" w-[5.6875rem] gap-[0.5rem] flex items-center h-[1.125rem]">
               <div className="w-[1.625rem] h-[0.0625rem] rounded-[2.125rem] bg-sterling-theme"></div>
-              <p className="text-sterling-theme text-[0.5rem] font-semibold tracking-[0.055rem] leading-normal">
+              <p
+                className="text-sterling-theme text-[0.5rem] font-semibold tracking-[0.055rem] leading-normal"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
                 FOUNDERS{" "}
               </p>
             </div>
@@ -241,6 +244,7 @@ export default function Founders() {
               className={` text-[1.5rem] font-semibold leading-normal tracking-[0.2rem] ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               PROFILE
             </p>
@@ -265,7 +269,10 @@ export default function Founders() {
               </div>
               <div className="w-auto sm:h-[17.0625rem] md:h-[17.0625rem] bg-navbar-bg backdrop-blur-[20px] lg:h-[13.0625rem]">
                 <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.19rem] mt-[2.19rem] mr-[1.63rem]">
-                  <p className="text-nav-text text-[1.25rem] font-semibold leading-normal lg:text-[1.25rem]">
+                  <p
+                    className="text-nav-text text-[1.25rem] font-semibold leading-normal lg:text-[1.25rem]"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Adesoji Bello
                   </p>
                   <div className="flex w-[4.4375rem] h-[1.8125rem] gap-[0.69rem]">
@@ -319,7 +326,10 @@ export default function Founders() {
               </div>
               <div className="w-auto sm:h-[17.0625rem] md:h-[17.0625rem] bg-navbar-bg backdrop-blur-[20px] lg:h-[13.0625rem]">
                 <div className="h-[1.5rem] w-auto flex justify-between items-center ml-[1.19rem] mt-[2.19rem] mr-[1.63rem]">
-                  <p className="text-nav-text text-[1.25rem] font-semibold leading-normal lg:text-[1.25rem]">
+                  <p
+                    className="text-nav-text text-[1.25rem] font-semibold leading-normal lg:text-[1.25rem]"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Rukayat Adeosun
                   </p>
                   <div className=" w-[4.4375rem] h-[1.8125rem] flex justify-end">

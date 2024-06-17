@@ -239,12 +239,15 @@ export default function Contact() {
 
       <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block">
         <div
-          className="bg-cover h-[17rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 pt-[3.875rem] pr-[1.875rem] pb-[6.625rem] pl-[1.875rem] gap-[1.125rem] flex flex-col "
+          className="bg-cover h-[17rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 pt-[3.875rem] pr-[1.875rem] pb-[6.625rem] pl-[1.875rem] gap-[0.75rem] flex flex-col "
           style={{
             backgroundImage: "url('/contactm.png')",
           }}
         >
-          <p className="text-nav-text text-[1.875rem] font-semibold leading-normal">
+          <p
+            className="text-nav-text text-[1.875rem] font-semibold leading-normal"
+            style={{ fontFamily: " Montserrat, sans-serif" }}
+          >
             Sterling Homes
           </p>
           <div className="w-auto h-[3.625rem] ">

@@ -127,6 +127,7 @@ export default function Testimonial() {
                   ? " text-sterling-theme"
                   : "text-our-service-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Testimonials
             </p>
@@ -141,7 +142,7 @@ export default function Testimonial() {
             </p>
           </div>
 
-          <div>
+          <div className="mt-[1rem]">
             <Carousel />
           </div>
         </div>

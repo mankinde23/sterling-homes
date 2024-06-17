@@ -331,9 +331,9 @@ export default function Catalogue() {
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
         >
-          <div className="flex pt-[5.38rem] justify-between items-center  w-auto ">
+          <div className="flex pt-[5.38rem] justify-between items-center  w-auto pr-[2rem]">
             <Link href="/">
-              <div className="w-[2.4375rem] h-[1.3125rem] p-[0.625rem] flex justify-center items-center">
+              <div className=" ">
                 <MdKeyboardArrowLeft className="w-[2rem] h-[2.5rem] text-sterling-theme" />
               </div>
             </Link>
