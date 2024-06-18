@@ -91,7 +91,7 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
-              className="bg-cover pt-[25.44rem]  w-[16.77081rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100  "
+              className="bg-cover pt-[25.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100  "
               style={{
                 backgroundImage: "url('/service1.png')",
               }}
@@ -214,7 +214,7 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1.5, ease: "backOut" }}
               exit={{ opacity: 0 }}
-              className="bg-cover  pt-[25.44rem]  w-[16.77081rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+              className="bg-cover  pt-[25.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
                 backgroundImage: "url('/services2.png')",
               }}
@@ -326,7 +326,7 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1.5, ease: "backOut" }}
               exit={{ opacity: 0 }}
-              className="bg-cover pt-[25.44rem]  w-[16.77081rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
+              className="bg-cover pt-[25.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
               style={{
                 backgroundImage: "url('/services3.png')",
               }}

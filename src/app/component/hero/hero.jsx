@@ -23,9 +23,9 @@ export default function Hero() {
         id="hero"
       >
         <div
-          className="bg-cover h-[57.3125rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+          className="bg-cover h-[64rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
           style={{
-            backgroundImage: "url('/landing-img2.png')",
+            backgroundImage: "url('/landing-img3.png')",
           }}
         >
           <div className="flex justify-center items-end ">

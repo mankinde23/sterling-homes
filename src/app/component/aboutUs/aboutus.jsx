@@ -91,12 +91,6 @@ export default function Aboutus() {
                 >
                   ABOUT US
                 </h1>
-                <p
-                  className=" text-sterling-theme text-[0.875rem] font-medium leading-[0.105rem]"
-                  style={{ fontFamily: " Montserrat, sans-serif" }}
-                >
-                  Est . 2024, March.
-                </p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 0 }}
