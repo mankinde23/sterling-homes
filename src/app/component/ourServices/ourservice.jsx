@@ -326,7 +326,7 @@ export default function Ourservice({ onClose }) {
               }}
               transition={{ duration: 1.5, ease: "backOut" }}
               exit={{ opacity: 0 }}
-              className="bg-cover pt-[23.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
+              className="bg-cover pt-[25.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
               style={{
                 backgroundImage: "url('/services3.png')",
               }}
@@ -337,9 +337,11 @@ export default function Ourservice({ onClose }) {
                     Tax Preparation & Filing
                   </p>
                   <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem]">
-                    Providing strategic tax planning and filing services
+                    {/* Providing strategic tax planning and filing services
                     tailored for real estate investors to optimize tax benefits
-                    and maximize gains.
+                    and maximize gains. */}
+                    Offering tailored tax planning and filing services for real
+                    estate investors to optimize benefits and maximize gains.
                   </p>
                 </div>
                 <button
