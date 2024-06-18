@@ -272,7 +272,7 @@ export default function Aboutus() {
 
           <div className="flex flex-col gap-[0.81rem] w-auto mt-[10rem]">
             <p
-              className={` text-[0.875rem] font-semibold ${
+              className={` text-[0.875rem] font-medium ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
               style={{ fontFamily: " Montserrat, sans-serif" }}
