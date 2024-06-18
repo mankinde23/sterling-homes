@@ -87,7 +87,7 @@ export default function Footer() {
                   FOLLOW US
                 </p>
                 <a
-                  href="https://github.com/mankinde23"
+                  href="https://www.twitter.com/sterlinghomes22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex gap-[1rem] items-center"
@@ -120,7 +120,7 @@ export default function Footer() {
                 </a>
 
                 <p className="w-auto h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test1">
-                  +1 9062818990
+                  +1 (770) 480-9107
                 </p>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function Footer() {
                   FOLLOW US
                 </p>
                 <a
-                  href="https://github.com/mankinde23"
+                  href="https://www.twitter.com/sterlinghomes22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex gap-[1rem] items-center"
@@ -212,7 +212,7 @@ export default function Footer() {
                 </a>
 
                 <p className="w-[17.0625rem] h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test1 lg:text-[0.6875rem] lg:w-auto lg:h-auto">
-                  +1 9062818990
+                  +1 (770) 480-9107
                 </p>
               </div>
             </div>
