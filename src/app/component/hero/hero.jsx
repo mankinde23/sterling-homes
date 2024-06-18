@@ -141,7 +141,7 @@ export default function Hero() {
               <div className="flex justify-center items-center mt-[1.56rem]">
                 <Link href="/catalogue">
                   <button className="w-[6.6875rem] h-[1.6875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
-                    <p className="text-nav-text text-[0.625rem] font-semibold leading-normal">
+                    <p className="text-nav-text text-[0.625rem] font-light leading-normal">
                       View Catalogue
                     </p>
                   </button>
