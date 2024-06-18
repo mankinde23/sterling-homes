@@ -116,7 +116,7 @@ export default function Aboutus() {
               className=" h-auto w-auto mt-[1.87rem]"
             >
               <p
-                className={` text-[1.5rem] font-normal text-justify leading-[2.55rem] hyphens-auto ${
+                className={` text-[1.25rem] font-normal text-justify leading-[2.55rem] hyphens-auto ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
@@ -130,7 +130,7 @@ export default function Aboutus() {
                 to delivering excellence.
               </p>
               <p
-                className={` text-[1.5rem] font-normal text-justify leading-[2.55rem] mt-[1.87rem] hyphens-auto ${
+                className={` text-[1.25rem] font-normal text-justify leading-[2.55rem] mt-[1.87rem] hyphens-auto ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
@@ -155,14 +155,14 @@ export default function Aboutus() {
           >
             <div className="flex flex-col gap-[0.81rem] ">
               <p
-                className={` text-[1.75rem] font-semibold ${
+                className={` text-[1.375rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
                 Commercial and Luxury Homes Focus
               </p>
               <p
-                className={` text-[1.25rem] font-normal  h-[5.625rem]  leading-normal ${
+                className={` text-[1.0625rem] font-normal  h-[5.625rem]  leading-normal ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -174,14 +174,14 @@ export default function Aboutus() {
             </div>
             <div className="flex flex-col gap-[0.81rem]">
               <p
-                className={` text-[1.75rem] font-semibold ${
+                className={` text-[1.375rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
                 Realtor Services Description
               </p>
               <p
-                className={` text-[1.25rem] font-normal leading-normal h-[5.625rem]  ${
+                className={` text-[1.0625rem] font-normal leading-normal h-[5.625rem]  ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -194,14 +194,14 @@ export default function Aboutus() {
 
             <div className="flex flex-col gap-[0.81rem] ">
               <p
-                className={` text-[1.75rem] font-semibold ${
+                className={` text-[1.375rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
                 }`}
               >
                 Tax Advisory
               </p>
               <p
-                className={` text-[1.25rem] font-normal leading-normal h-[5.625rem] ${
+                className={` text-[1.0625rem] font-normal leading-normal h-[5.625rem] ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -275,7 +275,6 @@ export default function Aboutus() {
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
-              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Commercial and Luxury Homes Focus
             </p>
@@ -295,7 +294,6 @@ export default function Aboutus() {
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
-              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Realtor Services Description
             </p>
@@ -315,7 +313,6 @@ export default function Aboutus() {
               className={` text-[0.875rem] font-semibold ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
               }`}
-              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Tax Advisory
             </p>

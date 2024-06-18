@@ -109,9 +109,9 @@ export default function Contact() {
                 }}
                 transition={{ duration: 1, ease: "easeIn" }}
                 exit={{ opacity: 0 }}
-                className="w-[46.375rem] h-[5.5rem] mt-[1.81rem] lg:w-auto"
+                className="w-[46.375rem] h-[5.5rem] mt-[1.81rem] lg:w-auto lg:mt-[-0.19rem]"
               >
-                <p className="text-nav-text text-[1rem] font-normal leading-[1.6rem] lg:text-[0.9375rem ]">
+                <p className="text-nav-text text-[1rem] font-extralight leading-[1.6rem] lg:text-[0.9375rem ]">
                   Unlock the door to your dream home with confidence , whether
                   you&apos;re seeking a cozy bungalow, a spacious family
                   retreat, or a sleek urban oasis, we are here to make your

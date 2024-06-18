@@ -50,14 +50,18 @@ export default function Founders() {
           >
             <div className=" w-[19.25rem] gap-[0.8125rem] flex items-center">
               <div className="w-[3.75rem] h-[0.125rem] rounded-[2.125rem] bg-sterling-theme"></div>
-              <p className="text-sterling-theme text-[0.9375rem] font-semibold tracking-[0.10313rem] leading-normal">
+              <p
+                className="text-sterling-theme text-[0.9375rem] font-semibold tracking-[0.10313rem] leading-normal"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
                 FOUNDERS{" "}
               </p>
             </div>
             <p
-              className={` text-[2.5rem] font-semibold leading-normal tracking-[0.4rem] ${
+              className={` text-[2.5rem] font-semibold leading-normal tracking-[0.4rem]  ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
               }`}
+              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               PROFILE
             </p>
@@ -83,7 +87,7 @@ export default function Founders() {
                 <div className="w-[10.0625rem] h-[2.5254rem]  px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
                   <p
                     className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.76rem]"
-                    style={{ fontFamily: "Roboto, sans-serif" }}
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
                   >
                     FOUNDER
                   </p>
@@ -117,7 +121,7 @@ export default function Founders() {
                   </div>
                 </div>
                 <div className="w-auto h-auto ml-[1.41rem]  mr-[1.77rem] mt-[1.56rem] mb-[5.25rem]">
-                  <p className="text-[1rem] font-medium leading-[1.62569rem] text-founders-text">
+                  <p className="text-[1rem] font-normal leading-[1.62569rem] text-founders-text">
                     Soji is a skilled commercial realtor and seasoned home
                     leasing service agent. With expertise in real estate tax
                     planning and filing, Soji excels in maximizing returns for
@@ -137,7 +141,7 @@ export default function Founders() {
                 <div className="w-[10.0625rem] h-[2.5254rem]  px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
                   <p
                     className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.76rem]"
-                    style={{ fontFamily: "Roboto, sans-serif" }}
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
                   >
                     CO. FOUNDER
                   </p>
@@ -161,7 +165,7 @@ export default function Founders() {
                   </div>
                 </div>
                 <div className="w-auto h-auto ml-[1.35rem]  mr-[1.13rem] mt-[1.56rem] mb-[4.01rem]">
-                  <p className="text-[1rem] font-medium leading-[1.62569rem] text-founders-text">
+                  <p className="text-[1rem] font-normal leading-[1.62569rem] text-founders-text">
                     With over 5 years of expertise in real estate transactions,{" "}
                     including buying and selling homes and negotiating{" "}
                     exceptional deals for clients, Rukayat also specializes in
@@ -261,7 +265,7 @@ export default function Founders() {
                 <div className="w-[7.70031rem] h-[2.07731rem] px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
                   <p
                     className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.54rem]"
-                    style={{ fontFamily: "Roboto, sans-serif" }}
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
                   >
                     FOUNDER
                   </p>
@@ -318,7 +322,7 @@ export default function Founders() {
                 <div className="w-[7.70031rem] h-[2.07731rem]    px-[1.19rem] bg-sterling-theme justify-center flex-col items-start">
                   <p
                     className="text-[0.75rem] font-medium leading-[1rem] text-nav-text my-[0.54rem]"
-                    style={{ fontFamily: "Roboto, sans-serif" }}
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
                   >
                     CO. FOUNDER
                   </p>

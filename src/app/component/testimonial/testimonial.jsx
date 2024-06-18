@@ -127,7 +127,6 @@ export default function Testimonial() {
                   ? " text-sterling-theme"
                   : "text-our-service-text"
               }`}
-              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Testimonials
             </p>

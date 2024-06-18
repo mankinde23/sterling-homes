@@ -102,7 +102,7 @@ export default function Ourservice({ onClose }) {
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Home Buying & Selling
                   </p>
-                  <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem] ">
+                  <p className="text-[0.875rem] leading-normal font-light text-our-servicet mt-[0.62rem] ">
                     Helping clients navigate the process of buying and selling
                     both residential and commercial properties.
                   </p>
@@ -224,7 +224,7 @@ export default function Ourservice({ onClose }) {
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Home Leasing Service
                   </p>
-                  <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem]">
+                  <p className="text-[0.875rem] leading-normal font-light text-our-servicet mt-[0.62rem]">
                     Facilitating quicker rental property leases by accurately
                     pricing properties to attract tenants efficiently.{" "}
                   </p>
@@ -336,7 +336,7 @@ export default function Ourservice({ onClose }) {
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Tax Preparation & Filing
                   </p>
-                  <p className="text-[0.875rem] leading-normal font-normal text-our-servicet mt-[0.62rem]">
+                  <p className="text-[0.875rem] leading-normal font-light text-our-servicet mt-[0.62rem]">
                     {/* Providing strategic tax planning and filing services
                     tailored for real estate investors to optimize tax benefits
                     and maximize gains. */}
@@ -449,17 +449,13 @@ export default function Ourservice({ onClose }) {
           }`}
         >
           <div className=" w-[4.75rem] h-[2.25rem] md:pl-[1.81rem] md:block lg:w-auto lg:flex lg:flex-col lg:justify-center lg:items-center lg:pl-0">
-            <p
-              className="text-about-s-w text-[0.8125rem] font-semibold leading-normal  "
-              style={{ fontFamily: " Montserrat, sans-serif" }}
-            >
+            <p className="text-about-s-w text-[0.8125rem] font-semibold leading-normal  ">
               OUR
             </p>
             <h1
               className={` md:text-[1.5rem] lg:text-[2rem] font-semibold leading-normal ${
                 theme === "light" ? "text-about-b" : "text-nav-text"
               }`}
-              style={{ fontFamily: " Montserrat, sans-serif" }}
             >
               Services
             </h1>
@@ -474,7 +470,10 @@ export default function Ourservice({ onClose }) {
             >
               <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
                 <div className="flex flex-col">
-                  <p className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]">
+                  <p
+                    className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]"
+                    style={{ fontFamily: " Montserrat, sans-serif" }}
+                  >
                     Home Buying & Selling
                   </p>
                   <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal  text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem] ">
@@ -490,10 +489,7 @@ export default function Ourservice({ onClose }) {
                       <div>
                         <div className="flex justify-between mt-[1.94rem]">
                           <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
-                            <h2
-                              className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]"
-                              style={{ fontFamily: " Montserrat, sans-serif" }}
-                            >
+                            <h2 className="text-nav-text md:text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]">
                               Home Buying & Selling
                             </h2>
                           </div>
@@ -609,7 +605,7 @@ export default function Ourservice({ onClose }) {
                       <div>
                         <div className="flex justify-between  mt-[1.94rem]">
                           <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
-                            <h2 className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]">
+                            <h2 className="text-nav-text md:text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]">
                               Home Leasing Service
                             </h2>
                           </div>
@@ -718,7 +714,7 @@ export default function Ourservice({ onClose }) {
                         <div className="flex justify-between  mt-[1.94rem]">
                           <div className="w-auto h-[1.875rem] flex justify-center mt-[1.2rem] ">
                             <h2
-                              className="text-nav-text text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]"
+                              className="text-nav-text md:text-[0.875rem] font-semibold leading-normal pl-[1.88rem] lg:text-[1.25rem]"
                               // style={{ fontFamily: " Montserrat, sans-serif" }}
                             >
                               Tax Preparation & Filing
