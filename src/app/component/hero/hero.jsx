@@ -48,7 +48,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: shouldAnimate ? 1 : 0, y: 0 }}
                 transition={{ duration: 1, ease: "easeIn" }}
-                className="flex justify-center items-center text-nav-text text-[0.8125rem] font-extralight"
+                className="flex justify-center items-center text-footer-test1 text-[0.8125rem] font-extralight"
               >
                 Building dreams, one home at a time, with integrity and
                 excellence

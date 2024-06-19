@@ -42,7 +42,7 @@ function DarkModeToggle() {
           className="mt-[1.06rem] w-[2.1875rem] pl-[2rem]"
         >
           {theme === "light" ? (
-            <FaMoon className=" h-[1.875rem] w-[1.875rem] text-nav-text" />
+            <FaMoon className="  h-[1.5rem] w-[2.5rem] text-nav-text" />
           ) : (
             <TbBrightnessUp className="  h-[1.73rem] w-[2.5rem] text-nav-text " />
           )}
