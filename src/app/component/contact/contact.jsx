@@ -73,6 +73,31 @@ export default function Contact() {
       };
     }
   }, [isInView1]);
+
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true });
+
+  const [shouldAnimate2, setShouldAnimate2] = useState(false);
+  const [animateImage2, setAnimateImage2] = useState(false);
+  const [shouldAnimateP1, setShouldAnimateP1] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate2(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage2(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP1(true);
+      }, 1000); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView2]);
+
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden">
@@ -243,13 +268,13 @@ export default function Contact() {
           style={{
             backgroundImage: "url('/contactm.png')",
           }}
-          ref={ref1}
+          ref={ref2}
         >
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{
-              opacity: shouldAnimate1 ? 1 : 0,
-              y: shouldAnimate1 ? 0 : 50,
+              opacity: shouldAnimate2 ? 1 : 0,
+              y: shouldAnimate2 ? 0 : 50,
             }}
             transition={{ duration: 1, ease: "easeIn" }}
             exit={{ opacity: 0 }}
@@ -261,8 +286,8 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, y: 0 }}
             animate={{
-              opacity: animateImage1 ? 1 : 0,
-              y: animateImage1 ? 0 : 0,
+              opacity: animateImage2 ? 1 : 0,
+              y: animateImage2 ? 0 : 0,
             }}
             transition={{ duration: 1, ease: "easeIn" }}
             exit={{ opacity: 0 }}
@@ -286,8 +311,8 @@ export default function Contact() {
             <motion.p
               initial={{ opacity: 0, y: 50 }}
               animate={{
-                opacity: shouldAnimate1 ? 1 : 0,
-                y: shouldAnimate1 ? 0 : 50,
+                opacity: shouldAnimate2 ? 1 : 0,
+                y: shouldAnimate2 ? 0 : 50,
               }}
               transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
@@ -298,8 +323,8 @@ export default function Contact() {
             <motion.p
               initial={{ opacity: 0, y: 0 }}
               animate={{
-                opacity: animateImage1 ? 1 : 0,
-                y: animateImage1 ? 0 : 0,
+                opacity: animateImage2 ? 1 : 0,
+                y: animateImage2 ? 0 : 0,
               }}
               transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
@@ -325,8 +350,8 @@ export default function Contact() {
                   <motion.div
                     initial={{ opacity: 0, y: 0 }}
                     animate={{
-                      opacity: animateImage1 ? 1 : 0,
-                      y: animateImage1 ? 0 : 0,
+                      opacity: animateImage2 ? 1 : 0,
+                      y: animateImage2 ? 0 : 0,
                     }}
                     transition={{ duration: 1, ease: "easeIn" }}
                     exit={{ opacity: 0 }}
@@ -387,8 +412,8 @@ export default function Contact() {
                   <motion.button
                     initial={{ opacity: 0, y: 0 }}
                     animate={{
-                      opacity: animateImage1 ? 1 : 0,
-                      y: animateImage1 ? 0 : 0,
+                      opacity: animateImage2 ? 1 : 0,
+                      y: animateImage2 ? 0 : 0,
                     }}
                     transition={{ duration: 1, ease: "easeIn" }}
                     exit={{ opacity: 0 }}

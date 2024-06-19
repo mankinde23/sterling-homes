@@ -35,6 +35,30 @@ export default function Testimonial() {
     }
   }, [isInView1]);
 
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true });
+
+  const [shouldAnimate2, setShouldAnimate2] = useState(false);
+  const [animateImage2, setAnimateImage2] = useState(false);
+  const [shouldAnimateP1, setShouldAnimateP1] = useState(false);
+
+  useEffect(() => {
+    if (isInView1) {
+      setShouldAnimate2(true);
+      const timeoutImage = setTimeout(() => {
+        setAnimateImage2(true);
+      }, 1000); // 2 seconds delay for image animation
+      const timeoutP = setTimeout(() => {
+        setShouldAnimateP1(true);
+      }, 1000); // 1 second delay for second paragraph animation
+
+      return () => {
+        clearTimeout(timeoutImage);
+        clearTimeout(timeoutP);
+      };
+    }
+  }, [isInView2]);
+
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden">
@@ -119,13 +143,13 @@ export default function Testimonial() {
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
-          ref={ref1}
+          ref={ref2}
         >
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{
-              opacity: shouldAnimate1 ? 1 : 0,
-              y: shouldAnimate1 ? 0 : 50,
+              opacity: shouldAnimate2 ? 1 : 0,
+              y: shouldAnimate2 ? 0 : 50,
             }}
             transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
             exit={{ opacity: 0 }}
@@ -154,8 +178,8 @@ export default function Testimonial() {
           <motion.div
             initial={{ opacity: 0, y: 0 }}
             animate={{
-              opacity: shouldAnimateP ? 1 : 0,
-              y: shouldAnimateP ? 0 : 0,
+              opacity: shouldAnimateP1 ? 1 : 0,
+              y: shouldAnimateP1 ? 0 : 0,
             }}
             transition={{ duration: 1, ease: "easeIn" }}
             exit={{ opacity: 0 }}
