@@ -12,7 +12,7 @@ export default function Hero() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShouldAnimate(true);
-    }, 1000); // Adjust the delay as needed (in milliseconds)
+    }, 1000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -131,14 +131,30 @@ export default function Hero() {
         >
           <div className="flex justify-center items-end w-full">
             <div className=" mt-[17.69rem]">
-              <h1 className="text-nav-text font-ameretto text-[1.875rem] leading-normal  font-normal tracking-[0.375rem]">
+              <motion.h1
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 50, y: 0 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                exit={{ opacity: 0 }}
+                className="text-nav-text font-ameretto text-[1.875rem] leading-normal  font-normal tracking-[0.375rem]"
+              >
                 STERLING HOMES
-              </h1>
-              <p className="flex justify-center items-center text-nav-text text-[0.4375rem]  font-extralight mt-[0.75rem]">
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 0 }}
+                animate={{ opacity: shouldAnimate ? 1 : 0, y: 0 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className="flex justify-center items-center text-nav-text text-[0.4375rem]  font-extralight mt-[0.75rem]"
+              >
                 Building dreams, one home at a time, with integrity and
                 excellence
-              </p>
-              <div className="flex justify-center items-center mt-[1.56rem]">
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 0 }}
+                animate={{ opacity: shouldAnimate ? 1 : 0, y: 0 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className="flex justify-center items-center mt-[1.56rem]"
+              >
                 <Link href="/catalogue">
                   <button className="w-[6.6875rem] h-[1.6875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
                     <p className="text-nav-text text-[0.625rem] font-light leading-normal">
@@ -146,7 +162,7 @@ export default function Hero() {
                     </p>
                   </button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

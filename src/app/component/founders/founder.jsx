@@ -68,12 +68,12 @@ export default function Founders() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{
               opacity: animateImage1 ? 1 : 0,
-              x: animateImage1 ? 0 : -100,
+              y: animateImage1 ? 0 : 0,
             }}
-            transition={{ duration: 1.5, ease: "backOut" }}
+            transition={{ duration: 1, ease: "easeIn" }}
             exit={{ opacity: 0 }}
             className="flex gap-[4.06rem] items-center pr-[3rem] xl:pr-0"
           >

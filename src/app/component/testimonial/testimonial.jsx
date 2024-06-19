@@ -119,8 +119,18 @@ export default function Testimonial() {
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
+          ref={ref1}
         >
-          <div className="w-[8.5625rem] h-[3rem] flex flex-col gap-[0.1rem] items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{
+              opacity: shouldAnimate1 ? 1 : 0,
+              y: shouldAnimate1 ? 0 : 50,
+            }}
+            transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+            exit={{ opacity: 0 }}
+            className="w-[8.5625rem] h-[3rem] flex flex-col gap-[0.1rem] items-center"
+          >
             <p
               className={` text-[1.25rem] font-semibold leading-normal ${
                 theme === "light"
@@ -139,11 +149,20 @@ export default function Testimonial() {
             >
               what Our Clients Say
             </p>
-          </div>
+          </motion.div>
 
-          <div className="mt-[1rem]">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: shouldAnimateP ? 1 : 0,
+              y: shouldAnimateP ? 0 : 0,
+            }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
+            className="mt-[1rem]"
+          >
             <Carousel />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

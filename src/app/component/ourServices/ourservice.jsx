@@ -61,12 +61,10 @@ export default function Ourservice({ onClose }) {
         >
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            // animate={{ opacity: isInView1 ? 1 : 0, y: isInView1 ? 0 : 0 }}
             animate={{
               opacity: shouldAnimate1 ? 1 : 0,
               y: shouldAnimate1 ? 0 : 50,
             }}
-            // transition={{ duration: 1.5, ease: "easeIn" }}
             transition={{ duration: 1, ease: "easeIn", delay: 0.2 }}
             exit={{ opacity: 0 }}
             className="flex flex-col w-[8.75rem] h-[3.6875rem]"
@@ -96,7 +94,6 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/service1.png')",
               }}
             >
-              {/* w-[16.3125rem] h-[2.53125rem] */}
               <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
@@ -207,12 +204,12 @@ export default function Ourservice({ onClose }) {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: -150 }}
+              initial={{ opacity: 0, y: 0 }}
               animate={{
-                opacity: shouldAnimateP ? 1 : 0,
-                x: shouldAnimateP ? 0 : -150,
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
               }}
-              transition={{ duration: 1.5, ease: "backOut" }}
+              transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
               className="bg-cover  pt-[25.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
               style={{
@@ -319,12 +316,12 @@ export default function Ourservice({ onClose }) {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: -250 }}
+              initial={{ opacity: 0, y: 0 }}
               animate={{
-                opacity: shouldAnimateP ? 1 : 0,
-                x: shouldAnimateP ? 0 : -250,
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
               }}
-              transition={{ duration: 1.5, ease: "backOut" }}
+              transition={{ duration: 1, ease: "easeIn" }}
               exit={{ opacity: 0 }}
               className="bg-cover pt-[25.44rem]  w-[20rem] bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
               style={{
@@ -447,8 +444,18 @@ export default function Ourservice({ onClose }) {
               ? "bg-our-service-b transition duration-500 ease-in-out"
               : "bg-profile-b transition duration-500 ease-in-out"
           }`}
+          ref={ref1}
         >
-          <div className=" w-[4.75rem] h-[2.25rem] md:pl-[1.81rem] md:block lg:w-auto lg:flex lg:flex-col lg:justify-center lg:items-center lg:pl-0">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: shouldAnimate1 ? 1 : 0,
+              y: shouldAnimate1 ? 0 : 0,
+            }}
+            transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+            exit={{ opacity: 0 }}
+            className=" w-[4.75rem] h-[2.25rem] md:pl-[1.81rem] md:block lg:w-auto lg:flex lg:flex-col lg:justify-center lg:items-center lg:pl-0"
+          >
             <p className="text-about-s-w text-[0.8125rem] font-semibold leading-normal  ">
               OUR
             </p>
@@ -459,7 +466,7 @@ export default function Ourservice({ onClose }) {
             >
               Services
             </h1>
-          </div>
+          </motion.div>
 
           <div className="flex md:gap-[0rem] flex-col justify-between  mt-[2.81rem] lg:gap-[2.94rem]">
             <div
@@ -468,7 +475,16 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/sterling1m.png')",
               }}
             >
-              <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{
+                  opacity: shouldAnimate1 ? 1 : 0,
+                  y: shouldAnimate1 ? 0 : 30,
+                }}
+                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                exit={{ opacity: 0 }}
+                className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]"
+              >
                 <div className="flex flex-col">
                   <p
                     className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]"
@@ -576,7 +592,7 @@ export default function Ourservice({ onClose }) {
                     Learn More
                   </p>
                 </button>
-              </div>
+              </motion.div>
             </div>
 
             <div
@@ -585,7 +601,16 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/sterling2m.png')",
               }}
             >
-              <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{
+                  opacity: shouldAnimate1 ? 1 : 0,
+                  y: shouldAnimate1 ? 0 : 30,
+                }}
+                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                exit={{ opacity: 0 }}
+                className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]"
+              >
                 <div className="flex flex-col">
                   <p
                     className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]"
@@ -683,7 +708,7 @@ export default function Ourservice({ onClose }) {
                     Learn More
                   </p>
                 </button>
-              </div>
+              </motion.div>
             </div>
 
             <div
@@ -692,7 +717,16 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/sterling3m.png')",
               }}
             >
-              <div className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{
+                  opacity: shouldAnimate1 ? 1 : 0,
+                  y: shouldAnimate1 ? 0 : 30,
+                }}
+                transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+                exit={{ opacity: 0 }}
+                className="h-[12.25rem] w-auto sm:pt-[1.38rem] md:pt-[1.38rem] pr-[1.88rem] pb-[1.32rem] pl-[1.87rem] flex gap-[1.625rem] flex-col  backdrop-blur-[7px] bg-navbar-bg lg:pt-[2.3rem]"
+              >
                 <div className="flex flex-col">
                   <p
                     className="sm:text-[1rem] md:text-[1rem] font-semibold leading-normal text-our-service-text lg:text-[1.25rem]"
@@ -795,7 +829,7 @@ export default function Ourservice({ onClose }) {
                     Learn More
                   </p>
                 </button>
-              </div>
+              </motion.div>
             </div>
           </div>
           <Modal isOpen={isModalOpen} onClose={closeModal}>

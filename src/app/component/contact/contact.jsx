@@ -243,21 +243,38 @@ export default function Contact() {
           style={{
             backgroundImage: "url('/contactm.png')",
           }}
+          ref={ref1}
         >
-          <p
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{
+              opacity: shouldAnimate1 ? 1 : 0,
+              y: shouldAnimate1 ? 0 : 50,
+            }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
             className="text-nav-text text-[1.875rem] font-semibold leading-normal"
             style={{ fontFamily: " Montserrat, sans-serif" }}
           >
             Sterling Homes
-          </p>
-          <div className="w-auto h-[3.625rem] ">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: animateImage1 ? 1 : 0,
+              y: animateImage1 ? 0 : 0,
+            }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
+            className="w-auto h-[3.625rem] "
+          >
             <p className="text-nav-text text-[0.75rem] font-normal leading-[1rem]">
               Unlock the door to your dream home with confidence , whether
               you&apos;re seeking a cozy bungalow, a spacious family retreat, or
               a sleek urban oasis, we are here to make your dreams a reality.
               Let&apos;s find your perfect place to call home together.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div
           className="bg-cover h-[33rem] w-auto shadow-md bg-contact-section backdrop-blur-[20px] bg-no-repeat flex-shrink-0  scale-100 mt-[0rem] "
@@ -266,13 +283,31 @@ export default function Contact() {
           }}
         >
           <div className="pl-[1.87rem] bg-contact-section backdrop-blur-[20px] h-[33rem] pt-[2.25rem] pr-[1.87rem]">
-            <p className="text-nav-text text-[2rem] font-medium leading-normal w-auto h-[2.43rem]">
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              animate={{
+                opacity: shouldAnimate1 ? 1 : 0,
+                y: shouldAnimate1 ? 0 : 50,
+              }}
+              transition={{ duration: 1, ease: "easeIn" }}
+              exit={{ opacity: 0 }}
+              className="text-nav-text text-[2rem] font-medium leading-normal w-auto h-[2.43rem]"
+            >
               Contact us
-            </p>
-            <p className="text-nav-text w-auto h-[2.25rem] text-[0.625rem] font-normal leading-[1rem] mt-[0.94rem]">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 0 }}
+              animate={{
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
+              }}
+              transition={{ duration: 1, ease: "easeIn" }}
+              exit={{ opacity: 0 }}
+              className="text-nav-text w-auto h-[2.25rem] text-[0.625rem] font-normal leading-[1rem] mt-[0.94rem]"
+            >
               We value your feedback and inquiries. Please fill out the form
               below, and we&apos;ll get back to you as soon as possible
-            </p>
+            </motion.p>
             <Formik
               initialValues={formValues}
               validationSchema={toFormikValidationSchema(validationSchema)}
@@ -287,7 +322,16 @@ export default function Contact() {
             >
               {({ values, handleChange, isSubmitting }) => (
                 <Form className="">
-                  <div className="w-auto h-[15.125rem] flex flex-col gap-[2.5rem] mt-[2.31rem]">
+                  <motion.div
+                    initial={{ opacity: 0, y: 0 }}
+                    animate={{
+                      opacity: animateImage1 ? 1 : 0,
+                      y: animateImage1 ? 0 : 0,
+                    }}
+                    transition={{ duration: 1, ease: "easeIn" }}
+                    exit={{ opacity: 0 }}
+                    className="w-auto h-[15.125rem] flex flex-col gap-[2.5rem] mt-[2.31rem]"
+                  >
                     <div className="w-auto h-[3.375rem]">
                       <Field
                         type="text"
@@ -339,8 +383,15 @@ export default function Contact() {
                         className="text-text-error text-[0.75rem] font-medium leading-normal w-[12.5rem] mt-[0.38rem] ml-[0.5rem]"
                       />
                     </div>
-                  </div>
-                  <button
+                  </motion.div>
+                  <motion.button
+                    initial={{ opacity: 0, y: 0 }}
+                    animate={{
+                      opacity: animateImage1 ? 1 : 0,
+                      y: animateImage1 ? 0 : 0,
+                    }}
+                    transition={{ duration: 1, ease: "easeIn" }}
+                    exit={{ opacity: 0 }}
                     type="submit"
                     disabled={isSubmitting}
                     className="w-[8.5rem] h-[2.8125rem] p-[0.5rem] gap-[0.5rem] flex justify-center items-center border-sterling-theme border-solid border-[0.7px] mt-[3.25rem]"
@@ -348,7 +399,7 @@ export default function Contact() {
                     <p className="text-nav-text text-[0.8125rem] font-normal leading-normal">
                       {buttonText}
                     </p>
-                  </button>
+                  </motion.button>
                 </Form>
               )}
             </Formik>

@@ -106,12 +106,12 @@ export default function Aboutus() {
               </motion.div>
             </div>
             <motion.div
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, y: 0 }}
               animate={{
-                opacity: shouldAnimate1 ? 1 : 0,
-                x: shouldAnimate1 ? 0 : -100,
+                opacity: animateImage1 ? 1 : 0,
+                y: animateImage1 ? 0 : 0,
               }}
-              transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+              transition={{ duration: 1.5, ease: "easeIn" }}
               exit={{ opacity: 0 }}
               className=" h-auto w-auto mt-[1.87rem]"
             >
@@ -144,12 +144,12 @@ export default function Aboutus() {
             </motion.div>
           </div>
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 0 }}
             animate={{
-              opacity: shouldAnimateP ? 1 : 0,
-              y: shouldAnimateP ? 0 : 50,
+              opacity: animateImage1 ? 1 : 0,
+              y: animateImage1 ? 0 : 0,
             }}
-            transition={{ duration: 1, ease: "easeIn" }}
+            transition={{ duration: 1.5, ease: "easeIn" }}
             exit={{ opacity: 0 }}
             className="gap-[3.62rem] flex items-baseline justify-between mt-[7.56rem] w-auto h-auto flex-col"
           >
@@ -224,8 +224,18 @@ export default function Aboutus() {
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
+          ref={ref1}
         >
-          <div className="h-[2.5625rem] w-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: shouldAnimate1 ? 1 : 0,
+              y: shouldAnimate1 ? 0 : 0,
+            }}
+            transition={{ duration: 1, ease: "easeIn", delay: 0.4 }}
+            exit={{ opacity: 0 }}
+            className="h-[2.5625rem] w-auto"
+          >
             <div></div>
             <h1
               className={` text-[1.5rem] font-bold leading-normal  ${
@@ -235,12 +245,30 @@ export default function Aboutus() {
             >
               ABOUT US
             </h1>
-          </div>
-          <div className="mt-[1.38rem]">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: animateImage1 ? 1 : 0,
+              y: animateImage1 ? 0 : 0,
+            }}
+            transition={{ duration: 1.5, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
+            className="mt-[1.38rem]"
+          >
             <Image src={mock} alt="" className="w-auto " />
-          </div>
+          </motion.div>
 
-          <div className=" w-auto text-justify hyphens-auto mt-[1.75rem] flex flex-col gap-[3rem]">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: animateImage1 ? 1 : 0,
+              y: animateImage1 ? 0 : 0,
+            }}
+            transition={{ duration: 1.5, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
+            className=" w-auto text-justify hyphens-auto mt-[1.75rem] flex flex-col gap-[3rem]"
+          >
             <p
               className={` text-[0.875rem] font-extralight leading-[1.4875rem] ${
                 theme === "light" ? "text-about-t" : "text-nav-text"
@@ -268,65 +296,75 @@ export default function Aboutus() {
               for all our clients, distinguishing ourselves in both residential
               and commercial real estate sectors.
             </p>
-          </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{
+              opacity: animateImage1 ? 1 : 0,
+              y: animateImage1 ? 0 : 0,
+            }}
+            transition={{ duration: 1.5, ease: "easeIn" }}
+            exit={{ opacity: 0 }}
+          >
+            <div className="flex flex-col gap-[0.81rem] w-auto mt-[10rem]">
+              <p
+                className={` text-[0.875rem] font-semibold ${
+                  theme === "light" ? "text-about-t" : "text-nav-text"
+                }`}
+              >
+                Commercial and Luxury Homes Focus
+              </p>
+              <p
+                className={` text-[0.8125rem] font-thin leading-normal h-auto  text-justify  hyphens-auto ${
+                  theme === "light" ? "text-about-s-w" : "text-about-s-b"
+                }`}
+              >
+                Our company specializes in commercial and luxury home real
+                estate, offering tailored solutions to meet client needs,
+                ensuring seamless transactions, and delivering exceptional value
+                and service.
+              </p>
+            </div>
+            <div className="flex flex-col gap-[0.81rem] w-auto  mt-[3.62rem]">
+              <p
+                className={` text-[0.875rem] font-semibold ${
+                  theme === "light" ? "text-about-t" : "text-nav-text"
+                }`}
+              >
+                Realtor Services Description
+              </p>
+              <p
+                className={`text-[0.8125rem] font-thin leading-normal h-auto  text-justify hyphens-auto ${
+                  theme === "light" ? "text-about-s-w" : "text-about-s-b"
+                }`}
+              >
+                Our realtor services provide expert guidance in buying or
+                selling properties, ensuring a smooth process, maximizing value,
+                and delivering personalized solutions to meet your real estate
+                goals.
+              </p>
+            </div>
 
-          <div className="flex flex-col gap-[0.81rem] w-auto mt-[10rem]">
-            <p
-              className={` text-[0.875rem] font-semibold ${
-                theme === "light" ? "text-about-t" : "text-nav-text"
-              }`}
-            >
-              Commercial and Luxury Homes Focus
-            </p>
-            <p
-              className={` text-[0.8125rem] font-thin leading-normal h-auto  text-justify  hyphens-auto ${
-                theme === "light" ? "text-about-s-w" : "text-about-s-b"
-              }`}
-            >
-              Our company specializes in commercial and luxury home real estate,
-              offering tailored solutions to meet client needs, ensuring
-              seamless transactions, and delivering exceptional value and
-              service.
-            </p>
-          </div>
-          <div className="flex flex-col gap-[0.81rem] w-auto  mt-[3.62rem]">
-            <p
-              className={` text-[0.875rem] font-semibold ${
-                theme === "light" ? "text-about-t" : "text-nav-text"
-              }`}
-            >
-              Realtor Services Description
-            </p>
-            <p
-              className={`text-[0.8125rem] font-thin leading-normal h-auto  text-justify hyphens-auto ${
-                theme === "light" ? "text-about-s-w" : "text-about-s-b"
-              }`}
-            >
-              Our realtor services provide expert guidance in buying or selling
-              properties, ensuring a smooth process, maximizing value, and
-              delivering personalized solutions to meet your real estate goals.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-[0.81rem] w-auto  mt-[3.62rem]">
-            <p
-              className={` text-[0.875rem] font-semibold ${
-                theme === "light" ? "text-about-t" : "text-nav-text"
-              }`}
-            >
-              Tax Advisory
-            </p>
-            <p
-              className={`text-[0.8125rem] font-thin leading-normal h-auto text-justify hyphens-auto ${
-                theme === "light" ? "text-about-s-w" : "text-about-s-b"
-              }`}
-            >
-              Our tax advisory services offer expert guidance on tax planning
-              and compliance, optimizing financial strategies, ensuring
-              regulatory compliance, and maximizing tax savings for individuals
-              and businesses.
-            </p>
-          </div>
+            <div className="flex flex-col gap-[0.81rem] w-auto  mt-[3.62rem]">
+              <p
+                className={` text-[0.875rem] font-semibold ${
+                  theme === "light" ? "text-about-t" : "text-nav-text"
+                }`}
+              >
+                Tax Advisory
+              </p>
+              <p
+                className={`text-[0.8125rem] font-thin leading-normal h-auto text-justify hyphens-auto ${
+                  theme === "light" ? "text-about-s-w" : "text-about-s-b"
+                }`}
+              >
+                Our tax advisory services offer expert guidance on tax planning
+                and compliance, optimizing financial strategies, ensuring
+                regulatory compliance, and maximizing tax savings for
+                individuals and businesses.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </>
