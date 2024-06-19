@@ -82,18 +82,18 @@ export default function Contact() {
   const [shouldAnimateP1, setShouldAnimateP1] = useState(false);
 
   useEffect(() => {
-    if (isInView1) {
+    if (isInView2) {
       setShouldAnimate2(true);
-      const timeoutImage = setTimeout(() => {
+      const timeoutImage1 = setTimeout(() => {
         setAnimateImage2(true);
       }, 1000); // 2 seconds delay for image animation
-      const timeoutP = setTimeout(() => {
+      const timeoutP1 = setTimeout(() => {
         setShouldAnimateP1(true);
       }, 1000); // 1 second delay for second paragraph animation
 
       return () => {
-        clearTimeout(timeoutImage);
-        clearTimeout(timeoutP);
+        clearTimeout(timeoutImage1);
+        clearTimeout(timeoutP1);
       };
     }
   }, [isInView2]);
