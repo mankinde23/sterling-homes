@@ -461,7 +461,7 @@ export default function Ourservice({ onClose }) {
         </div>
       </div>
       {/* Mobile....... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block hidden">
         <div
           className={`h-auto w-auto pt-[3.5rem] md:block lg:flex lg:flex-col lg:justify-center lg:items-center  ${
             theme === "dark"

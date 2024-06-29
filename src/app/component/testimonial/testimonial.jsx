@@ -61,7 +61,7 @@ export default function Testimonial() {
 
   return (
     <>
-      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden">
+      <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden hidden">
         <div
           className={`h-auto w-auto py-[4.44rem] px-[3.23rem] lg:px-[3rem] ${
             theme === "dark"
@@ -71,7 +71,7 @@ export default function Testimonial() {
           id="testimonials"
           ref={ref1}
         >
-          <div className="flex  gap-[3.56rem] lg:gap-[2.51rem] lg:block">
+          <div className="flex  gap-[3.56rem] lg:gap-[2.51rem] lg:block 2xl:justify-normal 2xl-max:justify-center">
             <motion.div
               initial={{ opacity: 0, y: 0 }}
               animate={{
@@ -136,7 +136,7 @@ export default function Testimonial() {
 
       {/* Mobile */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block hidden">
         <div
           className={`h-[24.125rem] w-auto pt-[2.38rem] pr-[1.88rem] pb-[1.2rem] pl-[1.88rem] flex flex-col gap-[0.69rem] items-center md:h-auto ${
             theme === "dark"

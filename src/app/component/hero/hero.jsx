@@ -23,7 +23,7 @@ export default function Hero() {
         id="hero"
       >
         <div
-          className="bg-cover h-[64rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
+          className="bg-cover h-[64rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 bg-center "
           style={{
             backgroundImage: "url('/landing-img3.png')",
           }}
@@ -74,7 +74,7 @@ export default function Hero() {
 
       {/* TAB */}
 
-      <div className="sm:hidden 2xl:hidden 2xl-max:hidden xl:block lg:block  md:block">
+      <div className="sm:hidden 2xl:hidden 2xl-max:hidden xl:block lg:block  md:block hidden">
         <div
           className="bg-cover h-[57.3125rem] w-full bg-light-gray bg-no-repeat flex-shrink-0  scale-100"
           style={{
@@ -122,7 +122,7 @@ export default function Hero() {
 
       {/* Mobile */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:hidden hidden">
         <div
           className="bg-cover h-[42.0625rem] w-full bg-light-gray bg-no-repeat flex-shrink-0  scale-100 "
           style={{

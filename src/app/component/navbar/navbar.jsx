@@ -224,7 +224,7 @@ export default function Navbar() {
       </div> */}
 
       {/* MOBILE...................................... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block hidden">
         <div className="fixed top-0 w-full z-50 h-[4rem] flex justify-between items-center backdrop-blur-[7px] bg-navbar-bg pl-[0.94rem] pr-[1.88rem] pt-[1rem] pb-[0.73rem]">
           <div className="h-[2.26rem] flex  justify-center items-center gap-[12.625rem] w-auto">
             <div className="w-[3.9375rem] h-[2.26906rem]">

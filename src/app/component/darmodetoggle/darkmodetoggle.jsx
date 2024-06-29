@@ -50,7 +50,7 @@ function DarkModeToggle() {
       </div>
 
       {/* MOBILE.... */}
-      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:block lg:block sm:block md:block hidden">
         <button onClick={toggleTheme}>
           {/* className="mt-[1.06rem] w-auto " */}
           {theme === "light" ? (

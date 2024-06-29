@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* MOBILE */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block hidden">
         <Navbar />
 
         <div className="w-full " id="herom">

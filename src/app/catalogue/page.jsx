@@ -321,7 +321,7 @@ export default function Catalogue() {
       </div>
       {/* Mobile  w-[9.625rem] gap-[13.19rem] sm:w-[43.6875rem]*/}
       <div
-        className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block "
+        className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block hidden"
         style={{ width: "100% !important" }}
       >
         <div

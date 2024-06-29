@@ -128,7 +128,7 @@ export default function Footer() {
               <Image src={logo} alt="" />
             </div>
           </div>
-          <div className="w-[81rem] h-[0.125rem] rounded-[2.125rem] bg-footer-s mx-[5.5rem] mt-[4.84rem] 2xl-max:w-auto"></div>
+          <div className="h-[0.125rem] rounded-[2.125rem] bg-footer-s mx-[5.5rem] mt-[4.84rem] 2xl-max:w-auto"></div>
           <div className="flex justify-center items-center mt-[1.72rem]">
             <p className="w-[20.125rem] h-[2.4375rem] text-[0.6875rem] font-normal leading-normal text-copy-t flex justify-center items-center">
               Copyright © 2024 Sterling Homes,All rights reserved.
@@ -139,7 +139,7 @@ export default function Footer() {
 
       {/* TAB */}
       <div
-        className="sm:hidden 2xl:hidden 2xl-max:hidden xl:hidden lg:block  md:hidden"
+        className="sm:hidden 2xl:hidden 2xl-max:hidden xl:hidden lg:block  md:hidden hidden"
         style={{ width: "auto" }}
       >
         <div className="w-auto h-[28.375rem] bg-footer-b">
@@ -231,7 +231,7 @@ export default function Footer() {
 
       {/* MOBILE */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block hidden">
         <div className="w-auto h-[36.6875rem] bg-footer-b px-[1.87rem]">
           <div className="flex gap-[4.56rem] items-center pt-[4.81rem] justify-between">
             <div className="w-auto h-[8.68rem] flex flex-col">

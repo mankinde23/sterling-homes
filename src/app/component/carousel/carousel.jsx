@@ -182,7 +182,7 @@ export function Carousel() {
 
       {/* Mobile.... */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block hidden">
         <div className="embla relative max-w-[20.625] ">
           <div
             className="embla__viewport overflow-hidden w-[19.625rem] h-[14.9375rem]"

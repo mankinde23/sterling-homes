@@ -95,7 +95,7 @@ export default function Aboutus() {
           id="about"
           ref={ref1}
         >
-          <div className="flex  gap-[3.45rem] items-center pt-[5.25rem] justify-between flex-col">
+          <div className="flex  gap-[3.45rem] 2xl:items-center pt-[5.25rem] justify-between flex-col">
             <div>
               <motion.div
                 initial={{ opacity: 0, y: 0 }}
@@ -241,7 +241,7 @@ export default function Aboutus() {
 
       {/* MOBILE ....... */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:block hidden">
         <div
           className={`h-auto w-auto  px-[1.87rem] pt-[3.06rem] pb-[3.75rem] ${
             theme === "dark"

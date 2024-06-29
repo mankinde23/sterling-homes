@@ -226,7 +226,7 @@ export default function Founders() {
 
       {/* Mobile ...... */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:flex md:flex-col md:justify-center  ">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:block sm:block md:flex md:flex-col md:justify-center  hidden">
         <div
           className={`h-auto w-auto pt-[1.88rem] md:px-[7rem] sm:px-0 md:block lg:flex lg:flex-col lg:justify-center lg:items-center  lg:px-[17rem] ${
             theme === "dark"

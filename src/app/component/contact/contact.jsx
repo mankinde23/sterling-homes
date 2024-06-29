@@ -262,7 +262,7 @@ export default function Contact() {
 
       {/* MOBILE */}
 
-      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block">
+      <div className="2xl:hidden 2xl-max:hidden xl:hidden lg:hidden sm:block md:block hidden">
         <div
           className="bg-cover h-[17rem] w-auto bg-light-gray bg-no-repeat flex-shrink-0  scale-100 pt-[3.875rem] pr-[1.875rem] pb-[6.625rem] pl-[1.875rem] gap-[0.75rem] flex flex-col "
           style={{
