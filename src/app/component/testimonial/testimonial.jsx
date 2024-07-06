@@ -63,7 +63,7 @@ export default function Testimonial() {
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:block  md:hidden hidden">
         <div
-          className={`h-auto w-auto py-[4.44rem] px-[3.23rem] lg:px-[3rem] ${
+          className={`h-auto w-auto py-[4.44rem] px-[3.96rem] lg:px-[3rem] ${
             theme === "dark"
               ? "bg-about-bg transition duration-500 ease-in-out"
               : "bg-nav-text transition duration-500 ease-in-out"
