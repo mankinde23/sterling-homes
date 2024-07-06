@@ -333,7 +333,7 @@ export default function Catalogue() {
         >
           <div className="flex pt-[5.38rem] justify-between items-center  w-auto pr-[2rem]">
             <Link href="/">
-              <div className=" ">
+              <div className="ml-[-1rem] ">
                 <MdKeyboardArrowLeft className="w-[2rem] h-[2.5rem] text-sterling-theme" />
               </div>
             </Link>
