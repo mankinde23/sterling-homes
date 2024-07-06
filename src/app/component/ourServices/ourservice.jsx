@@ -118,7 +118,7 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/service1.png')",
               }}
             >
-              <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
+              <div className="h-[14.56rem] w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Home Buying & Selling
@@ -240,14 +240,15 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/services2.png')",
               }}
             >
-              <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
+              <div className="h-[14.56rem] w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Home Leasing Service
                   </p>
                   <p className="text-[0.875rem] leading-normal font-light text-our-servicet mt-[0.62rem]">
                     Facilitating quicker rental property leases by accurately
-                    pricing properties to attract tenants efficiently.{" "}
+                    pricing properties to attract tenants efficiently and
+                    effectively.
                   </p>
                 </div>
                 <button
@@ -352,7 +353,7 @@ export default function Ourservice({ onClose }) {
                 backgroundImage: "url('/services3.png')",
               }}
             >
-              <div className="h-auto w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
+              <div className="h-[14.56rem] w-auto pt-[1.50513rem] pr-[1.1rem] pb-[1.35rem] pl-[0.72rem] flex gap-[0.6875rem] flex-col  backdrop-blur-[7px] bg-navbar-bg xl:w-auto">
                 <div className="flex flex-col">
                   <p className="text-[1.125rem] font-semibold leading-normal text-our-service-text">
                     Tax Preparation & Filing
@@ -644,7 +645,8 @@ export default function Ourservice({ onClose }) {
                   </p>
                   <p className="sm:text-[0.8125rem] md:text-[0.8125rem] leading-normal text-our-servicet mt-[0.62rem] w-auto lg:text-[1rem] ">
                     Facilitating quicker rental property leases by accurately
-                    pricing properties to attract tenants efficiently.{" "}
+                    pricing properties to attract tenants efficiently and
+                    effectively.
                   </p>
                 </div>
                 <button
