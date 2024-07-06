@@ -330,7 +330,7 @@ export default function Aboutus() {
             transition={{ duration: 1.5, ease: "easeIn" }}
             exit={{ opacity: 0 }}
           >
-            <div className="flex flex-col gap-[0.81rem] w-auto mt-[10rem]">
+            <div className="flex flex-col gap-[0.81rem] w-auto mt-[4rem]">
               <p
                 className={` text-[0.875rem] font-semibold ${
                   theme === "light" ? "text-about-t" : "text-nav-text"
