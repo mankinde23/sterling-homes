@@ -301,10 +301,11 @@ export default function Footer() {
                 sterlinghomes22@gmail.com
               </p>
             </a>
-
-            <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
-              +1 (770) 480-9107
-            </p>
+            <a href="tel:+17704809107">
+              <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
+                +1 (770) 480-9107
+              </p>
+            </a>
           </div>
           <div className="w-auto h-[0.125rem] rounded-[2.125rem] bg-footer-s  mt-[4.37rem] px-[0rem]"></div>
           <p className="w-auto h-[2.25rem] text-[0.625rem] font-normal leading-normal text-copy-t flex justify-center items-center mt-[1.13rem]">
