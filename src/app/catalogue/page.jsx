@@ -23,13 +23,13 @@ export default function Catalogue() {
           }`}
           // 2xl:w-[53rem] h-[4.3125rem] 2xl:gap-[27.125rem] 2xl-max:gap-[0rem] 2xl-max:w-full 2xl-max:justify-center xl:w-[37.1875rem] xl:gap-[18.56rem] xl:pt-[7.37rem] xl:h-[2.75rem]
         >
-          <div className="flex pt-[3.69rem]  items-center w-auto   justify-between">
+          <div className="flex pt-[3.69rem]  relative flex-row justify-center p-4 w-auto">
             <Link href="/">
-              <div className="w-[5.0625rem] h-[2.63rem]  flex justify-start items-center ">
+              <div className="absolute left-4 ">
                 <MdKeyboardArrowLeft className="w-[2rem] h-[2.5rem] text-sterling-theme" />
               </div>
             </Link>
-            <div className="w-[20.8125rem] xl:pl-[1rem] 2xl-max:mr-[1rem]">
+            <div className=" xl:pl-[1rem] 2xl-max:mr-[1rem]">
               <p
                 className={` text-[3.125rem] font-semibold leading-normal lg:text-[2.25rem] xl:text-[2.25rem] ${
                   theme === "light" ? "text-about-b" : "text-nav-text"
@@ -38,7 +38,6 @@ export default function Catalogue() {
                 CATALOGUE
               </p>
             </div>
-            <div></div>
           </div>
 
           <div className="grid grid-cols-3 auto-rows-auto px-auto gap-x-[6.81rem] gap-y-[5.38rem] mt-[4.69rem]  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-[0rem] xl:mt-[5.56rem]">
@@ -331,9 +330,9 @@ export default function Catalogue() {
               : "bg-nav-text transition duration-500 ease-in-out"
           }`}
         >
-          <div className="flex pt-[5.38rem] justify-between items-center  w-auto pr-[2rem]">
+          <div className="flex pt-[5.38rem] relative flex-row justify-center p-4">
             <Link href="/">
-              <div className="ml-[-1rem] ">
+              <div className="absolute left-[-1.2rem] ">
                 <MdKeyboardArrowLeft className="w-[2rem] h-[2.5rem] text-sterling-theme" />
               </div>
             </Link>
@@ -347,7 +346,6 @@ export default function Catalogue() {
                 CATALOGUE
               </p>
             </div>
-            <div></div>
           </div>
           <div className="grid grid-cols-1 auto-rows-auto gap-y-[2rem] mt-[3.81rem]">
             <div className="flex justify-center  flex-col gap-[2rem]">
