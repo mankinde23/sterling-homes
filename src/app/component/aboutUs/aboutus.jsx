@@ -186,7 +186,7 @@ export default function Aboutus() {
                 Commercial and Luxury Homes Focus
               </p>
               <p
-                className={` text-[1.0625rem] font-normal  h-[5.625rem]  leading-normal ${
+                className={` text-[1.25rem] font-normal  h-[5.625rem]  leading-normal ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -205,7 +205,7 @@ export default function Aboutus() {
                 Realtor Services Description
               </p>
               <p
-                className={` text-[1.0625rem] font-normal leading-normal h-[5.625rem]  ${
+                className={` text-[1.25rem] font-normal leading-normal h-[5.625rem]  ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
@@ -225,7 +225,7 @@ export default function Aboutus() {
                 Tax Advisory
               </p>
               <p
-                className={` text-[1.0625rem] font-normal leading-normal h-[5.625rem] ${
+                className={` text-[1.25rem] font-normal leading-normal h-[5.625rem] ${
                   theme === "light" ? "text-about-s-w" : "text-about-s-b"
                 }`}
               >
