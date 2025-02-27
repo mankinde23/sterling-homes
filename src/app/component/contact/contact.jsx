@@ -38,9 +38,9 @@ export default function Contact() {
       resetForm();
       toast.success("Form submitted successfully!");
 
-      console.log("Email sent successfully!");
+      // console.log("Email sent successfully!");
     } catch (error) {
-      console.error("Failed to send email:", error);
+      // console.error("Failed to send email:", error);
       toast.error("Failed to submit form. Please try again.");
     } finally {
       setSubmitting(false);
