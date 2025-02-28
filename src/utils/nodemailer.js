@@ -7,5 +7,4 @@ export const transporter = nodemailer.createTransport({
     pass: process.env.GOOGLE_PASSWORD,
   },
 });
-//Testing
 export const smtpEmail = process.env.GOOGLE_EMAIL;
