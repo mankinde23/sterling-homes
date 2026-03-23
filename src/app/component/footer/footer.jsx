@@ -113,9 +113,9 @@ export default function Footer() {
                 <p className="w-auto h-[2.6875rem] text-sterling-theme text-[1.25rem] font-medium leading-[3rem] tracking-[0.05rem]">
                   CONTACT US
                 </p>
-                <a href="mailto: sterlinghomes22@gmail.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
+                <a href="mailto: help@sterlinghms.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
                   <p className="w-auto h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test1">
-                    sterlinghomes22@gmail.com
+                    help@sterlinghms.com
                   </p>
                 </a>
 
@@ -205,9 +205,9 @@ export default function Footer() {
                 <p className="w-[17.0625rem] h-[2.6875rem] text-sterling-theme text-[1.25rem] font-medium leading-[3rem] tracking-[0.05rem] lg:text-[0.875rem] lg:w-auto">
                   CONTACT US
                 </p>
-                <a href="mailto: sterlinghomes22@gmail.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
+                <a href="mailto: help@sterlinghms.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
                   <p className="w-[17.0625rem] h-[3rem] text-[0.9375rem] font-light leading-[3rem]  text-footer-test1 lg:text-[0.6875rem] lg:w-auto lg:h-auto">
-                    sterlinghomes22@gmail.com
+                    help@sterlinghms.com
                   </p>
                 </a>
 
@@ -296,9 +296,9 @@ export default function Footer() {
             <p className="w-auto h-[2.6875rem] text-sterling-theme text-[0.875rem] font-medium leading-[3rem] tracking-[0.05rem]">
               CONTACT US
             </p>
-            <a href="mailto: sterlinghomes22@gmail.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
+            <a href="mailto: help@sterlinghms.com?subject=Sterling Home's Inquiry&body=Hello, I would like to inquire about your catalogue.">
               <p className="w-auto h-[2.6875rem] text-[0.6875rem]  leading-[3rem]  text-footer-test1">
-                sterlinghomes22@gmail.com
+                help@sterlinghms.com
               </p>
             </a>
             <a href="tel:+17704809107">
