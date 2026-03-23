@@ -7,7 +7,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
     const { name, email, message } = body;
-    console.log(smtpEmail);
+    // console.log(smtpEmail);
     // Validate required fields
     if (!name || !email || !message) {
       return NextResponse.json(
