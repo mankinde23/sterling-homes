@@ -28,8 +28,7 @@ export async function POST(req) {
       subject: "New Form Submission",
       html: emailHtml,
     };
-    console.log("Attempting to send email to:", smtpEmail);
-    // Send the email hfkb lncw svqp vddw
+
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
