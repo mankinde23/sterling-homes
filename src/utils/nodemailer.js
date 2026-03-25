@@ -7,7 +7,7 @@ export const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_APP_PASSWORD,
   },
 });
-console.log("PROD EMAIL:", process.env.GOOGLE_EMAIL);
+// console.log("PROD EMAIL:", process.env.GOOGLE_EMAIL);
 // console.log("GOOGLE_APP_PASSWORD from ENV:", process.env.GMAIL_APP_PASSWORD);
 // console.log(process.env);
 // console.log("SMTP Email (user):", process.env.GOOGLE_EMAIL);
