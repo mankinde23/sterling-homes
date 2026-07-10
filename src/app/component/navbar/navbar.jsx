@@ -81,6 +81,19 @@ export default function Navbar() {
                   </p>
                 </Link>
               </li>
+              <li className="text-nav-text">
+                <Link
+                  to="resources"
+                  spy={true}
+                  smooth={true}
+                  offset={-71}
+                  duration={900}
+                >
+                  <p className="hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out">
+                    Resources
+                  </p>
+                </Link>
+              </li>
               <li className=" text-nav-text">
                 <Link
                   to="testimonials"
@@ -95,6 +108,7 @@ export default function Navbar() {
                   </p>
                 </Link>
               </li>
+
               <li className=" text-nav-text">
                 <Link
                   to="contact"
@@ -300,6 +314,18 @@ export default function Navbar() {
                 style={{ fontFamily: " Montserrat, sans-serif" }}
               >
                 Services
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+            <li
+              className="text-lg font-thin flex gap-[7.69rem] justify-between h-[1.8125rem] hover:text-header-text"
+              onClick={() => handleCloseMenu("resourcesm")}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Resources
               </p>
               <IoIosArrowForward className="text-nav-text" />
             </li>

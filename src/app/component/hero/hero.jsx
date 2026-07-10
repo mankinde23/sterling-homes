@@ -62,7 +62,7 @@ export default function Hero() {
                 <Link href="/catalogue">
                   <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme hover:bg-sterling-hover transition duration-500 ease-in-out">
                     <p className="text-nav-text text-[1rem] font-light leading-normal">
-                      View Catalogue
+                      View Catalog
                     </p>
                   </button>
                 </Link>
@@ -110,7 +110,7 @@ export default function Hero() {
                 <Link href="/catalogue">
                   <button className="w-[11.9375rem] h-[2.875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme hover:bg-sterling-hover transition duration-500 ease-in-out">
                     <p className="text-nav-text text-[1rem] font-light leading-normal">
-                      View Catalogue
+                      View Catalog
                     </p>
                   </button>
                 </Link>
@@ -158,7 +158,7 @@ export default function Hero() {
                 <Link href="/catalogue">
                   <button className="w-[6.6875rem] h-[1.6875rem] p-[0.5rem] gap-[0.5rem] bg-sterling-theme">
                     <p className="text-nav-text text-[0.625rem] font-light leading-normal">
-                      View Catalogue
+                      View Catalog
                     </p>
                   </button>
                 </Link>

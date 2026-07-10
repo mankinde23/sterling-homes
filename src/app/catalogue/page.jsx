@@ -35,7 +35,7 @@ export default function Catalogue() {
                   theme === "light" ? "text-about-b" : "text-nav-text"
                 }`}
               >
-                CATALOGUE
+                CATALOG
               </p>
             </div>
           </div>

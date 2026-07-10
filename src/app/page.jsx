@@ -8,6 +8,7 @@ import Footer from "./component/footer/footer";
 import Navbar from "./component/navbar/navbar";
 import Link from "next/link";
 import Hero from "./component/hero/hero";
+import Resources from "./component/resources/resources";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
         </div>
         <div className="" id="services">
           <Ourservice />
+        </div>
+        <div className="" id="resources">
+          <Resources />
         </div>
         <div className="" id="testimonials">
           <Testimonial />
@@ -81,6 +85,9 @@ export default function Home() {
         </div>
         <div className="w-full scroll-mt-[3.5rem]" id="servicesm">
           <Ourservice />
+        </div>
+        <div className="w-full scroll-mt-[3.5rem]" id="resourcesm">
+          <Resources />
         </div>
         <div className="w-full scroll-mt-[3rem]" id="testimonialsm">
           <Testimonial />
