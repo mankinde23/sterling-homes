@@ -81,7 +81,7 @@ export default function Navbar() {
                   </p>
                 </Link>
               </li>
-              <li className="text-nav-text">
+              {/* <li className="text-nav-text">
                 <Link
                   to="resources"
                   spy={true}
@@ -93,7 +93,7 @@ export default function Navbar() {
                     Resources
                   </p>
                 </Link>
-              </li>
+              </li> */}
               <li className=" text-nav-text">
                 <Link
                   to="testimonials"
@@ -317,7 +317,7 @@ export default function Navbar() {
               </p>
               <IoIosArrowForward className="text-nav-text" />
             </li>
-            <li
+            {/* <li
               className="text-lg font-thin flex gap-[7.69rem] justify-between h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("resourcesm")}
             >
@@ -328,7 +328,7 @@ export default function Navbar() {
                 Resources
               </p>
               <IoIosArrowForward className="text-nav-text" />
-            </li>
+            </li> */}
             <li
               className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("testimonialsm")}

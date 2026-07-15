@@ -26,9 +26,9 @@ export default function Home() {
         <div className="" id="services">
           <Ourservice />
         </div>
-        <div className="" id="resources">
+        {/* <div className="" id="resources">
           <Resources />
-        </div>
+        </div> */}
         <div className="" id="testimonials">
           <Testimonial />
         </div>
@@ -86,9 +86,9 @@ export default function Home() {
         <div className="w-full scroll-mt-[3.5rem]" id="servicesm">
           <Ourservice />
         </div>
-        <div className="w-full scroll-mt-[3.5rem]" id="resourcesm">
+        {/* <div className="w-full scroll-mt-[3.5rem]" id="resourcesm">
           <Resources />
-        </div>
+        </div> */}
         <div className="w-full scroll-mt-[3rem]" id="testimonialsm">
           <Testimonial />
         </div>
