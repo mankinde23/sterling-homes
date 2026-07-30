@@ -117,7 +117,7 @@ export default function DocsModal({ open, onOpenChange }) {
             ))
           ) : (
             <p className="text-footer-test1 text-[0.8125rem] font-light text-center py-[2.5rem]">
-              No documents match "{query}"
+              {`No documents match "${query}"`}
             </p>
           )}
         </div>
