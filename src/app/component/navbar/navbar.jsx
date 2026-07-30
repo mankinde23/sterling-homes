@@ -10,9 +10,12 @@ import DarkModeToggle from "../darmodetoggle/darkmodetoggle";
 import { useLocation } from "react-router-dom";
 import { IoIosArrowForward, IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import DocsModal from "../docsModal/docsModal";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [docsOpen, setDocsOpen] = useState(false);
+
   const handleMenu = () => {
     setMenuOpen(!menuOpen); // Toggle menuOpen state
   };
@@ -24,6 +27,12 @@ export default function Navbar() {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+  const openDocs = () => {
+    setMenuOpen(false); // in case it was opened from the mobile menu
+    setDocsOpen(true);
+  };
+
   return (
     <>
       <div className="sm:hidden 2xl:block 2xl-max:block xl:block lg:hidden  md:hidden">
@@ -94,6 +103,13 @@ export default function Navbar() {
                   </p>
                 </Link>
               </li> */}
+              <li className="text-nav-text">
+                <button onClick={openDocs} type="button">
+                  <p className="hover:text-sterling-theme hover:cursor-pointer transition duration-500 ease-in-out">
+                    Docs
+                  </p>
+                </button>
+              </li>
               <li className=" text-nav-text">
                 <Link
                   to="testimonials"
@@ -330,6 +346,18 @@ export default function Navbar() {
               <IoIosArrowForward className="text-nav-text" />
             </li> */}
             <li
+              className="text-lg font-thin flex gap-[7.69rem] justify-between h-[1.8125rem] hover:text-header-text"
+              onClick={openDocs}
+            >
+              <p
+                className="w-[6.875rem] text-[0.75rem] text-nav-text leading-normal md:text-[1rem] lg:text-[1rem] xl:text-[1rem] font-normal"
+                style={{ fontFamily: " Montserrat, sans-serif" }}
+              >
+                Docs
+              </p>
+              <IoIosArrowForward className="text-nav-text" />
+            </li>
+            <li
               className="text-lg font-thin flex gap-[7.69rem] justify-between  h-[1.8125rem] hover:text-header-text"
               onClick={() => handleCloseMenu("testimonialsm")}
             >
@@ -356,6 +384,8 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+
+      <DocsModal open={docsOpen} onOpenChange={setDocsOpen} />
     </>
   );
 }
